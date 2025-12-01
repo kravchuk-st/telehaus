@@ -24,7 +24,7 @@
       left: -60px;
       width: calc(100% + 60px);
       height: 100%;
-      background: center / cover no-repeat url("/assets/img/innovation-bg.avif");
+      background: center / cover no-repeat url("../img/innovation-bg.avif");
     }
 
     &__title {
@@ -51,7 +51,7 @@
 
       @for $i from 1 through 7 {
         &:nth-child(#{$i}) {
-          background-image: url("/assets/img/options/#{$i}.avif");
+          background-image: url("../img/options/#{$i}.avif");
         }
       }
     }
