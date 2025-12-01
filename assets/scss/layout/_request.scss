@@ -1,0 +1,110 @@
+.request {
+  padding-bottom: 70px;
+  background: linear-gradient(to right, $color-main, $color-main 50%, $color-light 50%, $color-light);
+
+  .wrapper {
+    display: flex;
+    align-items: flex-start;
+
+    & > * {
+      flex-basis: 50%;
+    }
+  }
+
+  &__contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 24px;
+
+    .social__link {
+      display: block;
+      width: 40px;
+      height: 40px;
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+
+      &_ig {
+        background-image: url("/assets/img/social/insta.svg");
+      }
+
+      &_in {
+        background-image: url("/assets/img/social/linkedin.svg");
+      }
+
+      &_fb {
+        background-image: url("/assets/img/social/fb.svg");
+      }
+    }
+  }
+
+  .contacts {
+    &__phones {
+      display: flex;
+      column-gap: 42px;
+    }
+
+    &__title {
+      margin: 25px 0;
+      font-size: 34px;
+      font-weight: 600;
+    }
+
+    &__link {
+      font-size: 25px;
+      color: $color-light;
+    }
+
+    &__social {
+      display: flex;
+      column-gap: 20px;
+    }
+
+    &__line {
+      width: 80%;
+      max-width: 460px;
+      height: 1px;
+      color: $color-light;
+      background-color: $color-light;
+    }
+
+    &__copy {
+      font-size: 16px;
+    }
+  }
+
+  &__form {
+    padding-left: 115px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    color: $color-text;
+
+    .form {
+      &__row {
+        display: flex;
+        flex-direction: column;
+        row-gap: 7px;
+      }
+
+      &__btns {
+        margin-top: 9px;
+        text-align: center;
+      }
+
+      &__btn {
+        margin-left: 50px;
+        padding: 8px 20px;
+        font-size: 24px;
+        color: $color-text;
+        border-color: $color-text;
+
+        &:hover {
+          color: $color-main;
+          border-color: $color-main;
+        }
+      }
+    }
+  }
+}

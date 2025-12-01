@@ -1,0 +1,59 @@
+.about {
+  padding-top: 0;
+
+  .wrapper {
+    display: flex;
+
+    & > * {
+      flex-basis: 50%;
+    }
+  }
+
+  .innovation {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    row-gap: 30px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      z-index: -5;
+      left: -60px;
+      width: calc(100% + 60px);
+      height: 100%;
+      background: center / cover no-repeat url("/assets/img/innovation-bg.avif");
+    }
+
+    &__title {
+      font-size: 60px;
+      font-weight: 800;
+      text-transform: uppercase;
+    }
+  }
+
+  .options {
+    padding: 98px 0 98px 94px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+
+    &__item {
+      padding: 30px 35px;
+      font-size: 32px;
+      font-weight: 800;
+      border-radius: 30px;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+
+      @for $i from 1 through 7 {
+        &:nth-child(#{$i}) {
+          background-image: url("/assets/img/options/#{$i}.avif");
+        }
+      }
+    }
+  }
+}

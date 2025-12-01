@@ -1,0 +1,60 @@
+.portfolio {
+  .event {
+    color: $color-light;
+    background: center / cover no-repeat;
+
+    &:nth-child(2n) {
+      .event__content {
+        margin-left: auto;
+      }
+    }
+
+    &:nth-child(1) {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("/assets/img/portfolio/1.avif");
+    }
+
+    &:nth-child(2) {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("/assets/img/portfolio/2.avif");
+    }
+
+    &:nth-child(3) {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("/assets/img/portfolio/3.avif");
+    }
+
+    &__content {
+      width: 100%;
+      max-width: 440px;
+    }
+
+    &__header {
+      padding: 60px 32px 50px 60px;
+      background-color: #7db9fe;
+    }
+
+    &__title {
+      font-size: 36px;
+      font-weight: 800;
+    }
+
+    &__count {
+      margin-top: 5px;
+    }
+
+    &__subtitle {
+      margin-top: 30px;
+    }
+
+    &__place {
+      margin-top: 15px;
+    }
+
+    &__descr {
+      padding: 70px 20px 70px 60px;
+      backdrop-filter: blur(2px);
+      background-color: rgba(0, 0, 0, 0.75);
+      display: flex;
+      flex-direction: column;
+      row-gap: 20px;
+    }
+  }
+}

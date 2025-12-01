@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Telehaus</title>
+    <link rel="shortcut icon" type="image/ico" href="/assets/img/favicon.svg" />
+
+    <link rel="stylesheet" href="/assets/css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="/assets/css/splide.min.css" />
+    <link rel="stylesheet" type="text/css" href="/assets/css/style.css" />
+  </head>
+  <body>
+    <svg class="sprite" style="display: none">
+      <symbol viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg" id="arrow-btn">
+        <path
+          d="M2.07422 31.0933L30.2342 2.93332M30.2342 2.93332H4.42091M30.2342 2.93332V28.7466"
+          stroke-width="5.86667"
+        />
+      </symbol>
+      <symbol viewBox="0 0 200 40" fill="none" xmlns="http://www.w3.org/2000/svg" id="stars">
+        <path
+          d="M20 0L24.4903 13.8197H39.0211L27.2654 22.3607L31.7557 36.1803L20 27.6393L8.2443 36.1803L12.7346 22.3607L0.97887 13.8197H15.5097L20 0Z"
+          fill="#F8B805"
+        />
+        <path
+          d="M100 0L104.49 13.8197H119.021L107.265 22.3607L111.756 36.1803L100 27.6393L88.2443 36.1803L92.7346 22.3607L80.9789 13.8197H95.5097L100 0Z"
+          fill="#F8B805"
+        />
+        <path
+          d="M60 0L64.4903 13.8197H79.0211L67.2654 22.3607L71.7557 36.1803L60 27.6393L48.2443 36.1803L52.7346 22.3607L40.9789 13.8197H55.5097L60 0Z"
+          fill="#F8B805"
+        />
+        <path
+          d="M140 0L144.49 13.8197H159.021L147.265 22.3607L151.756 36.1803L140 27.6393L128.244 36.1803L132.735 22.3607L120.979 13.8197H135.51L140 0Z"
+          fill="#F8B805"
+        />
+        <path
+          d="M180 0L184.49 13.8197H199.021L187.265 22.3607L191.756 36.1803L180 27.6393L168.244 36.1803L172.735 22.3607L160.979 13.8197H175.51L180 0Z"
+          fill="#F8B805"
+        />
+      </symbol>
+      <symbol viewBox="0 0 22 13" fill="none" xmlns="http://www.w3.org/2000/svg" id="arrow">
+        <path d="M0.957031 0.957031L10.957 10.957L20.957 0.957031" stroke="black" stroke-width="2.70667" />
+      </symbol>
+    </svg>
+
+    <header class="header">
+      <div class="wrapper">
+        <a href="/" class="logo">
+          <img class="logo__img" src="/assets/img/logo.svg" alt="Logo img" width="220" />
+        </a>
+        <nav class="nav">
+          <ol class="nav__list list-reset">
+            <li class="nav__item">
+              <a href="#" class="nav__link">Послуги</a>
+            </li>
+            <li class="nav__item">
+              <a href="/promotions" class="nav__link">Чому ми?</a>
+            </li>
+            <li class="nav__item">
+              <a href="/delivery" class="nav__link">Портфоліо</a>
+            </li>
+            <li class="nav__item">
+              <a href="/pay" class="nav__link">Відгуки</a>
+            </li>
+          </ol>
+        </nav>
+        <a href="#" class="btn btn-reset">Консультація</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="banner">
+        <div class="wrapper">
+          <h1 class="banner__title">Професійне планування та&nbsp;проведення бізнес-заходів MICE</h1>
+          <div class="banner__info">
+            <div class="banner__links">
+              <a href="#" class="btn btn-active btn-reset">Отримати консультацію</a>
+            </div>
+            <span class="banner__meta">*безкоштовно</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="about">
+        <div class="wrapper">
+          <div class="innovation">
+            <h2 class="innovation__title">
+              Інноваційні рішення для&nbsp;заходів, що&nbsp;об'єднують, мотивують і&nbsp;надихають ваш&nbsp;бізнес
+            </h2>
+            <a href="#" class="btn btn-reset">ЗАЛИШИТИ ЗАЯВКУ</a>
+          </div>
+          <div class="options">
+            <p class="options__item">Тренінги та воркшопи</p>
+            <p class="options__item">Корпоративні зустрічі та&nbsp;стратегічні сесії</p>
+            <p class="options__item">Конференції та саміти</p>
+            <p class="options__item">Виставки та бізнес-форуми</p>
+            <p class="options__item">Корпоративні події та&nbsp;тімбілдинги</p>
+            <p class="options__item">Нетворкінг-заходи та&nbsp;бізнес-зустрічі</p>
+            <p class="options__item">Презентації продуктів та&nbsp;брендів</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="why">
+        <div class="wrapper">
+          <div class="title">
+            <h2 class="title__text">ЧОМУ ОБИРАЮТЬ TELEHAUS? </h2>
+            <p class="title__subtext">ЧОМУ МИ?</p>
+          </div>
+          <div class="why__content">
+            <div class="benefit">
+              <div class="benefit__info">
+                <span class="benefit__icon" aria-hidden="true"></span>
+                <h3 class="benefit__title">Досвід</h3>
+                <p class="benefit__text">Понад 10 років успішних MICE-проектів для провідних компаній.</p>
+              </div>
+              <div class="benefit__descr">
+                <h3 class="benefit__title">Професіоналізм</h3>
+                <p class="benefit__text">Команда експертів, що дбають про кожну деталь вашого заходу.</p>
+              </div>
+            </div>
+            <div class="benefit">
+              <div class="benefit__info">
+                <span class="benefit__icon" aria-hidden="true"></span>
+                <h3 class="benefit__title">Інновації</h3>
+                <p class="benefit__text">Застосування сучасних технологій і креативних рішень для WOW-ефекту.</p>
+              </div>
+              <div class="benefit__descr"></div>
+            </div>
+            <div class="benefit">
+              <div class="benefit__info">
+                <span class="benefit__icon" aria-hidden="true"></span>
+                <h3 class="benefit__title">Надійність</h3>
+                <p class="benefit__text">Чітке планування і контроль всіх етапів організації.</p>
+              </div>
+              <div class="benefit__descr">
+                <h3 class="benefit__title">Індивідуальний підхід</h3>
+                <p class="benefit__text">Кожен проект унікальний, ми створюємо персоналізовані концепції.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="portfolio">
+        <div class="wrapper">
+          <div class="title">
+            <h2 class="title__text">НАШІ КЕЙСИ</h2>
+            <p class="title__subtext">ПОРТФОЛІО</p>
+          </div>
+          <div class="portfolio__content">
+            <div class="event">
+              <div class="event__content">
+                <div class="event__header">
+                  <h3 class="event__title">Конференція</h3>
+                  <p class="event__count">/150 людей</p>
+                  <p class="event__subtitle">Презентація нової колекції дилерам та дистрибьюторам</p>
+                  <p class="event__place">Warsaw, Crowne Plaza The Hub</p>
+                </div>
+                <div class="event__descr">
+                  <p>Була ціль зібратися з ключовими партнерами та власниками магазинів для презентації колекції.</p>
+                  <p>Забезпечили організацію, техніку, сценарій, реєстрацію, бренд-зону, кейтерінг, шоурум.</p>
+                </div>
+              </div>
+            </div>
+            <div class="event">
+              <div class="event__content">
+                <div class="event__header">
+                  <h3 class="event__title">Презентація</h3>
+                  <p class="event__count">/250 людей</p>
+                  <p class="event__subtitle">Презентація нової колекції дилерам та дистрибьюторам</p>
+                  <p class="event__place">Warsaw, Crowne Plaza The Hub</p>
+                </div>
+                <div class="event__descr">
+                  <p>Була ціль зібратися з ключовими партнерами та власниками магазинів для презентації колекції.</p>
+                  <p>Забезпечили організацію, техніку, сценарій, реєстрацію, бренд-зону, кейтерінг, шоурум.</p>
+                </div>
+              </div>
+            </div>
+            <div class="event">
+              <div class="event__content">
+                <div class="event__header">
+                  <h3 class="event__title">Подорож</h3>
+                  <p class="event__count">/30 людей</p>
+                  <p class="event__subtitle">Презентація нової колекції дилерам та дистрибьюторам</p>
+                  <p class="event__place">Warsaw, Crowne Plaza The Hub</p>
+                </div>
+                <div class="event__descr">
+                  <p>Була ціль зібратися з ключовими партнерами та власниками магазинів для презентації колекції.</p>
+                  <p>Забезпечили організацію, техніку, сценарій, реєстрацію, бренд-зону, кейтерінг, шоурум.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="team">
+        <div class="wrapper">
+          <div class="title">
+            <h2 class="title__text">НАША КОМАНДА</h2>
+            <p class="title__subtext">ХТО МИ?</p>
+          </div>
+          <div class="team__content">
+            <div class="card">
+              <div class="card__front view">
+                <img class="card__img" src="/assets/img/team/1.avif" alt="..." />
+              </div>
+              <div class="card__back view">
+                <p class="card__name">Ім’я Прізвище</p>
+                <p class="card__position">/посада</p>
+                <p class="card__descr">опис</p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card__front view">
+                <img class="card__img" src="/assets/img/team/2.avif" alt="..." />
+              </div>
+              <div class="card__back view">
+                <p class="card__name">Ім’я Прізвище</p>
+                <p class="card__position">/посада</p>
+                <p class="card__descr">опис</p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card__front view">
+                <img class="card__img" src="/assets/img/team/3.avif" alt="..." />
+              </div>
+              <div class="card__back view">
+                <p class="card__name">Ім’я Прізвище</p>
+                <p class="card__position">/посада</p>
+                <p class="card__descr">опис</p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card__front view">
+                <img class="card__img" src="/assets/img/team/4.avif" alt="..." />
+              </div>
+              <div class="card__back view">
+                <p class="card__name">Ім’я Прізвище</p>
+                <p class="card__position">/посада</p>
+                <p class="card__descr">опис</p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card__front view">
+                <img class="card__img" src="/assets/img/team/5.avif" alt="..." />
+              </div>
+              <div class="card__back view">
+                <p class="card__name">Ім’я Прізвище</p>
+                <p class="card__position">/посада</p>
+                <p class="card__descr">опис</p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card__front view">
+                <img class="card__img" src="/assets/img/team/2.avif" alt="..." />
+              </div>
+              <div class="card__back view">
+                <p class="card__name">Ім’я Прізвище</p>
+                <p class="card__position">/посада</p>
+                <p class="card__descr">опис</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="comments">
+        <div class="wrapper">
+          <div class="title">
+            <h2 class="title__text">ЩО ПРО НАС КАЖУТЬ?</h2>
+            <p class="title__subtext">ВІДГУКИ</p>
+          </div>
+          <div class="slider splide">
+            <div class="splide__track">
+              <div class="splide__list">
+                <div class="comment splide__slide">
+                  <svg class="comment__icon">
+                    <use xlink:href="#stars"></use>
+                  </svg>
+                  <p class="comment__author">Олександр</p>
+                  <p class="comment__text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua.
+                  </p>
+                </div>
+                <div class="comment splide__slide">
+                  <svg class="comment__icon">
+                    <use xlink:href="#stars"></use>
+                  </svg>
+                  <p class="comment__author">Олександр</p>
+                  <p class="comment__text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua.
+                  </p>
+                </div>
+                <div class="comment splide__slide">
+                  <svg class="comment__icon">
+                    <use xlink:href="#stars"></use>
+                  </svg>
+                  <p class="comment__author">Олександр</p>
+                  <p class="comment__text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="splide__arrows">
+              <button class="splide__arrow splide__arrow--prev btn-reset"></button>
+              <button class="splide__arrow splide__arrow--next btn-reset"></button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="faq">
+        <div class="wrapper">
+          <div class="title">
+            <h2 class="title__text">ЧАСТІ ПИТАННЯ</h2>
+            <p class="title__subtext">Q&A</p>
+          </div>
+          <div class="accordion">
+            <div class="accordion__item">
+              <button class="accordion__btn btn-reset" aria-expanded="false">
+                <span class="accordion__title"
+                  >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt?</span
+                >
+                <svg class="accordion__icon">
+                  <use xlink:href="#arrow"></use>
+                </svg>
+              </button>
+              <div class="accordion__content" aria-hidden="true">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                  dolore magna aliqua.
+                </p>
+              </div>
+            </div>
+            <div class="accordion__item">
+              <button class="accordion__btn btn-reset" aria-expanded="false">
+                <span class="accordion__title"
+                  >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt?</span
+                >
+                <svg class="accordion__icon">
+                  <use xlink:href="#arrow"></use>
+                </svg>
+              </button>
+              <div class="accordion__content" aria-hidden="true">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                  dolore magna aliqua.
+                </p>
+              </div>
+            </div>
+            <div class="accordion__item">
+              <button class="accordion__btn btn-reset" aria-expanded="false">
+                <span class="accordion__title"
+                  >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt?</span
+                >
+                <svg class="accordion__icon">
+                  <use xlink:href="#arrow"></use>
+                </svg>
+              </button>
+              <div class="accordion__content" aria-hidden="true">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                  dolore magna aliqua.
+                </p>
+              </div>
+            </div>
+            <div class="accordion__item">
+              <button class="accordion__btn btn-reset" aria-expanded="false">
+                <span class="accordion__title"
+                  >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt?</span
+                >
+                <svg class="accordion__icon">
+                  <use xlink:href="#arrow"></use>
+                </svg>
+              </button>
+              <div class="accordion__content" aria-hidden="true">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                  dolore magna aliqua.
+                </p>
+              </div>
+            </div>
+            <div class="accordion__item">
+              <button class="accordion__btn btn-reset" aria-expanded="false">
+                <span class="accordion__title"
+                  >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt?</span
+                >
+                <svg class="accordion__icon">
+                  <use xlink:href="#arrow"></use>
+                </svg>
+              </button>
+              <div class="accordion__content" aria-hidden="true">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                  dolore magna aliqua.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="blog">
+        <div class="wrapper">
+          <div class="title">
+            <h2 class="title__text">БЛОГ</h2>
+            <p class="title__subtext">НОВИНИ</p>
+          </div>
+          <div class="blog__content">
+            <a href="#" class="blog__link btn-reset" style="background-image: url('/assets/img/blog/1.avif')">
+              <span class="link__icon" aria-hidden="true"></span>
+              <p class="link__title">Новина 1</p>
+              <p class="link__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </a>
+            <a href="#" class="blog__link btn-reset" style="background-image: url('/assets/img/blog/2.avif')">
+              <span class="link__icon" aria-hidden="true"></span>
+              <p class="link__title">Новина 2</p>
+              <p class="link__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </a>
+            <a href="#" class="blog__link btn-reset" style="background-image: url('/assets/img/blog/3.avif')">
+              <span class="link__icon" aria-hidden="true"></span>
+              <p class="link__title">Новина 3</p>
+              <p class="link__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </a>
+            <a href="#" class="blog__link btn-reset" style="background-image: url('/assets/img/blog/4.avif')">
+              <span class="link__icon" aria-hidden="true"></span>
+              <p class="link__title">Новина 4</p>
+              <p class="link__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </a>
+          </div>
+          <button class="btn btn-active btn-reset blog-btn">дивитись все</button>
+        </div>
+      </section>
+
+      <section class="request">
+        <div class="wrapper">
+          <div class="request__contacts">
+            <img class="contacts__logo" src="/assets/img/logo.svg" alt="Logo" width="308" />
+            <h2 class="contacts__title">Контакти</h2>
+            <div class="contacts__phones">
+              <a href="tel:+380501234567" class="contacts__link contacts__number">+38 050 123 45 67</a>
+              <a href="tel:+48255123456" class="contacts__link contacts__number">+48 255 123 456</a>
+            </div>
+            <a href="mailto:telehausme@gmail.com" class="contacts__link contacts__email">telehausme@gmail.com</a>
+            <a
+              href="https://maps.app.goo.gl/EVT97LwBF92cj2ki7"
+              class="contacts__link"
+              target="_blank"
+              rel="noopener noreferrer"
+              >м. Київ, вул. Братська 7</a
+            >
+            <ul class="contacts__social list-reset">
+              <li class="social__item">
+                <a href="#" class="social__link social__link_ig" target="_blank" rel="noopener noreferrer"></a>
+              </li>
+              <li class="social__item">
+                <a href="#" class="social__link social__link_in" target="_blank" rel="noopener noreferrer"></a>
+              </li>
+              <li class="social__item">
+                <a href="#" class="social__link social__link_fb" target="_blank" rel="noopener noreferrer"></a>
+              </li>
+            </ul>
+            <hr class="contacts__line" />
+            <p class="contacts__copy">&copy; Telehaus 2025</p>
+          </div>
+          <form class="request__form" action="#" method="post">
+            <div class="form__row">
+              <label for="name">Введіть ваше ім’я:</label>
+              <input name="Ім'я" type="text" id="name" />
+            </div>
+            <div class="form__row">
+              <label for="email">Введіть ваш email:</label>
+              <input name="E-mail" type="email" id="email" placeholder="example@gmail.com" />
+            </div>
+            <div class="form__row">
+              <label for="name">Оберіть послугу</label>
+              <select name="Послуга" id="">
+                <option value="Організація конференції">Організація конференції</option>
+              </select>
+            </div>
+            <div class="form__row">
+              <label for="descr">Коротко опишіть ваш запит</label>
+              <textarea name="Опис" id="descr" cols="30" rows="4"></textarea>
+            </div>
+            <div class="form__btns">
+              <button class="btn form__btn btn-reset" type="submit">Залишити заявку</button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <script src="/assets/js/lib/splide.min.js"></script>
+    <script src="/assets/js/lib/inputmask.min.js"></script>
+    <script src="/assets/js/slider.js"></script>
+    <script src="/assets/js/accordion.js"></script>
+  </body>
+</html>

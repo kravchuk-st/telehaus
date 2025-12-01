@@ -1,0 +1,47 @@
+.banner {
+  min-height: 100vh;
+  display: flex;
+  align-items: flex-end;
+  background: center / cover no-repeat linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+    url("/assets/img/banner.avif");
+
+  &__title {
+    margin: 0;
+    font-weight: 800;
+    font-size: 60px;
+    line-height: 0.95;
+    text-transform: uppercase;
+  }
+
+  &__info {
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    column-gap: 24px;
+  }
+
+  &__links {
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+
+    .btn-active {
+      padding: 29px 40px;
+      font-size: 28px;
+      border-width: 2px;
+    }
+
+    .btn-arrow {
+      font-size: 28px;
+      border-width: 2px;
+      stroke: $color-secondary;
+      border-color: $color-secondary;
+    }
+  }
+
+  &__meta {
+    font-size: 32px;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+}
