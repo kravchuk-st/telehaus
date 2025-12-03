@@ -43,5 +43,27 @@
     margin: 30px auto 0;
     color: $color-main;
     border-color: $color-main;
+
+    .btn__icon {
+      stroke: $color-main;
+    }
+
+    &:hover {
+      color: $color-hover;
+      border-color: $color-hover;
+
+      .btn__icon {
+        stroke: $color-hover;
+      }
+    }
+
+    &:active {
+      color: $color-main;
+      border-color: $color-main;
+
+      .btn__icon {
+        stroke: $color-main;
+      }
+    }
   }
 }

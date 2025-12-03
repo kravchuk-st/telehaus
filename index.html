@@ -13,11 +13,8 @@
   </head>
   <body>
     <svg class="sprite" style="display: none">
-      <symbol viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg" id="arrow-btn">
-        <path
-          d="M2.07422 31.0933L30.2342 2.93332M30.2342 2.93332H4.42091M30.2342 2.93332V28.7466"
-          stroke-width="5.86667"
-        />
+      <symbol viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg" id="arrow-btn">
+        <path d="M1.06055 15.9L15.4605 1.5M15.4605 1.5H2.26056M15.4605 1.5V14.7" stroke-width="3" />
       </symbol>
       <symbol viewBox="0 0 200 40" fill="none" xmlns="http://www.w3.org/2000/svg" id="stars">
         <path
@@ -77,7 +74,12 @@
           <h1 class="banner__title">Професійне планування та&nbsp;проведення бізнес-заходів MICE</h1>
           <div class="banner__info">
             <div class="banner__links">
-              <a href="#" class="btn btn-active btn-reset">Отримати консультацію</a>
+              <a href="#" class="btn btn-fill btn-reset"
+                >Отримати консультацію
+                <svg class="btn__icon" aria-hidden="true">
+                  <use xlink:href="#arrow-btn"></use>
+                </svg>
+              </a>
             </div>
             <span class="banner__meta">*безкоштовно</span>
           </div>
@@ -90,7 +92,12 @@
             <h2 class="innovation__title">
               Інноваційні рішення для&nbsp;заходів, що&nbsp;об'єднують, мотивують і&nbsp;надихають ваш&nbsp;бізнес
             </h2>
-            <a href="#" class="btn btn-reset">ЗАЛИШИТИ ЗАЯВКУ</a>
+            <a href="#" class="btn btn-reset"
+              >ЗАЛИШИТИ ЗАЯВКУ
+              <svg class="btn__icon" aria-hidden="true">
+                <use xlink:href="#arrow-btn"></use>
+              </svg>
+            </a>
           </div>
           <div class="options">
             <p class="options__item">Тренінги та воркшопи</p>
@@ -437,7 +444,12 @@
               <p class="link__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </a>
           </div>
-          <button class="btn btn-active btn-reset blog-btn">дивитись все</button>
+          <button class="btn btn-fill btn-reset blog-btn">
+            дивитись все
+            <svg class="btn__icon" aria-hidden="true">
+              <use xlink:href="#arrow-btn"></use>
+            </svg>
+          </button>
         </div>
       </section>
 
@@ -460,13 +472,34 @@
             >
             <ul class="contacts__social list-reset">
               <li class="social__item">
-                <a href="#" class="social__link social__link_ig" target="_blank" rel="noopener noreferrer"></a>
+                <a
+                  href="#"
+                  class="social__link social__link_ig"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Перейти до Instagram"
+                  title="Instagram"
+                ></a>
               </li>
               <li class="social__item">
-                <a href="#" class="social__link social__link_in" target="_blank" rel="noopener noreferrer"></a>
+                <a
+                  href="#"
+                  class="social__link social__link_in"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Перейти до LinkedIn"
+                  title="LinkedIn"
+                ></a>
               </li>
               <li class="social__item">
-                <a href="#" class="social__link social__link_fb" target="_blank" rel="noopener noreferrer"></a>
+                <a
+                  href="#"
+                  class="social__link social__link_fb"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Перейти до Facebook"
+                  title="Facebook"
+                ></a>
               </li>
             </ul>
             <hr class="contacts__line" />
@@ -482,8 +515,8 @@
               <input name="E-mail" type="email" id="email" placeholder="example@gmail.com" />
             </div>
             <div class="form__row">
-              <label for="name">Оберіть послугу</label>
-              <select name="Послуга" id="">
+              <label for="service">Оберіть послугу</label>
+              <select name="Послуга" id="service">
                 <option value="Організація конференції">Організація конференції</option>
               </select>
             </div>
@@ -492,7 +525,12 @@
               <textarea name="Опис" id="descr" cols="30" rows="4"></textarea>
             </div>
             <div class="form__btns">
-              <button class="btn form__btn btn-reset" type="submit">Залишити заявку</button>
+              <button class="btn btn-dark form__btn btn-reset" type="submit">
+                Залишити заявку
+                <svg class="btn__icon" aria-hidden="true">
+                  <use xlink:href="#arrow-btn"></use>
+                </svg>
+              </button>
             </div>
           </form>
         </div>

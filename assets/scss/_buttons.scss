@@ -8,13 +8,75 @@
   border: 1px solid $color-light;
   border-radius: $br-btn;
 
-  &:hover {
-    color: $color-main;
-    border-color: $color-main;
+  &__icon {
+    margin-left: 10px;
+    width: 0.8em;
+    height: 0.8em;
+    stroke: $color-light;
+    transition: transform 0.3s linear, stroke 0.3s ease-in-out;
   }
 
-  &-active {
+  &:hover {
+    color: $color-hover;
+    border-color: $color-hover;
+
+    .btn__icon {
+      stroke: $color-hover;
+      transform: rotate(45deg);
+    }
+  }
+
+  &:active {
+    color: $color-light;
+    border-color: $color-light;
+
+    .btn__icon {
+      stroke: $color-light;
+    }
+  }
+
+  &-fill {
     color: $color-secondary;
     border-color: $color-secondary;
+
+    .btn__icon {
+      stroke: $color-secondary;
+    }
+
+    &:active {
+      color: $color-secondary;
+      border-color: $color-secondary;
+
+      .btn__icon {
+        stroke: $color-secondary;
+      }
+    }
+  }
+
+  &-dark {
+    color: $color-text;
+    border-color: $color-text;
+
+    .btn__icon {
+      stroke: $color-text;
+    }
+
+    &:hover {
+      color: $color-secondary;
+      border-color: $color-secondary;
+
+      .btn__icon {
+        stroke: $color-secondary;
+      }
+    }
+
+    &:active {
+      color: $color-text;
+      border-color: $color-text;
+
+      .btn__icon {
+        stroke: $color-text;
+      }
+    }
   }
 }

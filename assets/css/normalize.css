@@ -8,12 +8,13 @@
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
 
- html {
+html {
   line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
 }
 
-body, html{
+body,
+html {
   scroll-behavior: smooth;
 }
 
@@ -370,25 +371,25 @@ template {
   border: none;
   background-color: transparent;
   cursor: pointer;
+  transition: color 0.3s ease-in-out, border-color 0.3s ease-in-out;
 }
 
 a:hover,
-.btn:hover {
+button:hover {
   text-decoration: none !important;
-  transition: all 0.3s;
 }
 
-.btn:focus,
-.btn:active {
+button:focus,
+button:active {
   box-shadow: none !important;
 }
 
-p{
+p {
   padding: 0;
   margin: 0;
 }
 
-ul{
+ul {
   margin-block-start: 0;
   margin-block-end: 0;
   margin-inline-start: 0px;

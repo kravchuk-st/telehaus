@@ -25,17 +25,10 @@
     align-items: center;
     column-gap: 15px;
 
-    .btn-active {
+    .btn-fill {
       padding: 29px 40px;
       font-size: 28px;
       border-width: 2px;
-    }
-
-    .btn-arrow {
-      font-size: 28px;
-      border-width: 2px;
-      stroke: $color-secondary;
-      border-color: $color-secondary;
     }
   }
 
