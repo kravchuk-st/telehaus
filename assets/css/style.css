@@ -633,10 +633,9 @@ p {
   background-color: #f0f0f0;
   border-radius: 20px;
 }
-.comments .comment__icon {
-  flex-shrink: 0;
-  width: 200px;
-  height: 40px;
+.comments .comment__rating {
+  font-size: 45px;
+  color: #f8b805;
 }
 .comments .comment__author {
   margin-top: auto;
@@ -645,6 +644,7 @@ p {
 }
 .comments .comment__text {
   font-size: 14px;
+  line-height: 1.15;
 }
 .comments .splide__arrow {
   width: 60px;

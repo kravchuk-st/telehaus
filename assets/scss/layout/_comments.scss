@@ -8,10 +8,9 @@
     background-color: #f0f0f0;
     border-radius: 20px;
 
-    &__icon {
-      flex-shrink: 0;
-      width: 200px;
-      height: 40px;
+    &__rating {
+      font-size: 45px;
+      color: #f8b805;
     }
 
     &__author {
@@ -22,6 +21,7 @@
 
     &__text {
       font-size: 14px;
+      line-height: 1.15;
     }
   }
 
