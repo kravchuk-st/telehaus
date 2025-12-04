@@ -307,9 +307,16 @@ p {
   transform: translateY(-50%);
 }
 
+.disable-scroll {
+  overflow: hidden;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+
 .header {
   padding-top: 30px;
-  margin-bottom: -83px;
+  margin-bottom: -76px;
 }
 .header .wrapper {
   display: flex;
@@ -336,6 +343,11 @@ p {
   color: #fff;
 }
 
+@media screen and (min-width: 1050px) {
+  .burger {
+    display: none;
+  }
+}
 .banner {
   min-height: 100vh;
   display: flex;
@@ -348,15 +360,10 @@ p {
   font-size: 60px;
   line-height: 0.95;
   text-transform: uppercase;
-}
-.banner__info {
-  margin-top: 40px;
-  display: flex;
-  align-items: center;
-  -moz-column-gap: 24px;
-       column-gap: 24px;
+  text-shadow: 0 0 1px #3055cf;
 }
 .banner__links {
+  margin-top: 40px;
   display: flex;
   align-items: center;
   -moz-column-gap: 15px;
@@ -366,11 +373,6 @@ p {
   padding: 29px 40px;
   font-size: 28px;
   border-width: 2px;
-}
-.banner__meta {
-  font-size: 32px;
-  font-weight: 600;
-  text-transform: uppercase;
 }
 
 .about {
@@ -548,9 +550,6 @@ p {
 }
 .portfolio .event__subtitle {
   margin-top: 30px;
-}
-.portfolio .event__place {
-  margin-top: 15px;
 }
 .portfolio .event__descr {
   padding: 70px 20px 70px 60px;

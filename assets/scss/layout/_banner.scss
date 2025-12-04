@@ -11,16 +11,11 @@
     font-size: 60px;
     line-height: 0.95;
     text-transform: uppercase;
-  }
-
-  &__info {
-    margin-top: 40px;
-    display: flex;
-    align-items: center;
-    column-gap: 24px;
+    text-shadow: 0 0 1px $color-main;
   }
 
   &__links {
+    margin-top: 40px;
     display: flex;
     align-items: center;
     column-gap: 15px;
@@ -30,11 +25,5 @@
       font-size: 28px;
       border-width: 2px;
     }
-  }
-
-  &__meta {
-    font-size: 32px;
-    font-weight: 600;
-    text-transform: uppercase;
   }
 }

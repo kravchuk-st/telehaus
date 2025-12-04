@@ -1,6 +1,6 @@
 .header {
   padding-top: 30px;
-  margin-bottom: -83px;
+  margin-bottom: -76px;
 
   .wrapper {
     display: flex;
@@ -31,4 +31,13 @@
       color: $color-light;
     }
   }
+}
+
+@media screen and (min-width: 1050px) {
+  .burger {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
 }

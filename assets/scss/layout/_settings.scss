@@ -62,3 +62,8 @@ p {
     transform: translateY(-50%);
   }
 }
+
+.disable-scroll {
+  overflow: hidden;
+  user-select: none;
+}

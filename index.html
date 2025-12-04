@@ -8,8 +8,13 @@
     <link rel="shortcut icon" type="image/ico" href="./assets/img/favicon.svg" />
 
     <link rel="stylesheet" href="./assets/css/normalize.css" />
-    <link rel="stylesheet" type="text/css" href="./assets/css/splide.min.css" />
-    <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="./assets/css/splide.min.css"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
   <body>
     <svg class="sprite" style="display: none">
@@ -65,6 +70,11 @@
           </ol>
         </nav>
         <a href="#" class="btn btn-reset">Консультація</a>
+        <button class="burger btn-reset" aria-label="Бургер">
+          <span class="burger__line" aria-hidden="true"></span>
+          <span class="burger__line" aria-hidden="true"></span>
+          <span class="burger__line" aria-hidden="true"></span>
+        </button>
       </div>
     </header>
 
@@ -72,16 +82,13 @@
       <section class="banner">
         <div class="wrapper">
           <h1 class="banner__title">Професійне планування та&nbsp;проведення бізнес-заходів MICE</h1>
-          <div class="banner__info">
-            <div class="banner__links">
-              <a href="#" class="btn btn-fill btn-reset"
-                >Отримати консультацію
-                <svg class="btn__icon" aria-hidden="true">
-                  <use xlink:href="#arrow-btn"></use>
-                </svg>
-              </a>
-            </div>
-            <span class="banner__meta">*безкоштовно</span>
+          <div class="banner__links">
+            <a href="#" class="btn btn-fill btn-reset"
+              >Отримати консультацію
+              <svg class="btn__icon" aria-hidden="true">
+                <use xlink:href="#arrow-btn"></use>
+              </svg>
+            </a>
           </div>
         </div>
       </section>
@@ -155,49 +162,57 @@
       <section class="portfolio">
         <div class="wrapper">
           <div class="title">
-            <h2 class="title__text">НАШІ КЕЙСИ</h2>
+            <h2 class="title__text">НАШІ ПОДІЇ</h2>
             <p class="title__subtext">ПОРТФОЛІО</p>
           </div>
           <div class="portfolio__content">
             <div class="event">
               <div class="event__content">
                 <div class="event__header">
-                  <h3 class="event__title">Конференція</h3>
+                  <h3 class="event__title">Конференції</h3>
                   <p class="event__count">/150 людей</p>
-                  <p class="event__subtitle">Презентація нової колекції дилерам та дистрибьюторам</p>
-                  <p class="event__place">Warsaw, Crowne Plaza The Hub</p>
+                  <p class="event__subtitle">Telehaus створює конференції, які працюють на результат.</p>
                 </div>
                 <div class="event__descr">
-                  <p>Була ціль зібратися з ключовими партнерами та власниками магазинів для презентації колекції.</p>
-                  <p>Забезпечили організацію, техніку, сценарій, реєстрацію, бренд-зону, кейтерінг, шоурум.</p>
+                  <p>
+                    Ми беремо на себе організацію під ключ: вибір локації, технічне забезпечення, сцену та сценарій,
+                    реєстрацію учасників, бренд-зони, кейтеринг та супровід у день події.
+                  </p>
                 </div>
               </div>
             </div>
             <div class="event">
               <div class="event__content">
                 <div class="event__header">
-                  <h3 class="event__title">Презентація</h3>
-                  <p class="event__count">/250 людей</p>
-                  <p class="event__subtitle">Презентація нової колекції дилерам та дистрибьюторам</p>
-                  <p class="event__place">Warsaw, Crowne Plaza The Hub</p>
+                  <h3 class="event__title">Корпоративні зустрічі</h3>
+                  <p class="event__count">/20–80 осіб</p>
+                  <p class="event__subtitle">
+                    Telehaus організовує корпоративні зустрічі, що зміцнюють партнерства та об’єднують команди.
+                  </p>
                 </div>
                 <div class="event__descr">
-                  <p>Була ціль зібратися з ключовими партнерами та власниками магазинів для презентації колекції.</p>
-                  <p>Забезпечили організацію, техніку, сценарій, реєстрацію, бренд-зону, кейтерінг, шоурум.</p>
+                  <p>
+                    Ми подбаємо про все: знайдемо відповідну локацію, налаштуємо технічну частину, створимо сценарій і
+                    забезпечимо модерацію, організуємо кейтеринг, оформлення простору, логістику учасників та повну
+                    координацію події.
+                  </p>
                 </div>
               </div>
             </div>
             <div class="event">
               <div class="event__content">
                 <div class="event__header">
-                  <h3 class="event__title">Подорож</h3>
-                  <p class="event__count">/30 людей</p>
-                  <p class="event__subtitle">Презентація нової колекції дилерам та дистрибьюторам</p>
-                  <p class="event__place">Warsaw, Crowne Plaza The Hub</p>
+                  <h3 class="event__title">Нетворкінг та бізнес-зустрічі</h3>
+                  <p class="event__count">/20–100 осіб</p>
+                  <p class="event__subtitle">
+                    Telehaus створює події, де народжуються партнерства, угоди та нові можливості.
+                  </p>
                 </div>
                 <div class="event__descr">
-                  <p>Була ціль зібратися з ключовими партнерами та власниками магазинів для презентації колекції.</p>
-                  <p>Забезпечили організацію, техніку, сценарій, реєстрацію, бренд-зону, кейтерінг, шоурум.</p>
+                  <p>
+                    Ми продумуємо подію від ідеї до реалізації: створюємо концепцію, підбираємо локацію, налаштовуємо
+                    техніку, організовуємо реєстрацію, бренд-зони та кейтеринг — і повністю координуємо день події.
+                  </p>
                 </div>
               </div>
             </div>
@@ -541,5 +556,6 @@
     <script src="./assets/js/lib/inputmask.min.js"></script>
     <script src="./assets/js/slider.js"></script>
     <script src="./assets/js/accordion.js"></script>
+    <script src="./assets/js/burger.js"></script>
   </body>
 </html>
