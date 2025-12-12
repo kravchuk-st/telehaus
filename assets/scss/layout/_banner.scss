@@ -27,3 +27,39 @@
     }
   }
 }
+
+@media screen and (max-width: 1100px) {
+  .banner__title {
+    font-size: 48px;
+  }
+
+  .banner__links .btn-fill {
+    padding: 20px 30px;
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .banner__title {
+    font-size: 42px;
+  }
+
+  .banner__links .btn-fill {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .banner__title {
+    font-size: 36px;
+  }
+
+  .banner__links {
+    margin-top: 25px;
+
+    .btn-fill {
+      padding: 15px;
+      font-size: 16px;
+    }
+  }
+}

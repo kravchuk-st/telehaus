@@ -96,3 +96,69 @@
     }
   }
 }
+
+@media screen and (max-width: 992px) {
+  .why .benefit__title {
+    font-size: 28px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .why__content {
+    row-gap: 10px;
+  }
+
+  .why .benefit {
+    column-gap: 10px;
+
+    &__icon {
+      width: 28px;
+      height: 28px;
+      background-size: 14px;
+    }
+  }
+
+  .why .benefit__title {
+    font-size: 22px;
+  }
+
+  .why .benefit__info .benefit__title,
+  .why .benefit__descr .benefit__title {
+    margin: 30px 0 15px;
+  }
+
+  .why .benefit__info,
+  .why .benefit__descr {
+    padding: 20px 10px 20px 25px;
+    border-radius: $br-btn-sm;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .why__content {
+    row-gap: 5px;
+  }
+
+  .why .benefit {
+    column-gap: 5px;
+  }
+
+  .why .benefit__title {
+    font-size: 18px;
+  }
+
+  .why .benefit__info,
+  .why .benefit__descr {
+    padding: 15px 10px 15px 15px;
+    border-radius: 12px;
+  }
+
+  .why .benefit__info .benefit__title,
+  .why .benefit__descr .benefit__title {
+    margin: 20px 0 12px;
+  }
+
+  .benefit__text {
+    font-size: 12px;
+  }
+}

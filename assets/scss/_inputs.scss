@@ -30,3 +30,16 @@ textarea {
   border-radius: 25px;
   resize: none;
 }
+
+@media screen and (max-width: 768px) {
+  input,
+  select,
+  textarea {
+    padding: 8px 10px;
+    font-size: 14px;
+  }
+
+  select {
+    background-size: 20px;
+  }
+}

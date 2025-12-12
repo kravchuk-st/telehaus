@@ -21,28 +21,6 @@
       <symbol viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg" id="arrow-btn">
         <path d="M1.06055 15.9L15.4605 1.5M15.4605 1.5H2.26056M15.4605 1.5V14.7" stroke-width="3" />
       </symbol>
-      <symbol viewBox="0 0 200 40" fill="none" xmlns="http://www.w3.org/2000/svg" id="stars">
-        <path
-          d="M20 0L24.4903 13.8197H39.0211L27.2654 22.3607L31.7557 36.1803L20 27.6393L8.2443 36.1803L12.7346 22.3607L0.97887 13.8197H15.5097L20 0Z"
-          fill="#F8B805"
-        />
-        <path
-          d="M100 0L104.49 13.8197H119.021L107.265 22.3607L111.756 36.1803L100 27.6393L88.2443 36.1803L92.7346 22.3607L80.9789 13.8197H95.5097L100 0Z"
-          fill="#F8B805"
-        />
-        <path
-          d="M60 0L64.4903 13.8197H79.0211L67.2654 22.3607L71.7557 36.1803L60 27.6393L48.2443 36.1803L52.7346 22.3607L40.9789 13.8197H55.5097L60 0Z"
-          fill="#F8B805"
-        />
-        <path
-          d="M140 0L144.49 13.8197H159.021L147.265 22.3607L151.756 36.1803L140 27.6393L128.244 36.1803L132.735 22.3607L120.979 13.8197H135.51L140 0Z"
-          fill="#F8B805"
-        />
-        <path
-          d="M180 0L184.49 13.8197H199.021L187.265 22.3607L191.756 36.1803L180 27.6393L168.244 36.1803L172.735 22.3607L160.979 13.8197H175.51L180 0Z"
-          fill="#F8B805"
-        />
-      </symbol>
       <symbol viewBox="0 0 22 13" fill="none" xmlns="http://www.w3.org/2000/svg" id="arrow">
         <path d="M0.957031 0.957031L10.957 10.957L20.957 0.957031" stroke="black" stroke-width="2.70667" />
       </symbol>
@@ -56,25 +34,27 @@
         <nav class="nav">
           <ol class="nav__list list-reset">
             <li class="nav__item">
-              <a href="#" class="nav__link">Послуги</a>
+              <a href="#about" class="nav__link">Послуги</a>
             </li>
             <li class="nav__item">
-              <a href="./promotions" class="nav__link">Чому ми?</a>
+              <a href="#why" class="nav__link">Чому ми?</a>
             </li>
             <li class="nav__item">
-              <a href="./delivery" class="nav__link">Портфоліо</a>
+              <a href="#portfolio" class="nav__link">Портфоліо</a>
             </li>
             <li class="nav__item">
-              <a href="./pay" class="nav__link">Відгуки</a>
+              <a href="#comments" class="nav__link">Відгуки</a>
             </li>
           </ol>
+          <a href="#form" class="btn nav__btn btn-reset">Консультація</a>
         </nav>
-        <a href="#" class="btn btn-reset">Консультація</a>
-        <button class="burger btn-reset" aria-label="Бургер">
+        <a href="#form" class="btn btn-lg btn-reset">Консультація</a>
+        <button class="burger btn-reset" aria-label="Відкрити меню">
           <span class="burger__line" aria-hidden="true"></span>
           <span class="burger__line" aria-hidden="true"></span>
           <span class="burger__line" aria-hidden="true"></span>
         </button>
+        <span class="overlay"></span>
       </div>
     </header>
 
@@ -83,7 +63,7 @@
         <div class="wrapper">
           <h1 class="banner__title">Професійне планування та&nbsp;проведення бізнес-заходів MICE</h1>
           <div class="banner__links">
-            <a href="#" class="btn btn-fill btn-reset"
+            <a href="#form" class="btn btn-fill btn-reset"
               >Отримати консультацію
               <svg class="btn__icon" aria-hidden="true">
                 <use xlink:href="#arrow-btn"></use>
@@ -93,13 +73,13 @@
         </div>
       </section>
 
-      <section class="about">
+      <section class="about" id="about">
         <div class="wrapper">
           <div class="innovation">
             <h2 class="innovation__title">
               Інноваційні рішення для&nbsp;заходів, що&nbsp;об'єднують, мотивують і&nbsp;надихають ваш&nbsp;бізнес
             </h2>
-            <a href="#" class="btn btn-reset"
+            <a href="#form" class="btn btn-reset"
               >ЗАЛИШИТИ ЗАЯВКУ
               <svg class="btn__icon" aria-hidden="true">
                 <use xlink:href="#arrow-btn"></use>
@@ -107,18 +87,18 @@
             </a>
           </div>
           <div class="options">
-            <p class="options__item">Тренінги та воркшопи</p>
-            <p class="options__item">Корпоративні зустрічі та&nbsp;стратегічні сесії</p>
             <p class="options__item">Конференції та саміти</p>
-            <p class="options__item">Виставки та бізнес-форуми</p>
             <p class="options__item">Корпоративні події та&nbsp;тімбілдинги</p>
-            <p class="options__item">Нетворкінг-заходи та&nbsp;бізнес-зустрічі</p>
+            <p class="options__item">Корпоративні зустрічі та&nbsp;стратегічні сесії</p>
+            <p class="options__item">Виставки та бізнес-форуми</p>
             <p class="options__item">Презентації продуктів та&nbsp;брендів</p>
+            <p class="options__item">Нетворкінг-заходи та&nbsp;бізнес-зустрічі</p>
+            <p class="options__item">Тренінги та воркшопи</p>
           </div>
         </div>
       </section>
 
-      <section class="why">
+      <section class="why" id="why">
         <div class="wrapper">
           <div class="title">
             <h2 class="title__text">ЧОМУ ОБИРАЮТЬ TELEHAUS? </h2>
@@ -159,7 +139,7 @@
         </div>
       </section>
 
-      <section class="portfolio">
+      <section class="portfolio" id="portfolio">
         <div class="wrapper">
           <div class="title">
             <h2 class="title__text">НАШІ ПОДІЇ</h2>
@@ -291,7 +271,7 @@
         </div>
       </section>
 
-      <section class="comments">
+      <section class="comments" id="comments">
         <div class="wrapper">
           <div class="title">
             <h2 class="title__text">ЩО ПРО НАС КАЖУТЬ?</h2>
@@ -357,87 +337,89 @@
       <section class="faq">
         <div class="wrapper">
           <div class="title">
-            <h2 class="title__text">ЧАСТІ ПИТАННЯ</h2>
+            <h2 class="title__text">5 порад для організації ефективного заходу</h2>
             <p class="title__subtext">Q&A</p>
           </div>
           <div class="accordion">
             <div class="accordion__item">
               <button class="accordion__btn btn-reset" aria-expanded="false">
-                <span class="accordion__title"
-                  >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt?</span
-                >
+                <span class="accordion__title">1. Завчасна підготовка завжди дешевше та ефективніше</span>
                 <svg class="accordion__icon">
                   <use xlink:href="#arrow"></use>
                 </svg>
               </button>
               <div class="accordion__content" aria-hidden="true">
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                  dolore magna aliqua.
+                  Підготовка до заходу напряму впливає на бюджет. Раннє бронювання готелів, залів та авіаквитків може
+                  зекономити десятки відсотків бюджету, адже ринок працює за принципом динамічного ціноутворення:
+                  низький попит = нижча вартість. Якщо планування починається за кілька місяців або навіть рік-два для
+                  великих щорічних подій, вибір локацій ширший, умови вигідніші, а ризики ажіотажного підвищення цін
+                  мінімальні.
                 </p>
               </div>
             </div>
             <div class="accordion__item">
               <button class="accordion__btn btn-reset" aria-expanded="false">
-                <span class="accordion__title"
-                  >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt?</span
-                >
+                <span class="accordion__title">2. Перед вибором локації проведіть інспекційний тур</span>
                 <svg class="accordion__icon">
                   <use xlink:href="#arrow"></use>
                 </svg>
               </button>
               <div class="accordion__content" aria-hidden="true">
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                  dolore magna aliqua.
+                  Якщо івент проходить у новому місті чи країні, перед фінальним рішенням варто особисто відвідати
+                  потенційні готелі й майданчики. Інспекція дозволяє пройти шлях гостя, оцінити інфраструктуру,
+                  перевірити логістику, побачити сусідні локації та переконатися, що обраний простір відповідає цілям
+                  заходу. Це суттєво знижує ризики та допомагає прийняти обгрунтоване рішення.
                 </p>
               </div>
             </div>
             <div class="accordion__item">
               <button class="accordion__btn btn-reset" aria-expanded="false">
-                <span class="accordion__title"
-                  >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt?</span
-                >
+                <span class="accordion__title">3. Збалансувати бюджет і якість допоможе професійне агентство</span>
                 <svg class="accordion__icon">
                   <use xlink:href="#arrow"></use>
                 </svg>
               </button>
               <div class="accordion__content" aria-hidden="true">
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                  dolore magna aliqua.
+                  Спроби «вичавити максимум» з мінімального бюджету або вибір найдешевших підрядників часто призводять
+                  до проблем. У той же час дорогі послуги не завжди гарантують відповідну якість. Агентство завдяки
+                  досвіду та партнерським відносинам з постачальниками пропонує оптимальні варіанти у заданих фінансових
+                  рамках, забезпечує відповідний рівень сервісу та захищає від зайвих витрат.
                 </p>
               </div>
             </div>
             <div class="accordion__item">
               <button class="accordion__btn btn-reset" aria-expanded="false">
-                <span class="accordion__title"
-                  >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt?</span
-                >
+                <span class="accordion__title">4. Уникайте хаотичних змін і рішень в останній момент</span>
                 <svg class="accordion__icon">
                   <use xlink:href="#arrow"></use>
                 </svg>
               </button>
               <div class="accordion__content" aria-hidden="true">
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                  dolore magna aliqua.
+                  Невчасне бронювання залів або номерів без точної кількості гостей може спричинити серйозні проблеми:
+                  пусті зали та оплачені, але незаселені номери, або навпаки брак місць і необхідність скасування чи
+                  термінового перепланування. Різні зміни призводять до подорожчання і ускладнюють проект, тому чітке
+                  планування — ключ до стабільності.
                 </p>
               </div>
             </div>
             <div class="accordion__item">
               <button class="accordion__btn btn-reset" aria-expanded="false">
-                <span class="accordion__title"
-                  >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt?</span
-                >
+                <span class="accordion__title">5. Самостійна організація часто складніша та дорожча, ніж здається</span>
                 <svg class="accordion__icon">
                   <use xlink:href="#arrow"></use>
                 </svg>
               </button>
               <div class="accordion__content" aria-hidden="true">
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                  dolore magna aliqua.
+                  Професійні агентства мають великий досвід, налагоджену базу підрядників та глибоке розуміння
+                  сезонності, логістики, місцевої специфіки й мікродеталей, які легко упустити. Питання віз, правил
+                  перетину кордону, оптимальних маршрутів, ресторанних рекомендацій, нюансів багажу — усе це потребує
+                  експертизи. Агенція знімає операційний тягар, зберігає ресурси та гарантує якість організації завдяки
+                  досвіду проведення тисяч івентів.
                 </p>
               </div>
             </div>
@@ -454,23 +436,31 @@
           <div class="blog__content">
             <a href="#" class="blog__link btn-reset" style="background-image: url('./assets/img/blog/1.avif')">
               <span class="link__icon" aria-hidden="true"></span>
-              <p class="link__title">Новина 1</p>
-              <p class="link__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <p class="link__title">Звана вечеря як бізнес-івент</p>
+              <p class="link__descr">
+                Звана вечеря давно перестала бути «святковою вечерею з дрес-кодом». У європейській MICE-індустрії це
+                повноцінний бізнес-формат, який працює і на HR, і на маркетинг, і на репутацію бренду.
+              </p>
             </a>
             <a href="#" class="blog__link btn-reset" style="background-image: url('./assets/img/blog/2.avif')">
               <span class="link__icon" aria-hidden="true"></span>
-              <p class="link__title">Новина 2</p>
-              <p class="link__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <p class="link__title">MICE-тренди в Європі 2025-2026 років</p>
+              <p class="link__descr">
+                Європейський MICE-ринок завжди був чутливим до змін: економіка, технології, стиль роботи, соціальні
+                запити — усе це миттєво впливає на те, якими стають корпоративні події. І сьогодні ми бачимо цікаву
+                трансформацію: події перестають бути просто “зустрічами” й перетворюються на досвід, що має цінність для
+                бізнесу і людей.
+              </p>
             </a>
             <a href="#" class="blog__link btn-reset" style="background-image: url('./assets/img/blog/3.avif')">
               <span class="link__icon" aria-hidden="true"></span>
-              <p class="link__title">Новина 3</p>
-              <p class="link__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </a>
-            <a href="#" class="blog__link btn-reset" style="background-image: url('./assets/img/blog/4.avif')">
-              <span class="link__icon" aria-hidden="true"></span>
-              <p class="link__title">Новина 4</p>
-              <p class="link__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <p class="link__title">Івент під ключ: делегувати агенції вигідніше?</p>
+              <p class="link__descr">
+                У сучасному бізнесі події перестали бути “додатковою опцією” чи розважальним елементом для команди.
+                Конференції, бізнес-вечері, нетворкінги, тімбілдинги та інсентиви стали важливою частиною корпоративної
+                стратегії, інструментом комунікації та способом зміцнення культури. Але разом із цим стало очевидно:
+                якісний івент вимагає значно більше часу, досвіду і ресурсів, ніж здається з боку.
+              </p>
             </a>
           </div>
           <button class="btn btn-fill btn-reset blog-btn">
@@ -482,10 +472,12 @@
         </div>
       </section>
 
-      <section class="request">
+      <section class="request" id="form">
         <div class="wrapper">
           <div class="request__contacts">
-            <img class="contacts__logo" src="./assets/img/logo.svg" alt="Logo" width="308" />
+            <a href="./" class="logo btn-reset">
+              <img class="contacts__logo" src="./assets/img/logo.svg" alt="Logo" width="308" />
+            </a>
             <h2 class="contacts__title">Контакти</h2>
             <div class="contacts__phones">
               <a href="tel:+380501234567" class="contacts__link contacts__number">+38 050 123 45 67</a>
@@ -537,11 +529,17 @@
           <form class="request__form" action="#" method="post">
             <div class="form__row">
               <label for="name">Введіть ваше ім’я:</label>
-              <input name="Ім'я" type="text" id="name" />
+              <input name="Ім'я" type="text" id="name" data-validate-field="name" />
             </div>
             <div class="form__row">
               <label for="email">Введіть ваш email:</label>
-              <input name="E-mail" type="email" id="email" placeholder="example@gmail.com" />
+              <input
+                name="E-mail"
+                type="email"
+                id="email"
+                placeholder="example@gmail.com"
+                data-validate-field="email"
+              />
             </div>
             <div class="form__row">
               <label for="service">Оберіть послугу</label>

@@ -9,7 +9,8 @@
   }
 
   &__link {
-    width: 445px;
+    flex-shrink: 0;
+    max-width: 445px;
     height: 300px;
     padding: 30px 40px 40px;
     display: flex;
@@ -22,6 +23,7 @@
     border-radius: $br;
 
     .link__icon {
+      flex-shrink: 0;
       width: 45px;
       height: 45px;
       margin-left: auto;
@@ -35,6 +37,15 @@
       margin-top: auto;
       font-size: 36px;
       font-weight: 800;
+      text-shadow: 0 0 1px #000;
+    }
+
+    .link__descr {
+      overflow: hidden;
+      display: -webkit-box; /* Використовуємо flexbox-подібний режим */
+      -webkit-box-orient: vertical; /* Вертикальна орієнтація */
+      -webkit-line-clamp: 3;
+      text-shadow: 0 0 1px #000;
     }
   }
 
@@ -64,6 +75,42 @@
       .btn__icon {
         stroke: $color-main;
       }
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .blog {
+    padding-bottom: inherit;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .blog__link {
+    padding: 20px 30px 30px;
+    border-radius: $br-btn-sm;
+
+    .link__title {
+      font-size: 26px;
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .blog__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 20px;
+  }
+
+  .blog__link {
+    padding: 20px 25px 25px;
+    height: 250px;
+    row-gap: 15px;
+
+    .link__title {
+      font-size: 22px;
     }
   }
 }

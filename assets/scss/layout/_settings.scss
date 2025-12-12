@@ -47,6 +47,7 @@ p {
   &__text {
     font-size: 60px;
     font-weight: 800;
+    text-transform: uppercase;
     color: $color-main;
   }
 
@@ -64,6 +65,69 @@ p {
 }
 
 .disable-scroll {
-  overflow: hidden;
+  overflow-y: hidden;
   user-select: none;
+}
+
+.overlay {
+  position: fixed;
+  z-index: 5;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(2px);
+  transition: opacity 0.3s ease-in-out, visibility 0.3s linear;
+}
+
+@media screen and (max-width: 1400px) {
+  .title__subtext {
+    font-size: 150px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .title__subtext {
+    font-size: 120px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .title {
+    margin-top: 15px;
+
+    &__subtext {
+      font-size: 90px;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+
+  section {
+    padding: 25px 0;
+  }
+
+  .title {
+    margin-bottom: 60px;
+
+    &__text {
+      font-size: 56px;
+    }
+
+    &__subtext {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .title {
+    margin-bottom: 40px;
+  }
+
+  .title__text {
+    font-size: 42px;
+  }
 }

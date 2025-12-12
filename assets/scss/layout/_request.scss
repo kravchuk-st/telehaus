@@ -17,6 +17,10 @@
     align-items: flex-start;
     row-gap: 24px;
 
+    .logo {
+      width: fit-content;
+    }
+
     .social__link {
       display: block;
       width: 40px;
@@ -99,5 +103,110 @@
         font-size: 24px;
       }
     }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .request {
+    padding-bottom: 25px;
+    background: none;
+
+    &__form {
+      padding-left: 0;
+
+      .form__btn {
+        margin-left: inherit;
+      }
+    }
+
+    &__contacts {
+      position: relative;
+      align-items: stretch;
+
+      &::before {
+        content: "";
+        position: absolute;
+        z-index: -5;
+        top: -20px;
+        right: -15px;
+        bottom: -25px;
+        left: -15px;
+        background-color: $color-main;
+      }
+    }
+
+    .wrapper {
+      flex-direction: column-reverse;
+      align-items: stretch;
+      row-gap: 50px;
+
+      & > * {
+        flex-basis: 100%;
+      }
+    }
+
+    .contacts__line {
+      width: 100%;
+      max-width: none;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .contacts__logo {
+    width: 172px;
+  }
+
+  .request .contacts__title {
+    margin: 5px 0;
+    font-size: 24px;
+  }
+
+  .request .contacts__link {
+    font-size: 18px;
+  }
+
+  .request__contacts .social__link {
+    width: 32px;
+    height: 32px;
+  }
+
+  .request__form .form__btn {
+    font-size: 18px;
+  }
+
+  .form__row label {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .request .contacts__title {
+    font-size: 18px;
+  }
+
+  .request__contacts {
+    row-gap: 15px;
+  }
+
+  .request .contacts__phones {
+    column-gap: 20px;
+  }
+
+  .request .contacts__link {
+    font-size: 14px;
+  }
+
+  .request__contacts .social__link {
+    width: 22px;
+    height: 22px;
+  }
+
+  .request .contacts__line {
+    height: 0;
+  }
+
+  .request__form .form__btn {
+    font-size: 16px;
   }
 }

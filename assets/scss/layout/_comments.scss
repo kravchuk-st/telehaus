@@ -60,3 +60,59 @@
     }
   }
 }
+
+@media screen and (max-width: 1500px) {
+  .splide__track {
+    margin: 0 auto;
+    width: calc(100% - 200px);
+  }
+
+  .comments .splide__arrow {
+    &--prev {
+      left: 0;
+    }
+
+    &--next {
+      right: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .splide__track {
+    width: calc(100% - 150px);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .splide__track {
+    width: 100%;
+  }
+
+  .comments .splide__arrow {
+    border: none;
+  }
+
+  .comments .comment {
+    padding: 20px;
+    row-gap: 25px;
+
+    &__rating {
+      font-size: 35px;
+    }
+
+    &__author {
+      margin-top: 10px;
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .comments .splide__arrow {
+    display: none;
+  }
+
+  .comments .comment__author {
+    font-size: 21px;
+  }
+}

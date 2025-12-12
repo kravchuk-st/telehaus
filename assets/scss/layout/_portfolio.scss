@@ -54,3 +54,45 @@
     }
   }
 }
+
+@media screen and (max-width: 768px) {
+  .portfolio .event {
+    padding-bottom: 240px;
+    background-size: auto 240px;
+    background-position: center bottom 0;
+
+    &__descr {
+      padding: 50px 60px 45px;
+      background-color: rgba(0, 0, 0, 0.95);
+    }
+  }
+
+  .portfolio .event__header {
+    padding: 50px 60px 45px;
+  }
+
+  .portfolio .event__content {
+    max-width: none;
+  }
+
+  .portfolio .event__title {
+    font-size: 36px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .portfolio .event {
+    &__title {
+      font-size: 26px;
+    }
+
+    &__subtitle {
+      margin-top: 20px;
+    }
+
+    &__header,
+    &__descr {
+      padding: 35px 40px 30px;
+    }
+  }
+}
