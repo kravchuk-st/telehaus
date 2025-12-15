@@ -841,8 +841,8 @@ p {
 
 @media screen and (max-width: 768px) {
   .portfolio .event {
-    padding-bottom: 240px;
-    background-size: auto 240px;
+    padding-bottom: 250px;
+    background-size: 100% auto;
     background-position: center bottom 0;
   }
   .portfolio .event__descr {
@@ -860,6 +860,9 @@ p {
   }
 }
 @media screen and (max-width: 576px) {
+  .portfolio .event {
+    padding-bottom: 200px;
+  }
   .portfolio .event__title {
     font-size: 26px;
   }
