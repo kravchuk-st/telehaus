@@ -2,8 +2,8 @@
   min-height: 100vh;
   display: flex;
   align-items: flex-end;
-  background: center / cover no-repeat linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
-    url("../img/banner.avif");
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+    center / cover no-repeat url("../img/banner.avif");
 
   &__title {
     margin: 0;
@@ -50,6 +50,11 @@
 }
 
 @media screen and (max-width: 576px) {
+  .banner {
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+      center / cover no-repeat url("../img/banner-sm.avif");
+  }
+
   .banner__title {
     font-size: 36px;
   }

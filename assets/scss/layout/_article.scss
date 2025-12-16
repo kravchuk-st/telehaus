@@ -1,0 +1,44 @@
+.banner {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+    center / cover no-repeat url("../img/article.avif");
+
+  &__title {
+    font-size: 50px;
+  }
+
+  &__descr {
+    margin: 25px auto 0;
+    max-width: 1250px;
+    font-size: 24px;
+  }
+}
+
+.article {
+  color: #000;
+
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+
+    p:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .banner {
+    &__title {
+      font-size: 30px;
+    }
+
+    &__descr {
+      font-size: 16px;
+    }
+  }
+}

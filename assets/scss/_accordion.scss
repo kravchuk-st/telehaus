@@ -78,6 +78,10 @@
 }
 
 @media screen and (max-width: 768px) {
+  .accordion {
+    gap: 25px;
+  }
+
   .accordion__item {
     padding-bottom: 15px;
   }

@@ -78,6 +78,10 @@ p {
   transition: opacity 0.3s ease-in-out, visibility 0.3s linear;
 }
 
+.js-validate-error-label {
+  display: none;
+}
+
 @media screen and (max-width: 1400px) {
   .title__subtext {
     font-size: 150px;
@@ -113,7 +117,7 @@ p {
     margin-bottom: 60px;
 
     &__text {
-      font-size: 56px;
+      font-size: 52px;
     }
 
     &__subtext {

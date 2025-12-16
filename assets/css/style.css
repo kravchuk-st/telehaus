@@ -264,6 +264,9 @@ textarea {
 }
 
 @media screen and (max-width: 768px) {
+  .accordion {
+    gap: 25px;
+  }
   .accordion__item {
     padding-bottom: 15px;
   }
@@ -358,6 +361,10 @@ p {
   transition: opacity 0.3s ease-in-out, visibility 0.3s linear;
 }
 
+.js-validate-error-label {
+  display: none;
+}
+
 @media screen and (max-width: 1400px) {
   .title__subtext {
     font-size: 150px;
@@ -387,7 +394,7 @@ p {
     margin-bottom: 60px;
   }
   .title__text {
-    font-size: 56px;
+    font-size: 52px;
   }
   .title__subtext {
     display: none;
@@ -493,7 +500,7 @@ p {
   min-height: 100vh;
   display: flex;
   align-items: flex-end;
-  background: center/cover no-repeat linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../img/banner.avif");
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), center/cover no-repeat url("../img/banner.avif");
 }
 .banner__title {
   margin: 0;
@@ -534,6 +541,9 @@ p {
   }
 }
 @media screen and (max-width: 576px) {
+  .banner {
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), center/cover no-repeat url("../img/banner-sm.avif");
+  }
   .banner__title {
     font-size: 36px;
   }
@@ -872,6 +882,9 @@ p {
   .portfolio .event__header, .portfolio .event__descr {
     padding: 35px 40px 30px;
   }
+}
+.team {
+  display: none;
 }
 .team__content {
   max-width: 920px;
