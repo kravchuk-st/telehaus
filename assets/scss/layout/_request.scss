@@ -1,5 +1,5 @@
 .request {
-  padding-bottom: 70px;
+  padding: 50px 0 70px;
   background: linear-gradient(to right, $color-main, $color-main 50%, $color-light 50%, $color-light);
 
   .wrapper {
@@ -44,18 +44,13 @@
   }
 
   .contacts {
-    &__phones {
-      display: flex;
-      column-gap: 42px;
-    }
-
     &__title {
-      margin: 25px 0;
+      margin: 25px 0 15px;
       font-size: 34px;
       font-weight: 600;
     }
 
-    &__link {
+    &__email {
       font-size: 25px;
       color: $color-light;
     }
@@ -67,7 +62,7 @@
 
     &__line {
       width: 80%;
-      max-width: 460px;
+      max-width: 530px;
       height: 1px;
       color: $color-light;
       background-color: $color-light;
@@ -75,6 +70,24 @@
 
     &__copy {
       font-size: 16px;
+    }
+  }
+
+  .address {
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+
+    &__link {
+      font-size: 18px;
+      text-decoration: underline;
+      color: $color-light;
+    }
+
+    &__number {
+      margin-top: 10px;
+      font-size: 20px;
+      color: $color-light;
     }
   }
 
@@ -98,8 +111,8 @@
       }
 
       &__btn {
-        margin-left: 50px;
-        padding: 8px 20px;
+        margin-left: 45px;
+        padding: 8px 30px;
         font-size: 24px;
       }
     }
@@ -110,6 +123,10 @@
   .request {
     padding-bottom: 25px;
     background: none;
+
+    .contacts__title {
+      margin-top: 10px;
+    }
 
     &__form {
       padding-left: 0;
@@ -150,6 +167,10 @@
       max-width: none;
     }
   }
+
+  .contacts__logo {
+    width: 210px;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -157,13 +178,22 @@
     width: 172px;
   }
 
+  .request {
+    padding-top: 25px;
+  }
+
   .request .contacts__title {
     margin: 5px 0;
     font-size: 24px;
   }
 
-  .request .contacts__link {
+  .request .address__link,
+  .request .address__number {
     font-size: 18px;
+  }
+
+  .request .contacts__email {
+    font-size: 22px;
   }
 
   .request__contacts .social__link {
@@ -182,24 +212,25 @@
 
 @media screen and (max-width: 576px) {
   .request .contacts__title {
-    font-size: 18px;
+    font-size: 20px;
   }
 
   .request__contacts {
     row-gap: 15px;
   }
 
-  .request .contacts__phones {
-    column-gap: 20px;
+  .request .address__link,
+  .request .address__number {
+    font-size: 16px;
   }
 
-  .request .contacts__link {
-    font-size: 14px;
+  .request .contacts__email {
+    font-size: 18px;
   }
 
   .request__contacts .social__link {
-    width: 22px;
-    height: 22px;
+    width: 28px;
+    height: 28px;
   }
 
   .request .contacts__line {

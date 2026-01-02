@@ -102,7 +102,6 @@
   }
 }
 input,
-select,
 textarea {
   padding: 10.5px 15px;
   border: 1px solid #000;
@@ -115,34 +114,17 @@ textarea {
   outline: none;
 }
 
-select {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  outline: none;
-  box-shadow: none;
-  padding-right: 50px;
-  background-image: url("data:image/svg+xml,%3Csvg width='30' height='30' viewBox='0 0 30 30' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='15' cy='15' r='14.1675' transform='matrix(0 1 1 0 0 0)' stroke='black' stroke-width='1.665'/%3E%3Cpath d='M7.7998 12.1504L15.2998 19.6504L22.7998 12.1504' stroke='black' stroke-width='2.03'/%3E%3C/svg%3E");
-  background-position: top 50% right 7px;
-  background-size: 28px;
-  background-repeat: no-repeat;
-}
-
 textarea {
-  height: 90px;
+  height: 110px;
   border-radius: 25px;
   resize: none;
 }
 
 @media screen and (max-width: 768px) {
   input,
-  select,
   textarea {
     padding: 8px 10px;
     font-size: 14px;
-  }
-  select {
-    background-size: 20px;
   }
 }
 .burger {
@@ -324,8 +306,10 @@ p {
   }
 }
 .header {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
   padding-top: 30px;
-  margin-bottom: -76px;
 }
 .header .wrapper {
   display: flex;
@@ -357,14 +341,26 @@ p {
   font-weight: 600;
   line-height: 1;
   color: #fff;
+  text-shadow: 0 0 1px #000;
 }
 .header .nav__btn {
   font-size: 18px;
+}
+.header .btn-lg {
+  padding: 10px 30px;
 }
 
 @media screen and (min-width: 1051px) {
   .burger {
     display: none;
+  }
+  .nav__link {
+    background: linear-gradient(to right, #fff, #fff) 0 100% no-repeat;
+    background-size: 0 1px;
+    transition: 0.3s ease-in-out;
+  }
+  .nav__link:hover {
+    background-size: 100% 1px;
   }
 }
 @media screen and (max-width: 1050px) {
@@ -411,6 +407,11 @@ p {
     width: 182px;
   }
 }
+@media screen and (max-width: 576px) {
+  .header {
+    margin-bottom: -65px;
+  }
+}
 .banner {
   min-height: 100vh;
   display: flex;
@@ -448,7 +449,7 @@ p {
   }
 }
 .request {
-  padding-bottom: 70px;
+  padding: 50px 0 70px;
   background: linear-gradient(to right, #3055cf, #3055cf 50%, #fff 50%, #fff);
 }
 .request .wrapper {
@@ -485,17 +486,12 @@ p {
 .request__contacts .social__link_fb {
   background-image: url("../img/social/fb.svg");
 }
-.request .contacts__phones {
-  display: flex;
-  -moz-column-gap: 42px;
-       column-gap: 42px;
-}
 .request .contacts__title {
-  margin: 25px 0;
+  margin: 25px 0 15px;
   font-size: 34px;
   font-weight: 600;
 }
-.request .contacts__link {
+.request .contacts__email {
   font-size: 25px;
   color: #fff;
 }
@@ -506,13 +502,28 @@ p {
 }
 .request .contacts__line {
   width: 80%;
-  max-width: 460px;
+  max-width: 530px;
   height: 1px;
   color: #fff;
   background-color: #fff;
 }
 .request .contacts__copy {
   font-size: 16px;
+}
+.request .address {
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+}
+.request .address__link {
+  font-size: 18px;
+  text-decoration: underline;
+  color: #fff;
+}
+.request .address__number {
+  margin-top: 10px;
+  font-size: 20px;
+  color: #fff;
 }
 .request__form {
   padding-left: 115px;
@@ -531,8 +542,8 @@ p {
   text-align: center;
 }
 .request__form .form__btn {
-  margin-left: 50px;
-  padding: 8px 20px;
+  margin-left: 45px;
+  padding: 8px 30px;
   font-size: 24px;
 }
 
@@ -540,6 +551,9 @@ p {
   .request {
     padding-bottom: 25px;
     background: none;
+  }
+  .request .contacts__title {
+    margin-top: 10px;
   }
   .request__form {
     padding-left: 0;
@@ -573,17 +587,27 @@ p {
     width: 100%;
     max-width: none;
   }
+  .contacts__logo {
+    width: 210px;
+  }
 }
 @media screen and (max-width: 768px) {
   .contacts__logo {
     width: 172px;
   }
+  .request {
+    padding-top: 25px;
+  }
   .request .contacts__title {
     margin: 5px 0;
     font-size: 24px;
   }
-  .request .contacts__link {
+  .request .address__link,
+  .request .address__number {
     font-size: 18px;
+  }
+  .request .contacts__email {
+    font-size: 22px;
   }
   .request__contacts .social__link {
     width: 32px;
@@ -598,21 +622,21 @@ p {
 }
 @media screen and (max-width: 576px) {
   .request .contacts__title {
-    font-size: 18px;
+    font-size: 20px;
   }
   .request__contacts {
     row-gap: 15px;
   }
-  .request .contacts__phones {
-    -moz-column-gap: 20px;
-         column-gap: 20px;
+  .request .address__link,
+  .request .address__number {
+    font-size: 16px;
   }
-  .request .contacts__link {
-    font-size: 14px;
+  .request .contacts__email {
+    font-size: 18px;
   }
   .request__contacts .social__link {
-    width: 22px;
-    height: 22px;
+    width: 28px;
+    height: 28px;
   }
   .request .contacts__line {
     height: 0;

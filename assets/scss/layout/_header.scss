@@ -1,6 +1,8 @@
 .header {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
   padding-top: 30px;
-  margin-bottom: -76px;
 
   .wrapper {
     display: flex;
@@ -40,17 +42,32 @@
       font-weight: 600;
       line-height: 1;
       color: $color-light;
+      text-shadow: 0 0 1px #000;
     }
 
     &__btn {
       font-size: 18px;
     }
   }
+
+  .btn-lg {
+    padding: 10px 30px;
+  }
 }
 
 @media screen and (min-width: 1051px) {
   .burger {
     display: none;
+  }
+
+  .nav__link {
+    background: linear-gradient(to right, #fff, #fff) 0 100% no-repeat;
+    background-size: 0 1px;
+    transition: 0.3s ease-in-out;
+
+    &:hover {
+      background-size: 100% 1px;
+    }
   }
 }
 
@@ -102,5 +119,11 @@
     .logo__img {
       width: 182px;
     }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .header {
+    margin-bottom: -65px;
   }
 }

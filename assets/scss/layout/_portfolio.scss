@@ -28,6 +28,10 @@
 
     &__header {
       padding: 60px 32px 50px 60px;
+      min-height: 200px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
       background-color: #7db9fe;
     }
 
@@ -36,12 +40,8 @@
       font-weight: 800;
     }
 
-    &__count {
-      margin-top: 5px;
-    }
-
     &__subtitle {
-      margin-top: 30px;
+      margin-top: 10px;
     }
 
     &__descr {
@@ -68,6 +68,7 @@
   }
 
   .portfolio .event__header {
+    min-height: 150px;
     padding: 50px 60px 45px;
   }
 
@@ -86,10 +87,6 @@
 
     &__title {
       font-size: 26px;
-    }
-
-    &__subtitle {
-      margin-top: 20px;
     }
 
     &__header,

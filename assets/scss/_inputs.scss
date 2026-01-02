@@ -1,5 +1,4 @@
 input,
-select,
 textarea {
   padding: 10.5px 15px;
   border: 1px solid $color-text;
@@ -12,34 +11,16 @@ textarea {
   outline: none;
 }
 
-select {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  outline: none;
-  box-shadow: none;
-  padding-right: 50px;
-  background-image: url("data:image/svg+xml,%3Csvg width='30' height='30' viewBox='0 0 30 30' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='15' cy='15' r='14.1675' transform='matrix(0 1 1 0 0 0)' stroke='black' stroke-width='1.665'/%3E%3Cpath d='M7.7998 12.1504L15.2998 19.6504L22.7998 12.1504' stroke='black' stroke-width='2.03'/%3E%3C/svg%3E");
-  background-position: top 50% right 7px;
-  background-size: 28px;
-  background-repeat: no-repeat;
-}
-
 textarea {
-  height: 90px;
+  height: 110px;
   border-radius: 25px;
   resize: none;
 }
 
 @media screen and (max-width: 768px) {
   input,
-  select,
   textarea {
     padding: 8px 10px;
     font-size: 14px;
-  }
-
-  select {
-    background-size: 20px;
   }
 }

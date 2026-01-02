@@ -1,9 +1,21 @@
 .banner {
   min-height: 100vh;
+  position: relative;
+  z-index: 0;
   display: flex;
   align-items: flex-end;
-  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
-    center / cover no-repeat url("../img/banner.avif");
+  // background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), center / cover no-repeat url("../img/banner.avif");
+
+  &__video-bg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+    z-index: -1;
+  }
 
   &__title {
     margin: 0;
@@ -11,7 +23,7 @@
     font-size: 60px;
     line-height: 0.95;
     text-transform: uppercase;
-    text-shadow: 0 0 1px $color-main;
+    text-shadow: 0 0 2px #000;
   }
 
   &__links {
@@ -51,8 +63,7 @@
 
 @media screen and (max-width: 576px) {
   .banner {
-    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
-      center / cover no-repeat url("../img/banner-sm.avif");
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), center / cover no-repeat url("../img/banner-sm.avif");
   }
 
   .banner__title {

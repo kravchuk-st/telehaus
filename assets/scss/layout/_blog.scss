@@ -15,7 +15,7 @@
     padding: 30px 40px 40px;
     display: flex;
     flex-direction: column;
-    row-gap: 20px;
+    row-gap: 18px;
     color: $color-light;
     background-position: center;
     background-size: cover;
@@ -35,21 +35,22 @@
 
     .link__title {
       margin-top: auto;
-      font-size: 36px;
+      font-size: 32px;
       font-weight: 800;
       text-shadow: 0 0 1px #000;
     }
 
     .link__descr {
       overflow: hidden;
-      display: -webkit-box; /* Використовуємо flexbox-подібний режим */
-      -webkit-box-orient: vertical; /* Вертикальна орієнтація */
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
       -webkit-line-clamp: 3;
       text-shadow: 0 0 1px #000;
     }
   }
 
   .btn {
+    width: fit-content;
     display: block;
     margin: 30px auto 0;
     color: $color-main;

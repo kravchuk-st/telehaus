@@ -1,0 +1,41 @@
+.header {
+  position: static;
+  margin-bottom: 0;
+
+  .nav {
+    &__link {
+      color: $color-text;
+      text-shadow: 0 0 1px $color-secondary;
+      background: linear-gradient(to right, #000, #000) 0 100% no-repeat;
+      background-size: 0 1px;
+
+      &:hover {
+        background-size: 100% 1px;
+      }
+    }
+  }
+
+  .btn-lg {
+    color: $color-text;
+    border-color: $color-text;
+
+    &:hover {
+      color: $color-secondary;
+      border-color: $color-secondary;
+    }
+  }
+
+  .burger__line {
+    background-color: #000;
+  }
+
+  .burger_open .burger__line {
+    background-color: #fff;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .header .nav__link {
+    color: #fff;
+  }
+}

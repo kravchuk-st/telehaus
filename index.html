@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -11,13 +11,11 @@
     <title>Telehaus</title>
     <link rel="shortcut icon" type="image/ico" href="./assets/img/favicon.svg" />
 
+    <link rel="preload" href="./assets/video/banner.webm" as="video" type="video/webm" fetchpriority="high" />
+    <link rel="preload" href="./assets/fonts/Montserrat-Medium.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="./assets/fonts/Montserrat-SemiBold.woff2" as="font" type="font/woff2" crossorigin />
+
     <link rel="stylesheet" href="./assets/css/normalize.css" />
-    <link
-      rel="stylesheet"
-      href="./assets/css/splide.min.css"
-      as="style"
-      onload="this.onload=null;this.rel='stylesheet'"
-    />
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
   <body>
@@ -33,7 +31,7 @@
     <header class="header">
       <div class="wrapper">
         <a href="./" class="logo">
-          <img class="logo__img" src="./assets/img/logo.svg" alt="Logo img" width="220" />
+          <img class="logo__img" src="./assets/img/logo.svg" alt="Logo img" width="220" height="43" />
         </a>
         <nav class="nav">
           <ol class="nav__list list-reset">
@@ -50,9 +48,9 @@
               <a href="#comments" class="nav__link">Відгуки</a>
             </li>
           </ol>
-          <a href="#form" class="btn nav__btn btn-reset">Консультація</a>
+          <a href="#form" class="btn nav__btn btn-reset">Контакти</a>
         </nav>
-        <a href="#form" class="btn btn-lg btn-reset">Консультація</a>
+        <a href="#form" class="btn btn-lg btn-reset">Контакти</a>
         <button class="burger btn-reset" aria-label="Відкрити меню">
           <span class="burger__line" aria-hidden="true"></span>
           <span class="burger__line" aria-hidden="true"></span>
@@ -64,11 +62,16 @@
 
     <main>
       <section class="banner">
+        <video class="banner__video-bg" autoplay muted loop playsinline>
+          <source src="./assets/video/banner.webm" type="video/webm" />
+          <source src="./assets/video/banner.mp4" type="video/mp4" />
+          Ваш браузер не підтримує відео.
+        </video>
         <div class="wrapper">
-          <h1 class="banner__title">Професійне планування та&nbsp;проведення бізнес-заходів MICE</h1>
+          <h1 class="banner__title">Професійне планування та&nbsp;проведення бізнес-заходів</h1>
           <div class="banner__links">
             <a href="#form" class="btn btn-fill btn-reset"
-              >Отримати консультацію
+              >Надіслати запит
               <svg class="btn__icon" aria-hidden="true">
                 <use xlink:href="#arrow-btn"></use>
               </svg>
@@ -84,7 +87,7 @@
               Інноваційні рішення для&nbsp;заходів, що&nbsp;об'єднують, мотивують і&nbsp;надихають ваш&nbsp;бізнес
             </h2>
             <a href="#form" class="btn btn-reset"
-              >ЗАЛИШИТИ ЗАЯВКУ
+              >Надіслати запит
               <svg class="btn__icon" aria-hidden="true">
                 <use xlink:href="#arrow-btn"></use>
               </svg>
@@ -93,10 +96,9 @@
           <div class="options">
             <p class="options__item">Конференції та саміти</p>
             <p class="options__item">Корпоративні події та&nbsp;тімбілдинги</p>
-            <p class="options__item">Корпоративні зустрічі та&nbsp;стратегічні сесії</p>
+            <p class="options__item">Бізнес зустрічі та&nbsp;стратегічні сесії</p>
             <p class="options__item">Виставки та бізнес-форуми</p>
             <p class="options__item">Презентації продуктів та&nbsp;брендів</p>
-            <p class="options__item">Нетворкінг-заходи та&nbsp;бізнес-зустрічі</p>
             <p class="options__item">Тренінги та воркшопи</p>
           </div>
         </div>
@@ -146,7 +148,7 @@
       <section class="portfolio" id="portfolio">
         <div class="wrapper">
           <div class="title">
-            <h2 class="title__text">НАШІ ПОДІЇ</h2>
+            <h2 class="title__text">ПОДІЇ</h2>
             <p class="title__subtext">ПОРТФОЛІО</p>
           </div>
           <div class="portfolio__content">
@@ -154,13 +156,11 @@
               <div class="event__content">
                 <div class="event__header">
                   <h3 class="event__title">Конференції</h3>
-                  <p class="event__count">/150 людей</p>
-                  <p class="event__subtitle">Telehaus створює конференції, які працюють на результат.</p>
                 </div>
                 <div class="event__descr">
                   <p>
-                    Ми беремо на себе організацію під ключ: вибір локації, технічне забезпечення, сцену та сценарій,
-                    реєстрацію учасників, бренд-зони, кейтеринг та супровід у день події.
+                    Ми беремо на себе організацію під ключ: вибір локації, технічне забезпечення, сцену та сценарій, реєстрацію учасників,
+                    бренд-зони, кейтеринг та супровід у день події.
                   </p>
                 </div>
               </div>
@@ -169,16 +169,11 @@
               <div class="event__content">
                 <div class="event__header">
                   <h3 class="event__title">Корпоративні зустрічі</h3>
-                  <p class="event__count">/20–80 осіб</p>
-                  <p class="event__subtitle">
-                    Telehaus організовує корпоративні зустрічі, що зміцнюють партнерства та об’єднують команди.
-                  </p>
                 </div>
                 <div class="event__descr">
                   <p>
-                    Ми подбаємо про все: знайдемо відповідну локацію, налаштуємо технічну частину, створимо сценарій і
-                    забезпечимо модерацію, організуємо кейтеринг, оформлення простору, логістику учасників та повну
-                    координацію події.
+                    Ми подбаємо про все: знайдемо відповідну локацію, налаштуємо технічну частину, створимо сценарій і забезпечимо
+                    модерацію, організуємо кейтеринг, оформлення простору, логістику учасників та повну координацію події.
                   </p>
                 </div>
               </div>
@@ -186,16 +181,13 @@
             <div class="event">
               <div class="event__content">
                 <div class="event__header">
-                  <h3 class="event__title">Нетворкінг та бізнес-зустрічі</h3>
-                  <p class="event__count">/20–100 осіб</p>
-                  <p class="event__subtitle">
-                    Telehaus створює події, де народжуються партнерства, угоди та нові можливості.
-                  </p>
+                  <h3 class="event__title">Циклові конференції та круглі столи</h3>
+                  <p class="event__subtitle">Для бьюті та фарм індустрії.</p>
                 </div>
                 <div class="event__descr">
                   <p>
-                    Ми продумуємо подію від ідеї до реалізації: створюємо концепцію, підбираємо локацію, налаштовуємо
-                    техніку, організовуємо реєстрацію, бренд-зони та кейтеринг — і повністю координуємо день події.
+                    Ми продумуємо подію від ідеї до реалізації: створюємо концепцію, підбираємо локацію, налаштовуємо техніку, організовуємо
+                    реєстрацію, бренд-зони та кейтеринг — і повністю координуємо день події.
                   </p>
                 </div>
               </div>
@@ -275,64 +267,29 @@
         </div>
       </section>
 
-      <section class="comments" id="comments">
+      <section class="partners">
         <div class="wrapper">
           <div class="title">
-            <h2 class="title__text">ЩО ПРО НАС КАЖУТЬ?</h2>
-            <p class="title__subtext">ВІДГУКИ</p>
+            <h2 class="title__text">НАМ ДОВІРЯЮТЬ</h2>
+            <p class="title__subtext">КЕЙСИ</p>
           </div>
-          <div class="slider splide">
-            <div class="splide__track">
-              <div class="splide__list">
-                <div class="comment splide__slide">
-                  <p class="comment__rating">★★★★★</p>
-                  <p class="comment__author">Анна</p>
-                  <p class="comment__text">
-                    Я хочу подякувати від себе за Ваш час праці над цим заходом та завжди оперативний зворотній зв’язок,
-                    а також за те, як Ви комунікували з готелем, щоб піти нам на зустріч і деяких питаннях. Це дуже
-                    допомогло цьому заходу відбутись на високому рівні.
-                  </p>
-                </div>
-                <div class="comment splide__slide">
-                  <p class="comment__rating">★★★★★</p>
-                  <p class="comment__author">Ольга</p>
-                  <p class="comment__text">
-                    Від нашої команди хочу подякувати вам за чудову роботу по організації і проведенню конференції в
-                    Буковелі минулого тижня. Дякую вам, ви молодці, справжні професіонали своєї справи!
-                  </p>
-                </div>
-                <div class="comment splide__slide">
-                  <p class="comment__rating">★★★★★</p>
-                  <p class="comment__author">Дмитро</p>
-                  <p class="comment__text">
-                    Дякуємо за організацію та супровід двох наших Циклових мітингів, які проходили в Буковелі і
-                    Трускавці. Все на вищому професійному рівні! Всі невеликі форс мажорні обставини, які виникали на
-                    локації, вирішувались миттєво. Завдяки вашій професійності все пройшло на вищому рівні.
-                  </p>
-                </div>
-                <div class="comment splide__slide">
-                  <p class="comment__rating">★★★★★</p>
-                  <p class="comment__author">Іванна</p>
-                  <p class="comment__text">
-                    Хочу поділитись із вами зворотнім зв’язком від колег: все було на найвищому рівні, обслуговування
-                    приємне, проживання комфортне, їжа неймовірно смачна, персонал привітний та ввічливий. Віддалена
-                    підтримка агентства теж відчутна на високому рівні.
-                  </p>
-                </div>
-                <div class="comment splide__slide">
-                  <p class="comment__rating">★★★★★</p>
-                  <p class="comment__author">Андрій</p>
-                  <p class="comment__text">
-                    Отримала від колег дуже хороші відгуки про захід у Одесі, торт був дуже гарний, дуже хороше меню,
-                    все було дуже добре. Дякую за організацію! Також прошу передати позитивні відгуки на локацію. Моя
-                    особиста вдячність за організацію та супровід В цілому дякую, що всіляко підтримуєте 😊
-                  </p>
-                </div>
-              </div>
+        </div>
+
+        <div class="marquee">
+          <div class="marquee__content">
+            <div class="marquee__line">
+              <img src="./assets/img/partners/1.webp" alt="..." />
+              <img src="./assets/img/partners/2.webp" alt="..." />
+              <img src="./assets/img/partners/3.webp" alt="..." />
+              <img src="./assets/img/partners/4.webp" alt="..." />
+              <img src="./assets/img/partners/5.webp" alt="..." />
             </div>
-            <div class="splide__arrows">
-              <button class="splide__arrow splide__arrow--prev btn-reset"></button>
-              <button class="splide__arrow splide__arrow--next btn-reset"></button>
+            <div class="marquee__line" aria-hidden="true">
+              <img src="./assets/img/partners/1.webp" alt="..." />
+              <img src="./assets/img/partners/2.webp" alt="..." />
+              <img src="./assets/img/partners/3.webp" alt="..." />
+              <img src="./assets/img/partners/4.webp" alt="..." />
+              <img src="./assets/img/partners/5.webp" alt="..." />
             </div>
           </div>
         </div>
@@ -354,11 +311,10 @@
               </button>
               <div class="accordion__content" aria-hidden="true">
                 <p>
-                  Підготовка до заходу напряму впливає на бюджет. Раннє бронювання готелів, залів та авіаквитків може
-                  зекономити десятки відсотків бюджету, адже ринок працює за принципом динамічного ціноутворення:
-                  низький попит = нижча вартість. Якщо планування починається за кілька місяців або навіть рік-два для
-                  великих щорічних подій, вибір локацій ширший, умови вигідніші, а ризики ажіотажного підвищення цін
-                  мінімальні.
+                  Підготовка до заходу напряму впливає на бюджет. Раннє бронювання готелів, залів та авіаквитків може зекономити десятки
+                  відсотків бюджету, адже ринок працює за принципом динамічного ціноутворення: низький попит = нижча вартість. Якщо
+                  планування починається за кілька місяців або навіть рік-два для великих щорічних подій, вибір локацій ширший, умови
+                  вигідніші, а ризики ажіотажного підвищення цін мінімальні.
                 </p>
               </div>
             </div>
@@ -371,10 +327,10 @@
               </button>
               <div class="accordion__content" aria-hidden="true">
                 <p>
-                  Якщо івент проходить у новому місті чи країні, перед фінальним рішенням варто особисто відвідати
-                  потенційні готелі й майданчики. Інспекція дозволяє пройти шлях гостя, оцінити інфраструктуру,
-                  перевірити логістику, побачити сусідні локації та переконатися, що обраний простір відповідає цілям
-                  заходу. Це суттєво знижує ризики та допомагає прийняти обгрунтоване рішення.
+                  Якщо івент проходить у новому місті чи країні, перед фінальним рішенням варто особисто відвідати потенційні готелі й
+                  майданчики. Інспекція дозволяє пройти шлях гостя, оцінити інфраструктуру, перевірити логістику, побачити сусідні локації
+                  та переконатися, що обраний простір відповідає цілям заходу. Це суттєво знижує ризики та допомагає прийняти обгрунтоване
+                  рішення.
                 </p>
               </div>
             </div>
@@ -387,10 +343,10 @@
               </button>
               <div class="accordion__content" aria-hidden="true">
                 <p>
-                  Спроби «вичавити максимум» з мінімального бюджету або вибір найдешевших підрядників часто призводять
-                  до проблем. У той же час дорогі послуги не завжди гарантують відповідну якість. Агентство завдяки
-                  досвіду та партнерським відносинам з постачальниками пропонує оптимальні варіанти у заданих фінансових
-                  рамках, забезпечує відповідний рівень сервісу та захищає від зайвих витрат.
+                  Спроби «вичавити максимум» з мінімального бюджету або вибір найдешевших підрядників часто призводять до проблем. У той же
+                  час дорогі послуги не завжди гарантують відповідну якість. Агентство завдяки досвіду та партнерським відносинам з
+                  постачальниками пропонує оптимальні варіанти у заданих фінансових рамках, забезпечує відповідний рівень сервісу та захищає
+                  від зайвих витрат.
                 </p>
               </div>
             </div>
@@ -403,10 +359,9 @@
               </button>
               <div class="accordion__content" aria-hidden="true">
                 <p>
-                  Невчасне бронювання залів або номерів без точної кількості гостей може спричинити серйозні проблеми:
-                  пусті зали та оплачені, але незаселені номери, або навпаки брак місць і необхідність скасування чи
-                  термінового перепланування. Різні зміни призводять до подорожчання і ускладнюють проект, тому чітке
-                  планування — ключ до стабільності.
+                  Невчасне бронювання залів або номерів без точної кількості гостей може спричинити серйозні проблеми: пусті зали та
+                  оплачені, але незаселені номери, або навпаки брак місць і необхідність скасування чи термінового перепланування. Різні
+                  зміни призводять до подорожчання і ускладнюють проект, тому чітке планування — ключ до стабільності.
                 </p>
               </div>
             </div>
@@ -419,11 +374,10 @@
               </button>
               <div class="accordion__content" aria-hidden="true">
                 <p>
-                  Професійні агентства мають великий досвід, налагоджену базу підрядників та глибоке розуміння
-                  сезонності, логістики, місцевої специфіки й мікродеталей, які легко упустити. Питання віз, правил
-                  перетину кордону, оптимальних маршрутів, ресторанних рекомендацій, нюансів багажу — усе це потребує
-                  експертизи. Агенція знімає операційний тягар, зберігає ресурси та гарантує якість організації завдяки
-                  досвіду проведення тисяч івентів.
+                  Професійні агентства мають великий досвід, налагоджену базу підрядників та глибоке розуміння сезонності, логістики,
+                  місцевої специфіки й мікродеталей, які легко упустити. Питання віз, правил перетину кордону, оптимальних маршрутів,
+                  ресторанних рекомендацій, нюансів багажу — усе це потребує експертизи. Агенція знімає операційний тягар, зберігає ресурси
+                  та гарантує якість організації завдяки досвіду проведення тисяч івентів.
                 </p>
               </div>
             </div>
@@ -438,149 +392,120 @@
             <p class="title__subtext">НОВИНИ</p>
           </div>
           <div class="blog__content">
-            <a href="./blog" class="blog__link btn-reset" style="background-image: url('./assets/img/blog/1.avif')">
+            <a href="./article" class="blog__link btn-reset" style="background-image: url('./assets/img/blog/1.avif')">
               <span class="link__icon" aria-hidden="true"></span>
               <p class="link__title">Звана вечеря як бізнес-івент</p>
               <p class="link__descr">
-                Звана вечеря давно перестала бути «святковою вечерею з дрес-кодом». У європейській MICE-індустрії це
-                повноцінний бізнес-формат, який працює і на HR, і на маркетинг, і на репутацію бренду.
+                Звана вечеря давно перестала бути «святковою вечерею з дрес-кодом». У європейській MICE-індустрії це повноцінний
+                бізнес-формат, який працює і на HR, і на маркетинг, і на репутацію бренду.
               </p>
             </a>
-            <a href="./blog" class="blog__link btn-reset" style="background-image: url('./assets/img/blog/2.avif')">
+            <a href="./article" class="blog__link btn-reset" style="background-image: url('./assets/img/blog/2.avif')">
               <span class="link__icon" aria-hidden="true"></span>
               <p class="link__title">MICE-тренди в Європі 2025-2026 років</p>
               <p class="link__descr">
-                Європейський MICE-ринок завжди був чутливим до змін: економіка, технології, стиль роботи, соціальні
-                запити — усе це миттєво впливає на те, якими стають корпоративні події. І сьогодні ми бачимо цікаву
-                трансформацію: події перестають бути просто “зустрічами” й перетворюються на досвід, що має цінність для
-                бізнесу і людей.
+                Європейський MICE-ринок завжди був чутливим до змін: економіка, технології, стиль роботи, соціальні запити — усе це миттєво
+                впливає на те, якими стають корпоративні події. І сьогодні ми бачимо цікаву трансформацію: події перестають бути просто
+                “зустрічами” й перетворюються на досвід, що має цінність для бізнесу і людей.
               </p>
             </a>
-            <a href="./blog" class="blog__link btn-reset" style="background-image: url('./assets/img/blog/3.avif')">
+            <a href="./article" class="blog__link btn-reset" style="background-image: url('./assets/img/blog/3.avif')">
               <span class="link__icon" aria-hidden="true"></span>
               <p class="link__title">Івент під ключ: делегувати агенції вигідніше?</p>
               <p class="link__descr">
-                У сучасному бізнесі події перестали бути “додатковою опцією” чи розважальним елементом для команди.
-                Конференції, бізнес-вечері, нетворкінги, тімбілдинги та інсентиви стали важливою частиною корпоративної
-                стратегії, інструментом комунікації та способом зміцнення культури. Але разом із цим стало очевидно:
-                якісний івент вимагає значно більше часу, досвіду і ресурсів, ніж здається з боку.
+                У сучасному бізнесі події перестали бути “додатковою опцією” чи розважальним елементом для команди. Конференції,
+                бізнес-вечері, нетворкінги, тімбілдинги та інсентиви стали важливою частиною корпоративної стратегії, інструментом
+                комунікації та способом зміцнення культури. Але разом із цим стало очевидно: якісний івент вимагає значно більше часу,
+                досвіду і ресурсів, ніж здається з боку.
               </p>
             </a>
           </div>
-          <button class="btn btn-fill btn-reset blog-btn">
+          <a class="btn btn-fill btn-reset blog-btn" href="./blog">
             дивитись все
             <svg class="btn__icon" aria-hidden="true">
               <use xlink:href="#arrow-btn"></use>
             </svg>
-          </button>
-        </div>
-      </section>
-
-      <section class="request" id="form">
-        <div class="wrapper">
-          <div class="request__contacts">
-            <a href="./" class="logo btn-reset">
-              <img class="contacts__logo" src="./assets/img/logo.svg" alt="Logo" width="308" />
-            </a>
-            <h2 class="contacts__title">Contacts</h2>
-            <div class="contacts__phones">
-              <a href="tel:+380501234567" class="contacts__link contacts__number">+38 050 123 45 67</a>
-              <a href="tel:+48255123456" class="contacts__link contacts__number">+48 255 123 456</a>
-            </div>
-            <a
-              href="https://maps.app.goo.gl/EVT97LwBF92cj2ki7"
-              class="contacts__link"
-              target="_blank"
-              rel="noopener noreferrer"
-              >м. Київ, вул. Братська 7</a
-            >
-            <a href="mailto:telehausme@gmail.com?subject=Mail from Telehausme" class="contacts__link contacts__email"
-              >telehausme@gmail.com</a
-            >
-            <ul class="contacts__social list-reset">
-              <li class="social__item">
-                <a
-                  href="#"
-                  class="social__link social__link_ig"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="Перейти до Instagram"
-                  title="Instagram"
-                ></a>
-              </li>
-              <li class="social__item">
-                <a
-                  href="#"
-                  class="social__link social__link_in"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="Перейти до LinkedIn"
-                  title="LinkedIn"
-                ></a>
-              </li>
-              <li class="social__item">
-                <a
-                  href="#"
-                  class="social__link social__link_fb"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="Перейти до Facebook"
-                  title="Facebook"
-                ></a>
-              </li>
-            </ul>
-            <hr class="contacts__line" />
-            <p class="contacts__copy">&copy; Telehaus 2025</p>
-          </div>
-          <form class="request__form" action="./assets/php/mail.php" method="post">
-            <div class="form__row">
-              <label for="name">Введіть ваше ім’я:</label>
-              <input name="Ім'я" type="text" id="name" data-validate-field="name" autocomplete="off" />
-            </div>
-            <div class="form__row">
-              <label for="email">Введіть ваш email:</label>
-              <input
-                name="E-mail"
-                type="email"
-                id="email"
-                placeholder="example@gmail.com"
-                data-validate-field="email"
-                autocomplete="off"
-              />
-            </div>
-            <div class="form__row">
-              <label for="service">Оберіть послугу</label>
-              <select name="Послуга" id="service">
-                <option value="Організація конференції">Організація конференції</option>
-                <option value="Організація корпоративної події">Організація корпоративної події</option>
-                <option value="Організація корпоративної події">Організація корпоративної зустрічі</option>
-                <option value="Організація виставки">Організація виставки</option>
-                <option value="Організація презентації">Організація презентації</option>
-                <option value="Організація бізнес-зустрічі">Організація бізнес-зустрічі</option>
-                <option value="Організація тренінгу">Організація тренінгу</option>
-              </select>
-            </div>
-            <div class="form__row">
-              <label for="descr">Коротко опишіть ваш запит</label>
-              <textarea name="Опис" id="descr" cols="30" rows="4"></textarea>
-            </div>
-            <div class="form__btns">
-              <button class="btn btn-dark form__btn btn-reset" type="submit">
-                Залишити заявку
-                <svg class="btn__icon" aria-hidden="true">
-                  <use xlink:href="#arrow-btn"></use>
-                </svg>
-              </button>
-            </div>
-          </form>
+          </a>
         </div>
       </section>
     </main>
 
-    <script src="./assets/js/lib/splide.min.js"></script>
+    <footer class="request" id="form">
+      <div class="wrapper">
+        <div class="request__contacts">
+          <a href="./" class="logo btn-reset">
+            <img class="contacts__logo" src="./assets/img/logo.svg" alt="Logo" width="275" height="54" />
+          </a>
+          <h2 class="contacts__title">Contacts</h2>
+          <a href="mailto:event@telehausme.com?subject=Mail%20from%20Telehausme" class="contacts__email btn-reset">event@telehausme.com</a>
+          <div class="address">
+            <p>02-673 WARSAW, POLAND</p>
+            <p>BUSINESS CENTER PARK ROZWOJU</p>
+            <p>ENTRANCE D, 3RD FLOOR</p>
+            <a href="https://maps.app.goo.gl/mMJwZ7mz5mBAdVBy7" class="address__link btn-reset" target="_blank" rel="noopener noreferrer"
+              >KONSTRUKTORSKA ST. 12/12A</a
+            >
+            <a href="tel:+48255123456" class="address__number btn-reset">+48 255 123 456</a>
+          </div>
+          <ul class="contacts__social list-reset">
+            <li class="social__item">
+              <a
+                href="https://www.instagram.com/telehaus_mettings_events/"
+                class="social__link social__link_ig"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Перейти до Instagram"
+                title="Instagram"
+              ></a>
+            </li>
+            <li class="social__item">
+              <a
+                href="https://www.linkedin.com/company/telehaus-meetings-events/"
+                class="social__link social__link_in"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Перейти до LinkedIn"
+                title="LinkedIn"
+              ></a>
+            </li>
+            <li class="social__item">
+              <a
+                href="https://www.facebook.com/profile.php?id=61583158618046"
+                class="social__link social__link_fb"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Перейти до Facebook"
+                title="Facebook"
+              ></a>
+            </li>
+          </ul>
+          <hr class="contacts__line" />
+          <p class="contacts__copy">&copy; Telehaus 2025</p>
+        </div>
+        <form class="request__form" action="./assets/php/mail.php" method="post">
+          <div class="form__row">
+            <label for="email">Введіть ваш email:</label>
+            <input name="E-mail" type="email" id="email" placeholder="example@gmail.com" data-validate-field="email" autocomplete="off" />
+          </div>
+          <div class="form__row">
+            <label for="descr">Коротко опишіть ваш запит</label>
+            <textarea name="Опис" id="descr" cols="30" rows="4"></textarea>
+          </div>
+          <div class="form__btns">
+            <button class="btn btn-dark form__btn btn-reset" type="submit">
+              Надіслати
+              <svg class="btn__icon" aria-hidden="true">
+                <use xlink:href="#arrow-btn"></use>
+              </svg>
+            </button>
+          </div>
+        </form>
+      </div>
+    </footer>
+
     <script src="./assets/js/lib/inputmask.min.js"></script>
     <script src="./assets/js/lib/just-validate.min.js"></script>
-    <script src="./assets/js/slider.js"></script>
+    <script src="./assets/js/video-bg.js"></script>
     <script src="./assets/js/accordion.js"></script>
     <script src="./assets/js/burger.js"></script>
     <script src="./assets/js/links.js"></script>

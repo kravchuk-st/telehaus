@@ -1,0 +1,36 @@
+.slider {
+  text-align: center;
+
+  &__slide {
+    padding: 20px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 25px;
+    border-radius: 32px;
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), center/cover no-repeat url("../img/article.avif");
+  }
+
+  &__title {
+    font-size: 50px;
+    font-weight: 800;
+    text-shadow: 0 0 2px #000;
+  }
+
+  &__descr {
+    font-size: 25px;
+    text-shadow: 0 0 1px #000;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .slider__slide {
+    border-radius: 24px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .slider__slide {
+    border-radius: 18px;
+  }
+}
