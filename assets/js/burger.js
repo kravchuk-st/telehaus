@@ -1,4 +1,5 @@
 const body = document.body;
+const headerSection = document.querySelector(".header");
 const burger = document.querySelector(".burger");
 const menu = document.querySelector(".nav");
 const overlay = document.querySelector(".overlay");
@@ -11,6 +12,7 @@ const openMenu = () => {
   burger.setAttribute("aria-expanded", "true");
   burger.setAttribute("aria-label", "Закрити меню");
   body.style.paddingRight = paddingOffset;
+  headerSection.style.paddingRight = paddingOffset;
   body.classList.add("disable-scroll");
 };
 
@@ -20,6 +22,7 @@ const closeMenu = () => {
   burger.setAttribute("aria-expanded", "false");
   burger.setAttribute("aria-label", "Відкрити меню");
   body.style = null;
+  headerSection.style = null;
   body.classList.remove("disable-scroll");
 };
 

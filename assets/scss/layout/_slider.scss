@@ -27,10 +27,27 @@
   .slider__slide {
     border-radius: 24px;
   }
+
+  .slider__title {
+    font-size: 45px;
+  }
+
+  .slider__descr {
+    font-size: 20px;
+  }
 }
 
 @media screen and (max-width: 768px) {
   .slider__slide {
     border-radius: 18px;
+    row-gap: 20px;
+  }
+
+  .slider__title {
+    font-size: 32px;
+  }
+
+  .slider__descr {
+    font-size: 16px;
   }
 }

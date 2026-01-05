@@ -306,10 +306,19 @@ p {
   }
 }
 .header {
-  position: absolute;
+  position: fixed;
   z-index: 1;
   width: 100%;
-  padding-top: 30px;
+  height: auto;
+  padding: 30px 0 20px;
+  top: 0;
+  left: 0;
+  background: linear-gradient(to bottom, rgba(51, 51, 51, 0.4), rgba(51, 51, 51, 0.1));
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  transition: transform 0.3s linear;
+}
+.header.hide {
+  transform: translateY(-100%);
 }
 .header .wrapper {
   display: flex;
@@ -321,6 +330,7 @@ p {
   visibility: hidden;
 }
 .header .logo__img {
+  filter: drop-shadow(0 4px 10px rgba(48, 85, 207, 0.3));
   transition: filter 0.25s ease-in-out;
 }
 .header .logo__img:hover {
@@ -400,30 +410,16 @@ p {
 }
 @media screen and (max-width: 768px) {
   .header {
-    margin-bottom: -58px;
     padding-top: 20px;
   }
   .header .logo__img {
     width: 182px;
   }
 }
-@media screen and (max-width: 576px) {
-  .header {
-    margin-bottom: -65px;
-  }
-}
 .header {
   position: static;
   margin-bottom: 0;
-}
-.header .nav__link {
-  color: #000;
-  text-shadow: 0 0 1px #7db9fe;
-  background: linear-gradient(to right, #000, #000) 0 100% no-repeat;
-  background-size: 0 1px;
-}
-.header .nav__link:hover {
-  background-size: 100% 1px;
+  background: linear-gradient(to bottom, rgba(51, 51, 51, 0.1), transparent);
 }
 .header .btn-lg {
   color: #000;
@@ -440,9 +436,15 @@ p {
   background-color: #fff;
 }
 
-@media screen and (max-width: 1050px) {
+@media screen and (min-width: 1050px) {
   .header .nav__link {
-    color: #fff;
+    color: #000;
+    text-shadow: 0 0 1px #7db9fe;
+    background: linear-gradient(to right, #000, #000) 0 100% no-repeat;
+    background-size: 0 1px;
+  }
+  .header .nav__link:hover {
+    background-size: 100% 1px;
   }
 }
 .slider {
@@ -471,10 +473,23 @@ p {
   .slider__slide {
     border-radius: 24px;
   }
+  .slider__title {
+    font-size: 45px;
+  }
+  .slider__descr {
+    font-size: 20px;
+  }
 }
 @media screen and (max-width: 768px) {
   .slider__slide {
     border-radius: 18px;
+    row-gap: 20px;
+  }
+  .slider__title {
+    font-size: 32px;
+  }
+  .slider__descr {
+    font-size: 16px;
   }
 }
 .blog {

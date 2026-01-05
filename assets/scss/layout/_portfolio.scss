@@ -1,12 +1,11 @@
 .portfolio {
   .event {
+    display: flex;
     color: $color-light;
     background: center / cover no-repeat;
 
     &:nth-child(2n) {
-      .event__content {
-        margin-left: auto;
-      }
+      flex-direction: row-reverse;
     }
 
     &:nth-child(1) {
@@ -22,8 +21,11 @@
     }
 
     &__content {
+      flex-shrink: 0;
       width: 100%;
       max-width: 440px;
+      display: flex;
+      flex-direction: column;
     }
 
     &__header {
@@ -52,12 +54,43 @@
       flex-direction: column;
       row-gap: 20px;
     }
+
+    &__player {
+      flex: 1;
+      position: relative;
+      z-index: 0;
+    }
+
+    &__video {
+      position: absolute;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .portfolio .event__content {
+    max-width: none;
+    flex-direction: row;
+  }
+
+  .portfolio .event,
+  .portfolio .event:nth-child(2n) {
+    flex-direction: column;
+  }
+
+  .portfolio .event__video {
+    position: static;
   }
 }
 
 @media screen and (max-width: 768px) {
   .portfolio .event {
-    padding-bottom: 250px;
     background-size: 100% auto;
     background-position: center bottom 0;
 
@@ -73,7 +106,7 @@
   }
 
   .portfolio .event__content {
-    max-width: none;
+    flex-direction: column;
   }
 
   .portfolio .event__title {
@@ -83,8 +116,6 @@
 
 @media screen and (max-width: 576px) {
   .portfolio .event {
-    padding-bottom: 200px;
-
     &__title {
       font-size: 26px;
     }

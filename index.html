@@ -11,7 +11,7 @@
     <title>Telehaus</title>
     <link rel="shortcut icon" type="image/ico" href="./assets/img/favicon.svg" />
 
-    <link rel="preload" href="./assets/video/banner.webm" as="video" type="video/webm" fetchpriority="high" />
+    <link rel="preload" href="./assets/img/poster.avif" as="image" type="image/avif" fetchpriority="high" />
     <link rel="preload" href="./assets/fonts/Montserrat-Medium.woff2" as="font" type="font/woff2" crossorigin />
     <link rel="preload" href="./assets/fonts/Montserrat-SemiBold.woff2" as="font" type="font/woff2" crossorigin />
 
@@ -62,7 +62,7 @@
 
     <main>
       <section class="banner">
-        <video class="banner__video-bg" autoplay muted loop playsinline>
+        <video class="banner__video-bg" poster="./assets/img/poster.avif" autoplay muted loop playsinline>
           <source src="./assets/video/banner.webm" type="video/webm" />
           <source src="./assets/video/banner.mp4" type="video/mp4" />
           Ваш браузер не підтримує відео.
@@ -164,6 +164,13 @@
                   </p>
                 </div>
               </div>
+              <div class="event__player">
+                <video class="event__video" autoplay muted loop playsinline>
+                  <source src="./assets/video/portfolio/1.webm" type="video/webm" />
+                  <source src="./assets/video/portfolio/1.mp4" type="video/mp4" />
+                  Ваш браузер не підтримує відео.
+                </video>
+              </div>
             </div>
             <div class="event">
               <div class="event__content">
@@ -176,6 +183,13 @@
                     модерацію, організуємо кейтеринг, оформлення простору, логістику учасників та повну координацію події.
                   </p>
                 </div>
+              </div>
+              <div class="event__player">
+                <video class="event__video" autoplay muted loop playsinline>
+                  <source src="./assets/video/portfolio/2.webm" type="video/webm" />
+                  <source src="./assets/video/portfolio/2.mp4" type="video/mp4" />
+                  Ваш браузер не підтримує відео.
+                </video>
               </div>
             </div>
             <div class="event">
@@ -190,6 +204,13 @@
                     реєстрацію, бренд-зони та кейтеринг — і повністю координуємо день події.
                   </p>
                 </div>
+              </div>
+              <div class="event__player">
+                <video class="event__video" autoplay muted loop playsinline>
+                  <source src="./assets/video/portfolio/3.webm" type="video/webm" />
+                  <source src="./assets/video/portfolio/3.mp4" type="video/mp4" />
+                  Ваш браузер не підтримує відео.
+                </video>
               </div>
             </div>
           </div>
@@ -505,6 +526,7 @@
 
     <script src="./assets/js/lib/inputmask.min.js"></script>
     <script src="./assets/js/lib/just-validate.min.js"></script>
+    <script src="./assets/js/fixed-header.js"></script>
     <script src="./assets/js/video-bg.js"></script>
     <script src="./assets/js/accordion.js"></script>
     <script src="./assets/js/burger.js"></script>
