@@ -1,5 +1,6 @@
 .about {
   padding-top: 0;
+  background: center / cover no-repeat url("../img/about-bg.avif");
 
   .wrapper {
     display: flex;
@@ -24,7 +25,7 @@
       left: -60px;
       width: calc(100% + 60px);
       height: 100%;
-      background: center / cover no-repeat url("../img/innovation-bg.avif");
+      // background: center / cover no-repeat url("../img/innovation-bg.avif");
     }
 
     &__title {
@@ -43,17 +44,9 @@
     &__item {
       padding: 25px 35px;
       font-size: 32px;
-      font-weight: 800;
-      border-radius: $br-btn;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
-
-      @for $i from 1 through 7 {
-        &:nth-child(#{$i}) {
-          background-image: url("../img/options/#{$i}.avif");
-        }
-      }
+      font-weight: 600;
+      border: 2px solid #fff;
+      border-radius: $br-btn-xl;
     }
   }
 }
@@ -101,7 +94,7 @@
 
     &__item {
       font-size: 24px;
-      border-radius: $br-btn-sm;
+      border-radius: $br-btn-lg;
     }
   }
 }

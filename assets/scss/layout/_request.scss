@@ -45,13 +45,17 @@
 
   .contacts {
     &__title {
-      margin: 25px 0 15px;
+      margin: 15px 0 10px;
       font-size: 34px;
       font-weight: 600;
     }
 
+    &__country {
+      font-size: 20px;
+      margin-bottom: 5px;
+    }
+
     &__email {
-      font-size: 25px;
       color: $color-light;
     }
 
@@ -213,6 +217,10 @@
 @media screen and (max-width: 576px) {
   .request .contacts__title {
     font-size: 20px;
+  }
+
+  .request .contacts__country {
+    font-size: 18px;
   }
 
   .request__contacts {

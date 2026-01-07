@@ -410,7 +410,7 @@ p {
 }
 @media screen and (max-width: 768px) {
   .header {
-    padding-top: 20px;
+    padding: 15px 0;
   }
   .header .logo__img {
     width: 182px;
@@ -421,7 +421,10 @@ p {
   display: flex;
   align-items: center;
   text-align: center;
-  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), center/cover no-repeat url("../img/article.avif");
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../img/article.avif");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .banner__title {
   font-size: 50px;
@@ -442,6 +445,10 @@ p {
 }
 .article .wrapper p:not(:last-child) {
   margin-bottom: 10px;
+}
+.article .wrapper ul {
+  margin: 15px 0;
+  list-style-position: inside;
 }
 
 @media screen and (max-width: 768px) {
@@ -491,12 +498,15 @@ p {
   background-image: url("../img/social/fb.svg");
 }
 .request .contacts__title {
-  margin: 25px 0 15px;
+  margin: 15px 0 10px;
   font-size: 34px;
   font-weight: 600;
 }
+.request .contacts__country {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
 .request .contacts__email {
-  font-size: 25px;
   color: #fff;
 }
 .request .contacts__social {
@@ -627,6 +637,9 @@ p {
 @media screen and (max-width: 576px) {
   .request .contacts__title {
     font-size: 20px;
+  }
+  .request .contacts__country {
+    font-size: 18px;
   }
   .request__contacts {
     row-gap: 15px;

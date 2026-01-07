@@ -1,5 +1,5 @@
 <?
-$admin_email = 'telehausme@gmail.com';
+$admin_email = 'event@telehausme.com';
 
 $form_subject = 'Заявка з сайту Telehausme - ' . date('d.m.Y H:i:s');
 
