@@ -32,7 +32,7 @@
     transition: filter 0.25s ease-in-out;
 
     &:hover {
-      filter: drop-shadow(0 4px 10px $color-main);
+      filter: drop-shadow(0 4px 10px $color-hover);
     }
   }
 
@@ -72,11 +72,12 @@
   }
 
   .nav__link {
-    background: linear-gradient(to right, #fff, #fff) 0 100% no-repeat;
+    background: linear-gradient(to right, $color-hover, $color-hover) 0 100% no-repeat;
     background-size: 0 1px;
     transition: 0.3s ease-in-out;
 
     &:hover {
+      color: $color-hover;
       background-size: 100% 1px;
     }
   }

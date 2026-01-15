@@ -8,8 +8,8 @@
     border-color: $color-text;
 
     &:hover {
-      color: $color-secondary;
-      border-color: $color-secondary;
+      color: $color-hover;
+      border-color: $color-hover;
     }
   }
 
@@ -30,6 +30,9 @@
     background-size: 0 1px;
 
     &:hover {
+      color: $color-hover;
+      text-shadow: 0 0 1px $color-hover;
+      background: linear-gradient(to right, $color-hover, $color-hover) 0 100% no-repeat;
       background-size: 100% 1px;
     }
   }

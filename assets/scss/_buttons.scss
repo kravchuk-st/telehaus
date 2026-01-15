@@ -1,6 +1,6 @@
 .btn {
   padding: 10px 20px;
-  font-family: "Montserrat", Verdana, sans-serif;
+  font-family: 'Montserrat', Verdana, sans-serif;
   font-weight: bold;
   font-size: 24px;
   text-transform: uppercase;
@@ -59,15 +59,6 @@
 
     .btn__icon {
       stroke: $color-text;
-    }
-
-    &:hover {
-      color: $color-secondary;
-      border-color: $color-secondary;
-
-      .btn__icon {
-        stroke: $color-secondary;
-      }
     }
 
     &:active {

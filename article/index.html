@@ -107,20 +107,22 @@
     <footer class="request" id="form">
       <div class="wrapper">
         <div class="request__contacts">
-          <a href="./" class="logo btn-reset">
+          <a href="../" class="logo btn-reset">
             <img class="contacts__logo" src="../assets/img/logo.svg" alt="Logo" width="275" height="54" />
           </a>
-          <h2 class="contacts__title">Contacts</h2>
+          <h2 class="contacts__title">Warsaw, Poland</h2>
           <div class="address">
-            <p class="contacts__country">Warsaw, Poland</p>
-            <a href="mailto:sales@telehausme.com?subject=Mail%20from%20Telehausme" class="contacts__email btn-reset"
-              >sales@telehausme.com</a
-            >
             <p>Business center Park Rozwoju</p>
             <p>Entrance D, 3rd floor</p>
             <a href="https://maps.app.goo.gl/mMJwZ7mz5mBAdVBy7" class="address__link btn-reset" target="_blank" rel="noopener noreferrer"
               >Konstruktorska st. 12/12A</a
             >
+            <div class="address__email">
+              <a href="mailto:sales@telehausme.com?subject=Mail%20from%20Telehausme" class="contacts__email btn-reset"
+                >sales@telehausme.com</a
+              >
+              <span class="link-icon" aria-label="Копіювати e-mail"></span>
+            </div>
             <a href="tel:+48255123456" class="address__number btn-reset">+48 255 123 456</a>
           </div>
           <ul class="contacts__social list-reset">
@@ -160,7 +162,7 @@
         </div>
         <form class="request__form" action="../assets/php/mail.php" method="post">
           <div class="form__row">
-            <label for="email">Введіть ваш email:</label>
+            <label for="email">Введіть ваш email</label>
             <input name="E-mail" type="email" id="email" placeholder="example@company.com" data-validate-field="email" autocomplete="off" />
           </div>
           <div class="form__row">
@@ -179,11 +181,14 @@
       </div>
     </footer>
 
+    <script src="../assets/js/blog.js"></script>
     <script src="../assets/js/article.js"></script>
     <script src="../assets/js/lib/inputmask.min.js"></script>
     <script src="../assets/js/lib/just-validate.min.js"></script>
+    <script src="../assets/js/fixed-header.js"></script>
     <script src="../assets/js/burger.js"></script>
     <script src="../assets/js/links.js"></script>
     <script src="../assets/js/form.js"></script>
+    <script src="../assets/js/mail-link.js"></script>
   </body>
 </html>

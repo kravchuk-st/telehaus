@@ -21,8 +21,8 @@
     z-index: 2;
     right: 50px;
     bottom: 50px;
-    width: 50px;
-    height: 50px;
+    width: 28px;
+    height: 28px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -36,11 +36,19 @@
 
   &__title {
     margin: 0;
-    font-weight: 800;
+    font-weight: 600;
     font-size: 60px;
     line-height: 0.95;
-    text-transform: uppercase;
+    letter-spacing: 1%;
     text-shadow: 0 0 2px #000;
+  }
+
+  &__subtitle {
+    margin-top: 16px;
+    font-size: 24px;
+    line-height: 0.95;
+    letter-spacing: 1%;
+    text-shadow: 0 0 1px #000;
   }
 
   &__links {
@@ -78,8 +86,8 @@
   }
 
   .banner__sound {
-    width: 35px;
-    height: 35px;
+    width: 30px;
+    height: 30px;
     right: 15px;
     bottom: 25px;
   }
@@ -87,7 +95,7 @@
 
 @media screen and (max-width: 576px) {
   .banner {
-    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), center / cover no-repeat url("../img/banner-sm.avif");
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), center / cover no-repeat url('../img/banner-sm.avif');
   }
 
   .banner__title {

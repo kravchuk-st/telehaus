@@ -132,46 +132,13 @@
                 досвіду і ресурсів, ніж здається з боку.
               </p>
             </a>
-            <a
-              href="../article/?id=1"
-              class="blog__link btn-reset"
-              style="background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6)), url('../assets/img/blog/1.avif')"
-            >
-              <span class="link__icon" aria-hidden="true"></span>
-              <p class="link__title">Звана вечеря як бізнес-івент</p>
-              <p class="link__descr">
-                Звана вечеря давно перестала бути «святковою вечерею з дрес-кодом». У європейській MICE-індустрії це повноцінний
-                бізнес-формат, який працює і на HR, і на маркетинг, і на репутацію бренду.
-              </p>
-            </a>
-            <a
-              href="../article/?id=2"
-              class="blog__link btn-reset"
-              style="background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6)), url('../assets/img/blog/2.avif')"
-            >
-              <span class="link__icon" aria-hidden="true"></span>
-              <p class="link__title">MICE-тренди в Європі 2025-2026 років</p>
-              <p class="link__descr">
-                Європейський MICE-ринок завжди був чутливим до змін: економіка, технології, стиль роботи, соціальні запити — усе це миттєво
-                впливає на те, якими стають корпоративні події. І сьогодні ми бачимо цікаву трансформацію: події перестають бути просто
-                “зустрічами” й перетворюються на досвід, що має цінність для бізнесу і людей.
-              </p>
-            </a>
-            <a
-              href="../article/?id=3"
-              class="blog__link btn-reset"
-              style="background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6)), url('../assets/img/blog/3.avif')"
-            >
-              <span class="link__icon" aria-hidden="true"></span>
-              <p class="link__title">Івент під ключ: делегувати агенції вигідніше?</p>
-              <p class="link__descr">
-                У сучасному бізнесі події перестали бути “додатковою опцією” чи розважальним елементом для команди. Конференції,
-                бізнес-вечері, нетворкінги, тімбілдинги та інсентиви стали важливою частиною корпоративної стратегії, інструментом
-                комунікації та способом зміцнення культури. Але разом із цим стало очевидно: якісний івент вимагає значно більше часу,
-                досвіду і ресурсів, ніж здається з боку.
-              </p>
-            </a>
           </div>
+          <a class="btn btn-fill btn-reset blog-btn blog-btn--reverse" href="../">
+            <svg class="btn__icon" aria-hidden="true">
+              <use xlink:href="#arrow-btn"></use>
+            </svg>
+            на головну
+          </a>
         </div>
       </section>
     </main>
@@ -179,20 +146,22 @@
     <footer class="request" id="form">
       <div class="wrapper">
         <div class="request__contacts">
-          <a href="./" class="logo btn-reset">
+          <a href="../" class="logo btn-reset">
             <img class="contacts__logo" src="../assets/img/logo.svg" alt="Logo" width="275" height="54" />
           </a>
-          <h2 class="contacts__title">Contacts</h2>
+          <h2 class="contacts__title">Warsaw, Poland</h2>
           <div class="address">
-            <p class="contacts__country">Warsaw, Poland</p>
-            <a href="mailto:sales@telehausme.com?subject=Mail%20from%20Telehausme" class="contacts__email btn-reset"
-              >sales@telehausme.com</a
-            >
             <p>Business center Park Rozwoju</p>
             <p>Entrance D, 3rd floor</p>
             <a href="https://maps.app.goo.gl/mMJwZ7mz5mBAdVBy7" class="address__link btn-reset" target="_blank" rel="noopener noreferrer"
               >Konstruktorska st. 12/12A</a
             >
+            <div class="address__email">
+              <a href="mailto:sales@telehausme.com?subject=Mail%20from%20Telehausme" class="contacts__email btn-reset"
+                >sales@telehausme.com</a
+              >
+              <span class="link-icon" aria-label="Копіювати e-mail"></span>
+            </div>
             <a href="tel:+48255123456" class="address__number btn-reset">+48 255 123 456</a>
           </div>
           <ul class="contacts__social list-reset">
@@ -232,7 +201,7 @@
         </div>
         <form class="request__form" action="../assets/php/mail.php" method="post">
           <div class="form__row">
-            <label for="email">Введіть ваш email:</label>
+            <label for="email">Введіть ваш email</label>
             <input name="E-mail" type="email" id="email" placeholder="example@company.com" data-validate-field="email" autocomplete="off" />
           </div>
           <div class="form__row">
@@ -254,9 +223,11 @@
     <script src="../assets/js/lib/splide.min.js"></script>
     <script src="../assets/js/lib/inputmask.min.js"></script>
     <script src="../assets/js/lib/just-validate.min.js"></script>
+    <script src="../assets/js/blog.js"></script>
     <script src="../assets/js/slider.js"></script>
     <script src="../assets/js/burger.js"></script>
     <script src="../assets/js/links.js"></script>
     <script src="../assets/js/form.js"></script>
+    <script src="../assets/js/mail-link.js"></script>
   </body>
 </html>
