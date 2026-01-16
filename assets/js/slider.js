@@ -7,7 +7,7 @@ const blog = document.querySelector('.blog__content');
   let content = '';
   let blogContent = '';
 
-  data.forEach((el) => {
+  data.toReversed().forEach((el) => {
     content += `<div class="slider__slide splide__slide" style="background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), center/cover no-repeat url('../assets/img/blog/${el.img}')">
       <p class="slider__title">${el.title}</p>
       <p class="slider__descr">${el.subtitle}</p>

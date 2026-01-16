@@ -1,5 +1,6 @@
 .about {
   padding-top: 0;
+  overflow-x: hidden;
   background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), center / cover no-repeat url('../img/about-bg.avif');
 
   .wrapper {
@@ -55,6 +56,22 @@
       font-weight: 600;
       border: 2px solid #fff;
       border-radius: $br-btn-xl;
+      opacity: 0;
+      transform: translateX(120px);
+      transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
+
+      @for $i from 1 through 6 {
+        &:nth-child(#{$i}) {
+          transition-delay: #{($i - 1) * 0.1}s;
+        }
+      }
+    }
+
+    &.visible {
+      .options__item {
+        opacity: 1;
+        transform: translateX(0);
+      }
     }
   }
 }
@@ -131,5 +148,16 @@
       padding: 20px;
       font-size: 20px;
     }
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateX(120px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
   }
 }

@@ -573,6 +573,9 @@ p {
   .banner__title {
     font-size: 42px;
   }
+  .banner__subtitle {
+    font-size: 20px;
+  }
   .banner__links .btn-fill {
     font-size: 20px;
   }
@@ -600,6 +603,7 @@ p {
 }
 .about {
   padding-top: 0;
+  overflow-x: hidden;
   background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), center/cover no-repeat url("../img/about-bg.avif");
 }
 .about .wrapper {
@@ -648,6 +652,31 @@ p {
   font-weight: 600;
   border: 2px solid #fff;
   border-radius: 50px;
+  opacity: 0;
+  transform: translateX(120px);
+  transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
+}
+.about .options__item:nth-child(1) {
+  transition-delay: 0s;
+}
+.about .options__item:nth-child(2) {
+  transition-delay: 0.1s;
+}
+.about .options__item:nth-child(3) {
+  transition-delay: 0.2s;
+}
+.about .options__item:nth-child(4) {
+  transition-delay: 0.3s;
+}
+.about .options__item:nth-child(5) {
+  transition-delay: 0.4s;
+}
+.about .options__item:nth-child(6) {
+  transition-delay: 0.5s;
+}
+.about .options.visible .options__item {
+  opacity: 1;
+  transform: translateX(0);
 }
 
 @media screen and (max-width: 1300px) {
@@ -707,6 +736,16 @@ p {
   .about .options__item {
     padding: 20px;
     font-size: 20px;
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateX(120px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
   }
 }
 .why__content {
