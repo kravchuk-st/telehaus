@@ -5,7 +5,7 @@
 }
 
 body {
-  font-family: "Montserrat", Verdana, sans-serif;
+  font-family: 'Montserrat', Verdana, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
@@ -52,9 +52,10 @@ p {
   }
 
   &__subtext {
-    font-size: 180px;
+    font-size: 140px;
     font-weight: 800;
     color: #f0f0f0;
+    text-transform: uppercase;
     position: absolute;
     z-index: -5;
     top: 50%;
@@ -80,6 +81,43 @@ p {
 
 .js-validate-error-label {
   display: none;
+}
+
+.section-btns {
+  position: fixed;
+  top: 50%;
+  right: 30px;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+
+  .section-btn {
+    width: 50px;
+    height: 50px;
+    opacity: 0.6;
+    box-shadow: 0 0 1px $color-main;
+    border: 2px solid #7db9fe;
+    border-radius: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    &:disabled {
+      cursor: auto;
+    }
+
+    &:not(:disabled):hover {
+      opacity: 1;
+    }
+
+    &--prev {
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%237db9fe' viewBox='0 0 32 32'%3E%3Cpath d='m15.29 10.29-8 8L8.7 19.7l7.3-7.29 7.29 7.29 1.41-1.41-8-8a1 1 0 0 0-1.41 0z'/%3E%3C/svg%3E");
+    }
+
+    &--next {
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%237db9fe' viewBox='0 0 32 32'%3E%3Cpath d='m16 19.59-7.29-7.3-1.42 1.42 8 8a1 1 0 0 0 1.41 0l8-8-1.41-1.41z'/%3E%3C/svg%3E");
+    }
+  }
 }
 
 @media screen and (max-width: 1400px) {
@@ -123,6 +161,10 @@ p {
     &__subtext {
       display: none;
     }
+  }
+
+  .section-btns {
+    display: none;
   }
 }
 

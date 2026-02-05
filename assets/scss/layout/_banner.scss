@@ -36,7 +36,8 @@
 
   &__title {
     margin: 0;
-    font-weight: 600;
+    max-width: 1150px;
+    font-weight: 800;
     font-size: 60px;
     line-height: 0.95;
     letter-spacing: 1%;
@@ -45,7 +46,7 @@
 
   &__subtitle {
     margin-top: 16px;
-    font-size: 24px;
+    font-size: 22px;
     line-height: 0.95;
     letter-spacing: 1%;
     text-shadow: 0 0 1px #000;
@@ -77,12 +78,16 @@
 }
 
 @media screen and (max-width: 768px) {
+  .banner {
+    padding-bottom: 60px;
+  }
+
   .banner__title {
     font-size: 42px;
   }
 
   .banner__subtitle {
-    font-size: 20px;
+    font-size: 18px;
   }
 
   .banner__links .btn-fill {
@@ -98,10 +103,6 @@
 }
 
 @media screen and (max-width: 576px) {
-  .banner {
-    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), center / cover no-repeat url('../img/banner-sm.avif');
-  }
-
   .banner__title {
     font-size: 36px;
   }

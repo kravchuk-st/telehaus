@@ -45,7 +45,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      column-gap: 40px;
+      column-gap: 30px;
     }
 
     &__link {
@@ -64,13 +64,20 @@
   .btn-lg {
     padding: 10px 30px;
   }
-}
 
-@media screen and (min-width: 1051px) {
-  .burger {
+  &__btns {
+    display: flex;
+    column-gap: 20px;
+  }
+}
+@media screen and (min-width: 1260.5px) {
+  .burger,
+  .header .nav .nav__btn {
     display: none;
   }
+}
 
+@media screen and (min-width: 1260px) {
   .nav__link {
     background: linear-gradient(to right, $color-hover, $color-hover) 0 100% no-repeat;
     background-size: 0 1px;
@@ -83,7 +90,7 @@
   }
 }
 
-@media screen and (max-width: 1050px) {
+@media screen and (max-width: 1260px) {
   .nav {
     position: fixed;
     z-index: 15;
@@ -121,6 +128,23 @@
     opacity: 1;
     visibility: visible;
   }
+
+  .header__btns {
+    margin-left: auto;
+    margin-right: 15px;
+  }
+
+  .custom-select {
+    width: 70px;
+
+    .select-trigger {
+      padding: 8px 30px 8px 12px;
+    }
+
+    .select-arrow {
+      right: 10px;
+    }
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -129,6 +153,18 @@
 
     .logo__img {
       width: 182px;
+    }
+  }
+
+  .custom-select {
+    width: 60px;
+
+    .select-trigger {
+      padding: 6px 25px 6px 10px;
+    }
+
+    .select-option {
+      padding: 10px 16px;
     }
   }
 }

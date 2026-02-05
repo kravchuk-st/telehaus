@@ -1,0 +1,44 @@
+{
+  "en": {
+    "headerLinks": ["Services", "Case Studies", "Why us?", "Cases", "Partners"],
+    "headerBtn": "Contact",
+    "blogTitle": "Blog",
+    "blogSUbtext": "News",
+    "blogBtn": "Back to Previous Page",
+    "footerTitle": "Warsaw, Poland",
+    "footerLocation": "Business center Park Rozwoju",
+    "footerPoint": "Entrance D, 3rd floor",
+    "footerLink": "Konstruktorska st. 12/12A",
+    "footerEmail": "Enter your email",
+    "footerTextarea": "Briefly describe your request",
+    "footerBtn": "Send"
+  },
+  "pl": {
+    "headerLinks": ["Usługi", "Case Studies", "Dlaczego my?", "Cases", "Partnerzy"],
+    "headerBtn": "Kontakt",
+    "blogTitle": "Blog",
+    "blogSUbtext": "Aktualności",
+    "blogBtn": "Na stronę główną",
+    "footerTitle": "Warszawa, Polska",
+    "footerLocation": "Centrum biznesowe Park Rozwoju",
+    "footerPoint": "Wejście D, 3. piętro",
+    "footerLink": "ul. Konstruktorska 12/12A",
+    "footerEmail": "Wpisz swój adres e-mail",
+    "footerTextarea": "Krótko opisz swoje zapytanie",
+    "footerBtn": "Wyślij"
+  },
+  "ua": {
+    "headerLinks": ["Послуги", "Кейси", "Чому ми?", "Портфоліо", "Партнери"],
+    "headerBtn": "Контакти",
+    "blogTitle": "БЛОГ",
+    "blogSUbtext": "НОВИНИ",
+    "blogBtn": "на головну",
+    "footerTitle": "Warsaw, Poland",
+    "footerLocation": "Business center Park Rozwoju",
+    "footerPoint": "Entrance D, 3rd floor",
+    "footerLink": "Konstruktorska st. 12/12A",
+    "footerEmail": "Введіть ваш email",
+    "footerTextarea": "Коротко опишіть ваш запит",
+    "footerBtn": "Надіслати"
+  }
+}

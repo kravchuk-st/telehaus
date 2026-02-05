@@ -7,8 +7,13 @@ textarea {
   font-size: 18px;
   font-weight: 500;
   line-height: 1;
-  color: #00000080;
+  color: #000;
   outline: none;
+
+  &::placeholder {
+    color: #000;
+    opacity: 1;
+  }
 }
 
 textarea {

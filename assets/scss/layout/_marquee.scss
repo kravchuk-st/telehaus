@@ -1,47 +1,6 @@
 .marquee {
-  overflow-x: hidden;
-  width: 100%;
-
-  &__content {
-    width: fit-content;
-    display: flex;
-    animation: scroll 20s linear infinite;
-
-    &:hover {
-      animation-play-state: paused;
-    }
-  }
-
-  &__line {
-    margin: 0 40px;
-    flex-shrink: 0;
-    display: flex;
-    column-gap: 80px;
-
-    img {
-      flex-shrink: 0;
-      height: 80px;
-      width: auto;
-    }
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .marquee__line {
-    margin: 0 20px;
-    column-gap: 40px;
-
-    img {
-      height: 50px;
-    }
-  }
-}
-
-@keyframes scroll {
-  from {
-    transform: translateX(0%);
-  }
-  to {
-    transform: translateX(-50%);
+  &__item:hover,
+  img:hover {
+    cursor: grabbing;
   }
 }

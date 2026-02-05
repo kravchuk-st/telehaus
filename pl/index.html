@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Telehaus — corporate events & MICE in Europe. Strategy, production, logistics, and execution end-to-end"
+    />
+    <title>Telehaus</title>
+    <link rel="shortcut icon" type="image/ico" href="/assets/img/favicon.svg" />
+
+    <link rel="preload" href="/assets/img/poster.avif" as="image" type="image/avif" fetchpriority="high" />
+    <link rel="preload" href="/assets/fonts/Montserrat-Medium.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="/assets/fonts/Montserrat-SemiBold.woff2" as="font" type="font/woff2" crossorigin />
+
+    <link rel="stylesheet" href="../assets/css/normalize.css" />
+    <link rel="stylesheet" href="/assets/css/lib/splide.min.css" />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+  </head>
+  <body>
+    <svg class="sprite" style="display: none">
+      <symbol viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg" id="arrow-btn">
+        <path d="M1.06055 15.9L15.4605 1.5M15.4605 1.5H2.26056M15.4605 1.5V14.7" stroke-width="3" />
+      </symbol>
+      <symbol viewBox="0 0 22 13" fill="none" xmlns="http://www.w3.org/2000/svg" id="arrow">
+        <path d="M0.957031 0.957031L10.957 10.957L20.957 0.957031" stroke-width="2.70667" />
+      </symbol>
+    </svg>
+
+    <header class="header fixed">
+      <div class="wrapper">
+        <a href="./" class="logo">
+          <img class="logo__img" src="/assets/img/logo.svg" alt="Logo img" width="220" height="43" />
+        </a>
+        <nav class="nav">
+          <ol class="nav__list list-reset">
+            <li class="nav__item">
+              <a href="#about" class="nav__link">Usługi</a>
+            </li>
+            <li class="nav__item">
+              <a href="#projects" class="nav__link">Case Studies</a>
+            </li>
+            <li class="nav__item">
+              <a href="#why" class="nav__link">Dlaczego my?</a>
+            </li>
+            <li class="nav__item">
+              <a href="#portfolio" class="nav__link">Cases</a>
+            </li>
+            <li class="nav__item">
+              <a href="#partners" class="nav__link">Partnerzy</a>
+            </li>
+          </ol>
+          <a href="#form" class="btn nav__btn btn-reset">Kontakt</a>
+        </nav>
+        <div class="header__btns">
+          <div class="custom-select">
+            <div class="select-trigger">
+              <span class="select-text placeholder">pl</span>
+              <svg class="select-arrow" aria-hidden="true">
+                <use xlink:href="#arrow"></use>
+              </svg>
+            </div>
+            <div class="select-options">
+              <div class="select-option" data-value="en">en</div>
+              <div class="select-option" data-value="pl">pl</div>
+              <div class="select-option" data-value="ua">ua</div>
+            </div>
+          </div>
+          <a href="#form" class="btn btn-lg btn-reset">Kontakt</a>
+        </div>
+        <button class="burger btn-reset" aria-label="Відкрити меню">
+          <span class="burger__line" aria-hidden="true"></span>
+          <span class="burger__line" aria-hidden="true"></span>
+          <span class="burger__line" aria-hidden="true"></span>
+        </button>
+        <span class="overlay"></span>
+      </div>
+    </header>
+
+    <main>
+      <section class="banner">
+        <video class="banner__video-bg" poster="/assets/img/poster.avif" autoplay muted loop playsinline>
+          <source src="/assets/video/banner.webm" type="video/webm" />
+          <source src="/assets/video/banner.mp4" type="video/mp4" />
+          Ваш браузер не підтримує відео.
+        </video>
+        <button class="banner__sound btn-reset" aria-label="Увімкнути звук"></button>
+        <div class="wrapper">
+          <h1 class="banner__title">Tam, gdzie doświadczenie spotyka się ze strategią</h1>
+          <p class="banner__subtitle">Profesjonalne planowanie wydarzeń biznesowych</p>
+          <div class="banner__links">
+            <a href="#form" class="btn btn-fill btn-reset"
+              >Wyślij zapytanie
+              <svg class="btn__icon" aria-hidden="true">
+                <use xlink:href="#arrow-btn"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="about" id="about">
+        <div class="wrapper">
+          <div class="innovation">
+            <h2 class="innovation__title">Innowacyjne rozwiązania dla wydarzeń</h2>
+            <p class="innovation__subtitle">Łączymy, motywujemy i inspirujemy Twój biznes</p>
+            <a href="#form" class="btn btn-reset"
+              >Wyślij zapytanie
+              <svg class="btn__icon" aria-hidden="true">
+                <use xlink:href="#arrow-btn"></use>
+              </svg>
+            </a>
+          </div>
+          <div class="options animation">
+            <p class="options__item">Konferencje i szczyty</p>
+            <p class="options__item">Wydarzenia korporacyjne i team building</p>
+            <p class="options__item">Spotkania biznesowe i sesje strategiczne</p>
+            <p class="options__item">Targi i fora biznesowe</p>
+            <p class="options__item">Prezentacje produktów i marek</p>
+            <p class="options__item">Szkolenia i warsztaty</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="project" id="projects">
+        <div class="wrapper">
+          <div class="title">
+            <h2 class="title__text">Cases</h2>
+            <p class="title__subtext">Portfolio</p>
+          </div>
+          <div class="marquee marquee-projects splide">
+            <div class="marquee__content splide__track">
+              <div class="marquee__line splide__list">
+                <div class="marquee__item splide__slide">
+                  <img src="/assets/img/projects/1.avif" alt="..." />
+                  <span class="marquee__text">Integracyjne wydarzenie firmowe inspirowane programem „Fort Boyard”</span>
+                </div>
+                <div class="marquee__item splide__slide">
+                  <img src="/assets/img/projects/2.avif" alt="..." />
+                  <span class="marquee__text">Firmowe wydarzenie jubileuszowe</span>
+                </div>
+                <div class="marquee__item splide__slide">
+                  <img src="/assets/img/projects/3.avif" alt="..." />
+                  <span class="marquee__text">Wydarzenie partnerskie: premiera nowej kolekcji</span>
+                </div>
+                <div class="marquee__item splide__slide">
+                  <img src="/assets/img/projects/4.avif" alt="..." />
+                  <span class="marquee__text">World Economic Forum Annual Meeting 2025</span>
+                </div>
+                <div class="marquee__item splide__slide">
+                  <img src="/assets/img/projects/5.avif" alt="..." />
+                  <span class="marquee__text">Coroczna konferencja sektora farmaceutycznego</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="why" id="why">
+        <div class="wrapper">
+          <div class="title">
+            <h2 class="title__text">Dlaczego wybierają TELEHAUS?</h2>
+            <p class="title__subtext">CZEMU MY?</p>
+          </div>
+          <div class="why__content">
+            <div class="benefit">
+              <div class="benefit__info">
+                <span class="benefit__icon" aria-hidden="true"></span>
+                <h3 class="benefit__title animation fadeInLeft">Doświadczenie</h3>
+                <p class="benefit__text animation fadeInLeft">Ponad 10 lat udanych projektów MICE dla wiodących firm.</p>
+              </div>
+              <div class="benefit__descr">
+                <h3 class="benefit__title">Indywidualne podejście</h3>
+                <p class="benefit__text">Każdy projekt jest unikalny – tworzymy spersonalizowane koncepcje.</p>
+              </div>
+            </div>
+            <div class="benefit">
+              <div class="benefit__info">
+                <span class="benefit__icon" aria-hidden="true"></span>
+                <h3 class="benefit__title animation fadeInRight">Innowacje</h3>
+                <p class="benefit__text animation fadeInRight">
+                  Wykorzystanie nowoczesnych technologii i kreatywnych rozwiązań dla efektu WOW.
+                </p>
+              </div>
+              <div class="benefit__descr"></div>
+            </div>
+            <div class="benefit">
+              <div class="benefit__info">
+                <span class="benefit__icon" aria-hidden="true"></span>
+                <h3 class="benefit__title animation fadeInLeft">Niezawodność</h3>
+                <p class="benefit__text animation fadeInLeft">Precyzyjne planowanie i kontrola wszystkich etapów organizacji.</p>
+              </div>
+              <div class="benefit__descr">
+                <h3 class="benefit__title">Zrównoważony rozwój w MICE</h3>
+                <p class="benefit__text">
+                  Projektujemy wydarzenia MICE w duchu zrównoważonego rozwoju — ograniczamy wpływ na środowisko i tworzymy długofalową
+                  wartość biznesową oraz społeczną.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="portfolio" id="portfolio">
+        <div class="wrapper">
+          <div class="title">
+            <h2 class="title__text">Wydarzenia</h2>
+            <p class="title__subtext">Usługi</p>
+          </div>
+          <div class="portfolio__content">
+            <div class="event">
+              <div class="event__content">
+                <div class="event__header">
+                  <h3 class="event__title animation fadeInUp">Konferencje</h3>
+                  <p class="event__subtitle animation fadeInUp">Fora, targi, kongresy</p>
+                </div>
+                <div class="event__descr">
+                  <p class="animation fadeInUp">
+                    Zapewniamy kompleksową organizację wydarzeń: wybór lokalizacji, obsługę techniczną, scenę i scenariusz, rejestrację
+                    uczestników, strefy brandingowe, catering oraz pełne wsparcie w dniu wydarzenia.
+                  </p>
+                </div>
+              </div>
+              <div class="event__player">
+                <video class="event__video" autoplay muted loop playsinline loading="lazy">
+                  <source src="/assets/video/portfolio/1.webm" type="video/webm" />
+                  <source src="/assets/video/portfolio/1.mp4" type="video/mp4" />
+                  Ваш браузер не підтримує відео.
+                </video>
+              </div>
+            </div>
+            <div class="event">
+              <div class="event__content">
+                <div class="event__header">
+                  <h3 class="event__title animation fadeInUp">Spotkania korporacyjne</h3>
+                  <p class="event__subtitle animation fadeInUp">Seminaria, szkolenia, team building</p>
+                </div>
+                <div class="event__descr">
+                  <p class="animation fadeInUp">
+                    Zadbamy o wszystko: znajdziemy odpowiednią lokalizację, przygotujemy zaplecze techniczne, stworzymy scenariusz i
+                    zapewnimy moderację, zorganizujemy catering, aranżację przestrzeni, logistykę uczestników oraz pełną koordynację
+                    wydarzenia.
+                  </p>
+                </div>
+              </div>
+              <div class="event__player">
+                <video class="event__video" autoplay muted loop playsinline loading="lazy">
+                  <source src="/assets/video/portfolio/2.webm" type="video/webm" />
+                  <source src="/assets/video/portfolio/2.mp4" type="video/mp4" />
+                  Ваш браузер не підтримує відео.
+                </video>
+              </div>
+            </div>
+            <div class="event">
+              <div class="event__content">
+                <div class="event__header">
+                  <h3 class="event__title animation fadeInUp">Konferencje cykliczne i okrągłe stoły</h3>
+                  <p class="event__subtitle animation fadeInUp">Dla branży beauty i farmaceutycznej</p>
+                </div>
+                <div class="event__descr">
+                  <p class="animation fadeInUp">
+                    Projektujemy wydarzenie od pomysłu po realizację: tworzymy koncepcję, dobieramy lokalizację, przygotowujemy zaplecze
+                    techniczne, organizujemy rejestrację, strefy brandowe oraz catering — i w pełni koordynujemy dzień wydarzenia.
+                  </p>
+                </div>
+              </div>
+              <div class="event__player">
+                <video class="event__video" autoplay muted loop playsinline loading="lazy">
+                  <source src="/assets/video/portfolio/3.webm" type="video/webm" />
+                  <source src="/assets/video/portfolio/3.mp4" type="video/mp4" />
+                  Ваш браузер не підтримує відео.
+                </video>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="partners" id="partners">
+        <div class="wrapper">
+          <div class="title">
+            <h2 class="title__text">Zaufali nam</h2>
+            <p class="title__subtext">PARTNERZY</p>
+          </div>
+          <div class="marquee marquee-partners splide">
+            <div class="marquee__content splide__track">
+              <div class="marquee__line splide__list">
+                <img class="splide__slide" src="/assets/img/partners/1.webp" alt="..." />
+                <img class="splide__slide" src="/assets/img/partners/2.webp" alt="..." />
+                <img class="splide__slide" src="/assets/img/partners/3.webp" alt="..." />
+                <img class="splide__slide" src="/assets/img/partners/4.webp" alt="..." />
+                <img class="splide__slide" src="/assets/img/partners/5.webp" alt="..." />
+
+                <img class="splide__slide" src="/assets/img/partners/1.webp" alt="..." />
+                <img class="splide__slide" src="/assets/img/partners/2.webp" alt="..." />
+                <img class="splide__slide" src="/assets/img/partners/3.webp" alt="..." />
+                <img class="splide__slide" src="/assets/img/partners/4.webp" alt="..." />
+                <img class="splide__slide" src="/assets/img/partners/5.webp" alt="..." />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="faq">
+        <div class="wrapper">
+          <div class="title">
+            <h2 class="title__text">Top 5 porad dotyczących planowania wydarzeń</h2>
+            <p class="title__subtext">Q&A</p>
+          </div>
+          <div class="accordion">
+            <div class="accordion__item">
+              <button class="accordion__btn btn-reset" aria-expanded="false">
+                <span class="accordion__title">1. Wczesne przygotowanie jest zawsze tańsze i bardziej efektywne</span>
+                <svg class="accordion__icon">
+                  <use xlink:href="#arrow"></use>
+                </svg>
+              </button>
+              <div class="accordion__content" aria-hidden="true">
+                <p>
+                  Przygotowanie wydarzenia ma bezpośredni wpływ na budżet. Wczesna rezerwacja hoteli, sal i biletów lotniczych pozwala
+                  zaoszczędzić nawet kilkadziesiąt procent kosztów, ponieważ rynek działa w oparciu o dynamiczne kształtowanie cen: niski
+                  popyt = niższa cena. Gdy planowanie rozpoczyna się na kilka miesięcy, a w przypadku dużych cyklicznych wydarzeń nawet na
+                  rok lub dwa wcześniej, wybór lokalizacji jest szerszy, warunki korzystniejsze, a ryzyko gwałtownego wzrostu cen minimalne.
+                </p>
+              </div>
+            </div>
+            <div class="accordion__item">
+              <button class="accordion__btn btn-reset" aria-expanded="false">
+                <span class="accordion__title">2. Przed wyborem lokalizacji przeprowadź wizytę inspekcyjną</span>
+                <svg class="accordion__icon">
+                  <use xlink:href="#arrow"></use>
+                </svg>
+              </button>
+              <div class="accordion__content" aria-hidden="true">
+                <p>
+                  Jeśli wydarzenie odbywa się w nowym mieście lub kraju, przed podjęciem ostatecznej decyzji warto osobiście odwiedzić
+                  potencjalne hotele i obiekty. Taka inspekcja pozwala przejść ścieżkę gościa, ocenić infrastrukturę, sprawdzić logistykę,
+                  zobaczyć okoliczne lokalizacje i upewnić się, że wybrana przestrzeń odpowiada celom wydarzenia. Znacząco ogranicza to
+                  ryzyka i ułatwia podjęcie świadomej decyzji.
+                </p>
+              </div>
+            </div>
+            <div class="accordion__item">
+              <button class="accordion__btn btn-reset" aria-expanded="false">
+                <span class="accordion__title">3. Profesjonalna agencja pomoże zrównoważyć budżet i jakość</span>
+                <svg class="accordion__icon">
+                  <use xlink:href="#arrow"></use>
+                </svg>
+              </button>
+              <div class="accordion__content" aria-hidden="true">
+                <p>
+                  Próby „wyciśnięcia maksimum” z minimalnego budżetu lub wybór najtańszych podwykonawców często prowadzą do problemów.
+                  Jednocześnie wysokie ceny nie zawsze gwarantują odpowiednią jakość. Agencja, dzięki doświadczeniu i partnerskim relacjom z
+                  dostawcami, proponuje optymalne rozwiązania w określonych ramach finansowych, zapewnia właściwy poziom obsługi i chroni
+                  przed zbędnymi kosztami.
+                </p>
+              </div>
+            </div>
+            <div class="accordion__item">
+              <button class="accordion__btn btn-reset" aria-expanded="false">
+                <span class="accordion__title">4. Unikaj chaotycznych zmian i decyzji na ostatnią chwilę</span>
+                <svg class="accordion__icon">
+                  <use xlink:href="#arrow"></use>
+                </svg>
+              </button>
+              <div class="accordion__content" aria-hidden="true">
+                <p>
+                  Nieterminowa rezerwacja sal lub pokoi bez dokładnej liczby gości może prowadzić do poważnych problemów: pustych sal i
+                  opłaconych, lecz niewykorzystanych pokoi lub odwrotnie — braku miejsc i konieczności odwołań bądź pilnych zmian planu.
+                  Częste modyfikacje zwiększają koszty i komplikują realizację projektu, dlatego precyzyjne planowanie jest kluczem do
+                  stabilności.
+                </p>
+              </div>
+            </div>
+            <div class="accordion__item">
+              <button class="accordion__btn btn-reset" aria-expanded="false">
+                <span class="accordion__title">5. Samodzielna organizacja jest często trudniejsza i droższa, niż się wydaje</span>
+                <svg class="accordion__icon">
+                  <use xlink:href="#arrow"></use>
+                </svg>
+              </button>
+              <div class="accordion__content" aria-hidden="true">
+                <p>
+                  Profesjonalne agencje dysponują dużym doświadczeniem, sprawdzoną bazą podwykonawców oraz dogłębną wiedzą na temat
+                  sezonowości, logistyki, lokalnej specyfiki i mikroszczegółów, które łatwo przeoczyć. Kwestie wizowe, zasady przekraczania
+                  granic, optymalne trasy, rekomendacje restauracji czy niuanse bagażowe wymagają specjalistycznej wiedzy. Agencja przejmuje
+                  ciężar operacyjny, oszczędza zasoby i gwarantuje wysoką jakość organizacji dzięki doświadczeniu zdobytemu przy realizacji
+                  tysięcy wydarzeń.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="blog" id="blog">
+        <div class="wrapper">
+          <div class="title">
+            <h2 class="title__text">Blog</h2>
+            <p class="title__subtext">Aktualności</p>
+          </div>
+          <div class="blog__content">
+            <a href="/article/?id=1" class="blog__link btn-reset" style="background-image: url('/assets/img/blog/1.avif')">
+              <span class="link__icon" aria-hidden="true"></span>
+              <p class="link__title">Звана вечеря як бізнес-івент</p>
+              <p class="link__descr">
+                Звана вечеря давно перестала бути «святковою вечерею з дрес-кодом». У європейській MICE-індустрії це повноцінний
+                бізнес-формат, який працює і на HR, і на маркетинг, і на репутацію бренду.
+              </p>
+            </a>
+            <a href="/article/?id=2" class="blog__link btn-reset" style="background-image: url('/assets/img/blog/2.avif')">
+              <span class="link__icon" aria-hidden="true"></span>
+              <p class="link__title">MICE-тренди в Європі 2025-2026 років</p>
+              <p class="link__descr">
+                Європейський MICE-ринок завжди був чутливим до змін: економіка, технології, стиль роботи, соціальні запити — усе це миттєво
+                впливає на те, якими стають корпоративні події. І сьогодні ми бачимо цікаву трансформацію: події перестають бути просто
+                “зустрічами” й перетворюються на досвід, що має цінність для бізнесу і людей.
+              </p>
+            </a>
+            <a href="/article/?id=3" class="blog__link btn-reset" style="background-image: url('/assets/img/blog/3.avif')">
+              <span class="link__icon" aria-hidden="true"></span>
+              <p class="link__title">Івент під ключ: делегувати агенції вигідніше?</p>
+              <p class="link__descr">
+                У сучасному бізнесі події перестали бути “додатковою опцією” чи розважальним елементом для команди. Конференції,
+                бізнес-вечері, нетворкінги, тімбілдинги та інсентиви стали важливою частиною корпоративної стратегії, інструментом
+                комунікації та способом зміцнення культури. Але разом із цим стало очевидно: якісний івент вимагає значно більше часу,
+                досвіду і ресурсів, ніж здається з боку.
+              </p>
+            </a>
+          </div>
+          <a class="btn btn-fill btn-reset blog-btn" href="/blog">
+            Zobacz wszystko
+            <svg class="btn__icon" aria-hidden="true">
+              <use xlink:href="#arrow-btn"></use>
+            </svg>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="request" id="form">
+      <div class="wrapper">
+        <div class="request__contacts">
+          <a href="./" class="logo btn-reset">
+            <img class="contacts__logo" src="/assets/img/logo.svg" alt="Logo" width="275" height="54" />
+          </a>
+          <h2 class="contacts__title">Warszawa, Polska</h2>
+          <div class="address">
+            <p>Centrum biznesowe Park Rozwoju</p>
+            <p>Wejście D, 3. piętro</p>
+            <a href="https://maps.app.goo.gl/mMJwZ7mz5mBAdVBy7" class="address__link btn-reset" target="_blank" rel="noopener noreferrer"
+              >ul. Konstruktorska 12/12A</a
+            >
+            <div class="address__email">
+              <a href="mailto:sales@telehausme.com?subject=Mail%20from%20Telehausme" class="contacts__email btn-reset"
+                >sales@telehausme.com</a
+              >
+              <span class="link-icon" aria-label="Копіювати e-mail"></span>
+            </div>
+            <a href="tel:+48255123456" class="address__number btn-reset">+48 255 123 456</a>
+          </div>
+          <ul class="contacts__social list-reset">
+            <li class="social__item">
+              <a
+                href="https://www.instagram.com/telehaus_meetings_events/"
+                class="social__link social__link_ig"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Перейти до Instagram"
+                title="Instagram"
+              ></a>
+            </li>
+            <li class="social__item">
+              <a
+                href="https://www.linkedin.com/company/telehaus-meetings-events/"
+                class="social__link social__link_in"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Перейти до LinkedIn"
+                title="LinkedIn"
+              ></a>
+            </li>
+            <li class="social__item">
+              <a
+                href="https://www.facebook.com/profile.php?id=61583158618046"
+                class="social__link social__link_fb"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Перейти до Facebook"
+                title="Facebook"
+              ></a>
+            </li>
+          </ul>
+          <hr class="contacts__line" />
+          <div class="policy">
+            <a href="/privacy/" class="policy__link btn-reset" target="_blank" rel="noopener noreferrer">Privacy</a>
+            <a href="/cookie/" class="policy__link btn-reset" target="_blank" rel="noopener noreferrer">Cookie</a>
+            <a href="/legal/" class="policy__link btn-reset" target="_blank" rel="noopener noreferrer">Legal notice</a>
+          </div>
+          <p class="contacts__copy">&copy; Telehaus 2025</p>
+        </div>
+        <form class="request__form" action="/assets/php/mail.php" method="post">
+          <div class="form__row">
+            <label for="email">Wpisz swój adres e-mail</label>
+            <input name="E-mail" type="email" id="email" placeholder="example@company.com" data-validate-field="email" autocomplete="off" />
+          </div>
+          <div class="form__row">
+            <label for="descr">Krótko opisz swoje zapytanie</label>
+            <textarea name="Опис" id="descr" cols="30" rows="4"></textarea>
+          </div>
+          <div class="form__btns">
+            <button class="btn btn-dark form__btn btn-reset" type="submit">
+              Wyślij
+              <svg class="btn__icon" aria-hidden="true">
+                <use xlink:href="#arrow-btn"></use>
+              </svg>
+            </button>
+          </div>
+        </form>
+      </div>
+    </footer>
+
+    <div class="section-btns fixed">
+      <button class="section-btn section-btn--prev btn-reset" aria-label="Попередній блок"></button>
+      <button class="section-btn section-btn--next btn-reset" aria-label="Наступний блок"></button>
+    </div>
+
+    <div class="tooltip fixed">
+      <button class="tooltip__btn btn-reset" aria-labelledby="form-tooltip" aria-label="Відкрити форму"></button>
+      <div class="tooltip__body" role="tooltip" id="form-tooltip">
+        <form class="tooltip__form" action="/assets/php/mail.php" method="post">
+          <input
+            class="tooltip__input"
+            type="email"
+            name="Email"
+            placeholder="example@company.com"
+            data-validate-field="email"
+            autocomplete="off"
+          />
+        </form>
+      </div>
+    </div>
+
+    <script src="/assets/js/getData.js"></script>
+    <script src="/assets/js/select.js"></script>
+    <script src="/assets/js/language.js"></script>
+    <script src="/assets/js/lib/just-validate.min.js"></script>
+    <script src="/assets/js/fixed-header.js"></script>
+    <script src="/assets/js/video-bg.js"></script>
+    <script src="/assets/js/accordion.js"></script>
+    <script src="/assets/js/burger.js"></script>
+    <script src="/assets/js/links.js"></script>
+    <script src="/assets/js/form.js"></script>
+    <script src="/assets/js/mail-link.js"></script>
+    <script src="/assets/js/animation.js"></script>
+    <script src="/assets/js/moving.js"></script>
+    <script src="/assets/js/lib/splide.min.js"></script>
+    <script src="/assets/js/lib/splide-extension-auto-scroll.min.js"></script>
+    <script src="/assets/js/marquee.js"></script>
+    <script src="/assets/js/tooltip.js"></script>
+  </body>
+</html>

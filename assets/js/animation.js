@@ -1,15 +1,30 @@
-const options = document.querySelector('.options');
-const optionsOffset = options.offsetTop - 300;
-
-const handleScroll = () => {
-  const windowOffset = window.pageYOffset;
-
-  if (windowOffset > optionsOffset) {
-    options.classList.add('visible');
-    window.removeEventListener('scroll', handleScroll);
-  }
+const observerOptions = {
+  threshold: 0.5,
+  rootMargin: '0px 0px -150px 0px',
 };
 
-window.addEventListener('scroll', handleScroll);
+const handleIntersection = (entries, observer) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('animated');
 
-handleScroll();
+      observer.unobserve(entry.target);
+    }
+  });
+};
+
+const observer = new IntersectionObserver(handleIntersection, observerOptions);
+
+const initAnimations = () => {
+  const animatedElements = document.querySelectorAll('.animation');
+
+  animatedElements.forEach((element) => {
+    observer.observe(element);
+  });
+};
+
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', initAnimations);
+} else {
+  initAnimations();
+}

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="uk">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -9,14 +9,15 @@
       content="Telehaus — corporate events & MICE in Europe. Strategy, production, logistics, and execution end-to-end"
     />
     <title>Telehaus</title>
-    <link rel="shortcut icon" type="image/ico" href="./assets/img/favicon.svg" />
+    <link rel="shortcut icon" type="image/ico" href="/assets/img/favicon.svg" />
 
-    <link rel="preload" href="./assets/img/poster.avif" as="image" type="image/avif" fetchpriority="high" />
-    <link rel="preload" href="./assets/fonts/Montserrat-Medium.woff2" as="font" type="font/woff2" crossorigin />
-    <link rel="preload" href="./assets/fonts/Montserrat-SemiBold.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="/assets/img/poster.avif" as="image" type="image/avif" fetchpriority="high" />
+    <link rel="preload" href="/assets/fonts/Montserrat-Medium.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="/assets/fonts/Montserrat-SemiBold.woff2" as="font" type="font/woff2" crossorigin />
 
-    <link rel="stylesheet" href="./assets/css/normalize.css" />
-    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="/assets/css/normalize.css" />
+    <link rel="stylesheet" href="/assets/css/lib/splide.min.css" />
+    <link rel="stylesheet" href="/assets/css/style.css" />
   </head>
   <body>
     <svg class="sprite" style="display: none">
@@ -24,33 +25,51 @@
         <path d="M1.06055 15.9L15.4605 1.5M15.4605 1.5H2.26056M15.4605 1.5V14.7" stroke-width="3" />
       </symbol>
       <symbol viewBox="0 0 22 13" fill="none" xmlns="http://www.w3.org/2000/svg" id="arrow">
-        <path d="M0.957031 0.957031L10.957 10.957L20.957 0.957031" stroke="black" stroke-width="2.70667" />
+        <path d="M0.957031 0.957031L10.957 10.957L20.957 0.957031" stroke-width="2.70667" />
       </symbol>
     </svg>
 
-    <header class="header">
+    <header class="header fixed">
       <div class="wrapper">
         <a href="./" class="logo">
-          <img class="logo__img" src="./assets/img/logo.svg" alt="Logo img" width="220" height="43" />
+          <img class="logo__img" src="/assets/img/logo.svg" alt="Logo img" width="220" height="43" />
         </a>
         <nav class="nav">
           <ol class="nav__list list-reset">
             <li class="nav__item">
-              <a href="#about" class="nav__link">Послуги</a>
+              <a href="#about" class="nav__link">Our Services</a>
             </li>
             <li class="nav__item">
-              <a href="#why" class="nav__link">Чому ми?</a>
+              <a href="#projects" class="nav__link">Case Studies</a>
             </li>
             <li class="nav__item">
-              <a href="#portfolio" class="nav__link">Портфоліо</a>
+              <a href="#why" class="nav__link">Why Us</a>
             </li>
             <li class="nav__item">
-              <a href="#partners" class="nav__link">Партнери</a>
+              <a href="#portfolio" class="nav__link">Our Expertise</a>
+            </li>
+            <li class="nav__item">
+              <a href="#partners" class="nav__link">Partners</a>
             </li>
           </ol>
-          <a href="#form" class="btn nav__btn btn-reset">Контакти</a>
+          <a href="#form" class="btn nav__btn btn-reset">Contact Us</a>
         </nav>
-        <a href="#form" class="btn btn-lg btn-reset">Контакти</a>
+        <div class="header__btns">
+          <div class="custom-select">
+            <div class="select-trigger">
+              <span class="select-text placeholder">en</span>
+              <svg class="select-arrow" aria-hidden="true">
+                <use xlink:href="#arrow"></use>
+              </svg>
+            </div>
+            <div class="select-options">
+              <div class="select-option" data-value="en">en</div>
+              <div class="select-option" data-value="pl">pl</div>
+              <div class="select-option" data-value="ua">ua</div>
+            </div>
+          </div>
+          <a href="#form" class="btn btn-lg btn-reset">Contact Us</a>
+        </div>
         <button class="burger btn-reset" aria-label="Відкрити меню">
           <span class="burger__line" aria-hidden="true"></span>
           <span class="burger__line" aria-hidden="true"></span>
@@ -62,18 +81,18 @@
 
     <main>
       <section class="banner">
-        <video class="banner__video-bg" poster="./assets/img/poster.avif" autoplay muted loop playsinline>
-          <source src="./assets/video/banner.webm" type="video/webm" />
-          <source src="./assets/video/banner.mp4" type="video/mp4" />
+        <video class="banner__video-bg" poster="/assets/img/poster.avif" autoplay muted loop playsinline>
+          <source src="/assets/video/banner.webm" type="video/webm" />
+          <source src="/assets/video/banner.mp4" type="video/mp4" />
           Ваш браузер не підтримує відео.
         </video>
         <button class="banner__sound btn-reset" aria-label="Увімкнути звук"></button>
         <div class="wrapper">
-          <h1 class="banner__title">Там, де досвід зустрічається зі стратегією</h1>
-          <p class="banner__subtitle">Професійне планування бізнес подій</p>
+          <h1 class="banner__title">Where experience meets strategy</h1>
+          <p class="banner__subtitle">Professional business event planning</p>
           <div class="banner__links">
             <a href="#form" class="btn btn-fill btn-reset"
-              >Надіслати запит
+              >Request a Proposal
               <svg class="btn__icon" aria-hidden="true">
                 <use xlink:href="#arrow-btn"></use>
               </svg>
@@ -85,22 +104,57 @@
       <section class="about" id="about">
         <div class="wrapper">
           <div class="innovation">
-            <h2 class="innovation__title">Інноваційні рішення для&nbsp;заходів</h2>
-            <p class="innovation__subtitle">Які об'єднують, мотивують і&nbsp;надихають ваш&nbsp;бізнес</p>
+            <h2 class="innovation__title">Innovative Event Solutions</h2>
+            <p class="innovation__subtitle">We unite, motivate, and inspire your business</p>
             <a href="#form" class="btn btn-reset"
-              >Надіслати запит
+              >Request a Proposal
               <svg class="btn__icon" aria-hidden="true">
                 <use xlink:href="#arrow-btn"></use>
               </svg>
             </a>
           </div>
-          <div class="options">
-            <p class="options__item">Конференції та саміти</p>
-            <p class="options__item">Корпоративні події та&nbsp;тімбілдинги</p>
-            <p class="options__item">Бізнес зустрічі та&nbsp;стратегічні сесії</p>
-            <p class="options__item">Виставки та бізнес-форуми</p>
-            <p class="options__item">Презентації продуктів та&nbsp;брендів</p>
-            <p class="options__item">Тренінги та воркшопи</p>
+          <div class="options animation">
+            <p class="options__item">Conferences and summits</p>
+            <p class="options__item">Corporate events and team buildings</p>
+            <p class="options__item">Business meetings and strategic sessions</p>
+            <p class="options__item">Exhibitions and business forums</p>
+            <p class="options__item">Product and brand presentations</p>
+            <p class="options__item">Trainings and workshops</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="project" id="projects">
+        <div class="wrapper">
+          <div class="title">
+            <h2 class="title__text">Cases</h2>
+            <p class="title__subtext">Portfolio</p>
+          </div>
+          <div class="marquee marquee-projects splide">
+            <div class="marquee__content splide__track">
+              <div class="marquee__line splide__list">
+                <div class="marquee__item splide__slide">
+                  <img src="/assets/img/projects/1.avif" alt="..." />
+                  <span class="marquee__text">Team building corporate event inspired by Fort Boyard</span>
+                </div>
+                <div class="marquee__item splide__slide">
+                  <img src="/assets/img/projects/2.avif" alt="..." />
+                  <span class="marquee__text">Company anniversary corporate event</span>
+                </div>
+                <div class="marquee__item splide__slide">
+                  <img src="/assets/img/projects/3.avif" alt="..." />
+                  <span class="marquee__text">Partner event: launch of the new collection</span>
+                </div>
+                <div class="marquee__item splide__slide">
+                  <img src="/assets/img/projects/4.avif" alt="..." />
+                  <span class="marquee__text">World Economic Forum Annual Meeting 2025</span>
+                </div>
+                <div class="marquee__item splide__slide">
+                  <img src="/assets/img/projects/5.avif" alt="..." />
+                  <span class="marquee__text">Pharmaceutical sector annual conference</span>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -108,38 +162,45 @@
       <section class="why" id="why">
         <div class="wrapper">
           <div class="title">
-            <h2 class="title__text">ЧОМУ ОБИРАЮТЬ TELEHAUS? </h2>
-            <p class="title__subtext">ЧОМУ МИ?</p>
+            <h2 class="title__text">Why choose TELEHAUS?</h2>
+            <p class="title__subtext">Why TELEHAUS</p>
           </div>
           <div class="why__content">
             <div class="benefit">
               <div class="benefit__info">
                 <span class="benefit__icon" aria-hidden="true"></span>
-                <h3 class="benefit__title">Досвід</h3>
-                <p class="benefit__text">Понад 10 років успішних MICE-проектів для провідних компаній.</p>
+                <h3 class="benefit__title animation fadeInLeft">Proven Experience</h3>
+                <p class="benefit__text animation fadeInLeft">
+                  Over 10 years of delivering successful MICE projects for leading companies.
+                </p>
               </div>
               <div class="benefit__descr">
-                <h3 class="benefit__title">Сталий розвиток у MICE</h3>
-                <p class="benefit__text">Команда експертів, що дбають про кожну деталь вашого заходу.</p>
+                <h3 class="benefit__title">Personalized Solutions</h3>
+                <p class="benefit__text">We design bespoke concepts tailored to your business objectives.</p>
               </div>
             </div>
             <div class="benefit">
               <div class="benefit__info">
                 <span class="benefit__icon" aria-hidden="true"></span>
-                <h3 class="benefit__title">Інновації</h3>
-                <p class="benefit__text">Застосування сучасних технологій і креативних рішень для WOW-ефекту.</p>
+                <h3 class="benefit__title animation fadeInRight">Innovation & Technology</h3>
+                <p class="benefit__text animation fadeInRight">
+                  Leveraging modern technologies and creative solutions to create impactful event experiences.
+                </p>
               </div>
               <div class="benefit__descr"></div>
             </div>
             <div class="benefit">
               <div class="benefit__info">
                 <span class="benefit__icon" aria-hidden="true"></span>
-                <h3 class="benefit__title">Надійність</h3>
-                <p class="benefit__text">Чітке планування і контроль всіх етапів організації.</p>
+                <h3 class="benefit__title animation fadeInLeft">Reliability</h3>
+                <p class="benefit__text animation fadeInLeft">From planning to delivery, every detail is precisely managed.</p>
               </div>
               <div class="benefit__descr">
-                <h3 class="benefit__title">Індивідуальний підхід</h3>
-                <p class="benefit__text">Кожен проект унікальний, ми створюємо персоналізовані концепції.</p>
+                <h3 class="benefit__title">Sustainable Events</h3>
+                <p class="benefit__text">
+                  We&nbsp;design MICE projects with sustainability at&nbsp;their core&nbsp;&mdash; reducing environmental impact and
+                  creating long-term value for business and communities.
+                </p>
               </div>
             </div>
           </div>
@@ -149,27 +210,27 @@
       <section class="portfolio" id="portfolio">
         <div class="wrapper">
           <div class="title">
-            <h2 class="title__text">ПОДІЇ</h2>
-            <p class="title__subtext">ПОРТФОЛІО</p>
+            <h2 class="title__text">Events</h2>
+            <p class="title__subtext">portfolio</p>
           </div>
           <div class="portfolio__content">
             <div class="event">
               <div class="event__content">
                 <div class="event__header">
-                  <h3 class="event__title">Конференції</h3>
-                  <p class="event__subtitle">Форуми, виставки, конгреси</p>
+                  <h3 class="event__title animation fadeInUp">Conferences</h3>
+                  <p class="event__subtitle animation fadeInUp">Forums, exhibitions, congresses</p>
                 </div>
                 <div class="event__descr">
-                  <p>
-                    Ми беремо на себе організацію під ключ: вибір локації, технічне забезпечення, сцену та сценарій, реєстрацію учасників,
-                    бренд-зони, кейтеринг та супровід у день події.
+                  <p class="animation fadeInUp">
+                    We provide full-service event management, including venue selection, technical support, stage and script design,
+                    participant registration, branding zones, catering, and comprehensive support on the day of the event.
                   </p>
                 </div>
               </div>
               <div class="event__player">
                 <video class="event__video" autoplay muted loop playsinline loading="lazy">
-                  <source src="./assets/video/portfolio/1.webm" type="video/webm" />
-                  <source src="./assets/video/portfolio/1.mp4" type="video/mp4" />
+                  <source src="/assets/video/portfolio/1.webm" type="video/webm" />
+                  <source src="/assets/video/portfolio/1.mp4" type="video/mp4" />
                   Ваш браузер не підтримує відео.
                 </video>
               </div>
@@ -177,20 +238,20 @@
             <div class="event">
               <div class="event__content">
                 <div class="event__header">
-                  <h3 class="event__title">Корпоративні зустрічі</h3>
-                  <p class="event__subtitle">Семінари, тренінги, тімбілдінги</p>
+                  <h3 class="event__title animation fadeInUp">Corporate meetings</h3>
+                  <p class="event__subtitle animation fadeInUp">Seminars, trainings, team building</p>
                 </div>
                 <div class="event__descr">
-                  <p>
-                    Ми подбаємо про все: знайдемо відповідну локацію, налаштуємо технічну частину, створимо сценарій і забезпечимо
-                    модерацію, організуємо кейтеринг, оформлення простору, логістику учасників та повну координацію події.
+                  <p class="animation fadeInUp">
+                    We take care of everything: find the right location, prepare technical support, create the scenario and ensure
+                    moderation, organize catering, space design, participant logistics, and full event coordination.
                   </p>
                 </div>
               </div>
               <div class="event__player">
                 <video class="event__video" autoplay muted loop playsinline loading="lazy">
-                  <source src="./assets/video/portfolio/2.webm" type="video/webm" />
-                  <source src="./assets/video/portfolio/2.mp4" type="video/mp4" />
+                  <source src="/assets/video/portfolio/2.webm" type="video/webm" />
+                  <source src="/assets/video/portfolio/2.mp4" type="video/mp4" />
                   Ваш браузер не підтримує відео.
                 </video>
               </div>
@@ -198,93 +259,23 @@
             <div class="event">
               <div class="event__content">
                 <div class="event__header">
-                  <h3 class="event__title">Циклові конференції та круглі столи</h3>
-                  <p class="event__subtitle">Для б'юті та фарм індустрії</p>
+                  <h3 class="event__title animation fadeInUp">Annual Conference Series & Medical Roundtables</h3>
+                  <p class="event__subtitle animation fadeInUp">For the beauty and pharmaceutical industry</p>
                 </div>
                 <div class="event__descr">
-                  <p>
-                    Ми продумуємо подію від ідеї до реалізації: створюємо концепцію, підбираємо локацію, налаштовуємо техніку, організовуємо
-                    реєстрацію, бренд-зони та кейтеринг — і повністю координуємо день події.
+                  <p class="animation fadeInUp">
+                    We design every event with deep expertise in the beauty and pharmaceutical sectors. From concept to execution, we handle
+                    program design, venue selection, technical production, participant registration, branding and engagement zones,
+                    catering, and seamless on-site coordination — all tailored to the specific needs of your industry.
                   </p>
                 </div>
               </div>
               <div class="event__player">
                 <video class="event__video" autoplay muted loop playsinline loading="lazy">
-                  <source src="./assets/video/portfolio/3.webm" type="video/webm" />
-                  <source src="./assets/video/portfolio/3.mp4" type="video/mp4" />
+                  <source src="/assets/video/portfolio/3.webm" type="video/webm" />
+                  <source src="/assets/video/portfolio/3.mp4" type="video/mp4" />
                   Ваш браузер не підтримує відео.
                 </video>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="team">
-        <div class="wrapper">
-          <div class="title">
-            <h2 class="title__text">НАША КОМАНДА</h2>
-            <p class="title__subtext">ХТО МИ?</p>
-          </div>
-          <div class="team__content">
-            <div class="card">
-              <div class="card__front view">
-                <img class="card__img" src="./assets/img/team/1.avif" alt="..." />
-              </div>
-              <div class="card__back view">
-                <p class="card__name">Ім’я Прізвище</p>
-                <p class="card__position">/посада</p>
-                <p class="card__descr">опис</p>
-              </div>
-            </div>
-            <div class="card">
-              <div class="card__front view">
-                <img class="card__img" src="./assets/img/team/2.avif" alt="..." />
-              </div>
-              <div class="card__back view">
-                <p class="card__name">Ім’я Прізвище</p>
-                <p class="card__position">/посада</p>
-                <p class="card__descr">опис</p>
-              </div>
-            </div>
-            <div class="card">
-              <div class="card__front view">
-                <img class="card__img" src="./assets/img/team/3.avif" alt="..." />
-              </div>
-              <div class="card__back view">
-                <p class="card__name">Ім’я Прізвище</p>
-                <p class="card__position">/посада</p>
-                <p class="card__descr">опис</p>
-              </div>
-            </div>
-            <div class="card">
-              <div class="card__front view">
-                <img class="card__img" src="./assets/img/team/4.avif" alt="..." />
-              </div>
-              <div class="card__back view">
-                <p class="card__name">Ім’я Прізвище</p>
-                <p class="card__position">/посада</p>
-                <p class="card__descr">опис</p>
-              </div>
-            </div>
-            <div class="card">
-              <div class="card__front view">
-                <img class="card__img" src="./assets/img/team/5.avif" alt="..." />
-              </div>
-              <div class="card__back view">
-                <p class="card__name">Ім’я Прізвище</p>
-                <p class="card__position">/посада</p>
-                <p class="card__descr">опис</p>
-              </div>
-            </div>
-            <div class="card">
-              <div class="card__front view">
-                <img class="card__img" src="./assets/img/team/2.avif" alt="..." />
-              </div>
-              <div class="card__back view">
-                <p class="card__name">Ім’я Прізвище</p>
-                <p class="card__position">/посада</p>
-                <p class="card__descr">опис</p>
               </div>
             </div>
           </div>
@@ -294,26 +285,24 @@
       <section class="partners" id="partners">
         <div class="wrapper">
           <div class="title">
-            <h2 class="title__text">НАМ ДОВІРЯЮТЬ</h2>
-            <p class="title__subtext">ПАРТНЕРИ</p>
+            <h2 class="title__text">Trusted by</h2>
+            <p class="title__subtext">Partners</p>
           </div>
-        </div>
+          <div class="marquee marquee-partners splide">
+            <div class="marquee__content splide__track">
+              <div class="marquee__line splide__list">
+                <img class="splide__slide" src="/assets/img/partners/1.webp" alt="..." />
+                <img class="splide__slide" src="/assets/img/partners/2.webp" alt="..." />
+                <img class="splide__slide" src="/assets/img/partners/3.webp" alt="..." />
+                <img class="splide__slide" src="/assets/img/partners/4.webp" alt="..." />
+                <img class="splide__slide" src="/assets/img/partners/5.webp" alt="..." />
 
-        <div class="marquee">
-          <div class="marquee__content">
-            <div class="marquee__line">
-              <img src="./assets/img/partners/1.webp" alt="..." />
-              <img src="./assets/img/partners/2.webp" alt="..." />
-              <img src="./assets/img/partners/3.webp" alt="..." />
-              <img src="./assets/img/partners/4.webp" alt="..." />
-              <img src="./assets/img/partners/5.webp" alt="..." />
-            </div>
-            <div class="marquee__line" aria-hidden="true">
-              <img src="./assets/img/partners/1.webp" alt="..." />
-              <img src="./assets/img/partners/2.webp" alt="..." />
-              <img src="./assets/img/partners/3.webp" alt="..." />
-              <img src="./assets/img/partners/4.webp" alt="..." />
-              <img src="./assets/img/partners/5.webp" alt="..." />
+                <img class="splide__slide" src="/assets/img/partners/1.webp" alt="..." />
+                <img class="splide__slide" src="/assets/img/partners/2.webp" alt="..." />
+                <img class="splide__slide" src="/assets/img/partners/3.webp" alt="..." />
+                <img class="splide__slide" src="/assets/img/partners/4.webp" alt="..." />
+                <img class="splide__slide" src="/assets/img/partners/5.webp" alt="..." />
+              </div>
             </div>
           </div>
         </div>
@@ -322,86 +311,85 @@
       <section class="faq">
         <div class="wrapper">
           <div class="title">
-            <h2 class="title__text">Топ 5 порад для планування події</h2>
+            <h2 class="title__text">Top 5 tips for event planning</h2>
             <p class="title__subtext">Q&A</p>
           </div>
           <div class="accordion">
             <div class="accordion__item">
               <button class="accordion__btn btn-reset" aria-expanded="false">
-                <span class="accordion__title">1. Завчасна підготовка завжди дешевше та ефективніше</span>
+                <span class="accordion__title">1. Early preparation is always more cost-effective</span>
                 <svg class="accordion__icon">
                   <use xlink:href="#arrow"></use>
                 </svg>
               </button>
               <div class="accordion__content" aria-hidden="true">
                 <p>
-                  Підготовка до заходу напряму впливає на бюджет. Раннє бронювання готелів, залів та авіаквитків може зекономити десятки
-                  відсотків бюджету, адже ринок працює за принципом динамічного ціноутворення: низький попит = нижча вартість. Якщо
-                  планування починається за кілька місяців або навіть рік-два для великих щорічних подій, вибір локацій ширший, умови
-                  вигідніші, а ризики ажіотажного підвищення цін мінімальні.
+                  Event planning has a direct impact on your budget. Securing hotels, venues, and flights early can save significant costs,
+                  as dynamic pricing favors early bookings. Planning months—or even 1–2 years ahead for large recurring events—provides more
+                  options, better conditions, and minimizes the risk of unexpected price increases.
                 </p>
               </div>
             </div>
             <div class="accordion__item">
               <button class="accordion__btn btn-reset" aria-expanded="false">
-                <span class="accordion__title">2. Перед вибором локації проведіть інспекційний тур</span>
+                <span class="accordion__title">2. Before choosing a venue, conduct an inspection tour</span>
                 <svg class="accordion__icon">
                   <use xlink:href="#arrow"></use>
                 </svg>
               </button>
               <div class="accordion__content" aria-hidden="true">
                 <p>
-                  Якщо івент проходить у новому місті чи країні, перед фінальним рішенням варто особисто відвідати потенційні готелі й
-                  майданчики. Інспекція дозволяє пройти шлях гостя, оцінити інфраструктуру, перевірити логістику, побачити сусідні локації
-                  та переконатися, що обраний простір відповідає цілям заходу. Це суттєво знижує ризики та допомагає прийняти обгрунтоване
-                  рішення.
+                  If the event takes place in a new city or country, it is worth personally visiting potential hotels and venues before
+                  making a final decision. An inspection allows you to walk the guest journey, evaluate infrastructure, check logistics, see
+                  nearby locations, and ensure the chosen space meets the event goals. It significantly reduces risks and supports informed
+                  decision-making.
                 </p>
               </div>
             </div>
             <div class="accordion__item">
               <button class="accordion__btn btn-reset" aria-expanded="false">
-                <span class="accordion__title">3. Збалансувати бюджет і якість допоможе професійне агентство</span>
+                <span class="accordion__title">3. A professional agency helps balance budget and quality</span>
                 <svg class="accordion__icon">
                   <use xlink:href="#arrow"></use>
                 </svg>
               </button>
               <div class="accordion__content" aria-hidden="true">
                 <p>
-                  Спроби «вичавити максимум» з мінімального бюджету або вибір найдешевших підрядників часто призводять до проблем. У той же
-                  час дорогі послуги не завжди гарантують відповідну якість. Агентство завдяки досвіду та партнерським відносинам з
-                  постачальниками пропонує оптимальні варіанти у заданих фінансових рамках, забезпечує відповідний рівень сервісу та захищає
-                  від зайвих витрат.
+                  Attempts to “squeeze the most” from a minimal budget or selecting low-cost vendors often lead to problems. Likewise,
+                  expensive services do not always guarantee the desired quality. Thanks to experience and strong supplier relationships, a
+                  professional agency delivers optimal solutions within the set budget, ensures appropriate service levels, and protects
+                  against unnecessary costs.
                 </p>
               </div>
             </div>
             <div class="accordion__item">
               <button class="accordion__btn btn-reset" aria-expanded="false">
-                <span class="accordion__title">4. Уникайте хаотичних змін і рішень в останній момент</span>
+                <span class="accordion__title">4. Avoid chaotic changes and last-minute decisions</span>
                 <svg class="accordion__icon">
                   <use xlink:href="#arrow"></use>
                 </svg>
               </button>
               <div class="accordion__content" aria-hidden="true">
                 <p>
-                  Невчасне бронювання залів або номерів без точної кількості гостей може спричинити серйозні проблеми: пусті зали та
-                  оплачені, але незаселені номери, або навпаки брак місць і необхідність скасування чи термінового перепланування. Різні
-                  зміни призводять до подорожчання і ускладнюють проект, тому чітке планування — ключ до стабільності.
+                  Late booking of rooms or venues without an exact guest count can cause serious problems: empty halls and paid but unused
+                  rooms, or a lack of space requiring cancellations or urgent replanning. Frequent changes increase costs and complicate
+                  project execution, so precise planning is key to stability.
                 </p>
               </div>
             </div>
             <div class="accordion__item">
               <button class="accordion__btn btn-reset" aria-expanded="false">
-                <span class="accordion__title">5. Самостійна організація часто складніша та дорожча, ніж здається</span>
+                <span class="accordion__title">5. Organizing on your own is often harder and more expensive than it seems</span>
                 <svg class="accordion__icon">
                   <use xlink:href="#arrow"></use>
                 </svg>
               </button>
               <div class="accordion__content" aria-hidden="true">
                 <p>
-                  Професійні агентства мають великий досвід, налагоджену базу підрядників та глибоке розуміння сезонності, логістики,
-                  місцевої специфіки й мікродеталей, які легко упустити. Питання віз, правил перетину кордону, оптимальних маршрутів,
-                  ресторанних рекомендацій, нюансів багажу — усе це потребує експертизи. Агенція знімає операційний тягар, зберігає ресурси
-                  та гарантує якість організації завдяки досвіду проведення тисяч івентів.
+                  Professional agencies have extensive experience, a verified network of vendors, and deep knowledge of seasonality,
+                  logistics, local specifics, and micro-details that are easy to miss. Visa issues, border regulations, optimal routes,
+                  restaurant recommendations, or luggage nuances require expertise. The agency takes on the operational burden, saves
+                  resources, and ensures high-quality event execution thanks to experience from thousands of events.
                 </p>
               </div>
             </div>
@@ -409,14 +397,14 @@
         </div>
       </section>
 
-      <section class="blog">
+      <section class="blog" id="blog">
         <div class="wrapper">
           <div class="title">
-            <h2 class="title__text">БЛОГ</h2>
-            <p class="title__subtext">НОВИНИ</p>
+            <h2 class="title__text">Blog</h2>
+            <p class="title__subtext">News</p>
           </div>
           <div class="blog__content">
-            <a href="./article/?id=1" class="blog__link btn-reset" style="background-image: url('./assets/img/blog/1.avif')">
+            <a href="/article/?id=1" class="blog__link btn-reset" style="background-image: url('../assets/img/blog/1.avif')">
               <span class="link__icon" aria-hidden="true"></span>
               <p class="link__title">Звана вечеря як бізнес-івент</p>
               <p class="link__descr">
@@ -424,7 +412,7 @@
                 бізнес-формат, який працює і на HR, і на маркетинг, і на репутацію бренду.
               </p>
             </a>
-            <a href="./article/?id=2" class="blog__link btn-reset" style="background-image: url('./assets/img/blog/2.avif')">
+            <a href="/article/?id=2" class="blog__link btn-reset" style="background-image: url('../assets/img/blog/2.avif')">
               <span class="link__icon" aria-hidden="true"></span>
               <p class="link__title">MICE-тренди в Європі 2025-2026 років</p>
               <p class="link__descr">
@@ -433,7 +421,7 @@
                 “зустрічами” й перетворюються на досвід, що має цінність для бізнесу і людей.
               </p>
             </a>
-            <a href="./article/?id=3" class="blog__link btn-reset" style="background-image: url('./assets/img/blog/3.avif')">
+            <a href="/article/?id=3" class="blog__link btn-reset" style="background-image: url('../assets/img/blog/3.avif')">
               <span class="link__icon" aria-hidden="true"></span>
               <p class="link__title">Івент під ключ: делегувати агенції вигідніше?</p>
               <p class="link__descr">
@@ -444,8 +432,8 @@
               </p>
             </a>
           </div>
-          <a class="btn btn-fill btn-reset blog-btn" href="./blog">
-            дивитись все
+          <a class="btn btn-fill btn-reset blog-btn" href="/blog">
+            See all
             <svg class="btn__icon" aria-hidden="true">
               <use xlink:href="#arrow-btn"></use>
             </svg>
@@ -458,7 +446,7 @@
       <div class="wrapper">
         <div class="request__contacts">
           <a href="./" class="logo btn-reset">
-            <img class="contacts__logo" src="./assets/img/logo.svg" alt="Logo" width="275" height="54" />
+            <img class="contacts__logo" src="/assets/img/logo.svg" alt="Logo" width="275" height="54" />
           </a>
           <h2 class="contacts__title">Warsaw, Poland</h2>
           <div class="address">
@@ -508,20 +496,25 @@
             </li>
           </ul>
           <hr class="contacts__line" />
+          <div class="policy">
+            <a href="/privacy/" class="policy__link btn-reset" target="_blank" rel="noopener noreferrer">Privacy</a>
+            <a href="/cookie/" class="policy__link btn-reset" target="_blank" rel="noopener noreferrer">Cookie</a>
+            <a href="/legal/" class="policy__link btn-reset" target="_blank" rel="noopener noreferrer">Legal notice</a>
+          </div>
           <p class="contacts__copy">&copy; Telehaus 2025</p>
         </div>
-        <form class="request__form" action="./assets/php/mail.php" method="post">
+        <form class="request__form" action="/assets/php/mail.php" method="post">
           <div class="form__row">
-            <label for="email">Введіть ваш email</label>
+            <label for="email">Enter your email</label>
             <input name="E-mail" type="email" id="email" placeholder="example@company.com" data-validate-field="email" autocomplete="off" />
           </div>
           <div class="form__row">
-            <label for="descr">Коротко опишіть ваш запит</label>
+            <label for="descr">Briefly describe your request</label>
             <textarea name="Опис" id="descr" cols="30" rows="4"></textarea>
           </div>
           <div class="form__btns">
             <button class="btn btn-dark form__btn btn-reset" type="submit">
-              Надіслати
+              Send
               <svg class="btn__icon" aria-hidden="true">
                 <use xlink:href="#arrow-btn"></use>
               </svg>
@@ -531,35 +524,44 @@
       </div>
     </footer>
 
-    <script src="./assets/js/blog.js"></script>
-    <script>
-      const blog = document.querySelector('.blog__content');
-      getData().then((data) => {
-        const newData = data.toReversed().slice(0, 4);
-        let blogContent = '';
+    <div class="section-btns fixed">
+      <button class="section-btn section-btn--prev btn-reset" aria-label="Попередній блок"></button>
+      <button class="section-btn section-btn--next btn-reset" aria-label="Наступний блок"></button>
+    </div>
 
-        newData.forEach((el) => {
-          blogContent += `<a href="./article/?id=${el.id}" class="blog__link btn-reset" style="background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6)), center/cover no-repeat url('./assets/img/blog/${el.img}')">
-        <div class="link__header">
-          <span class="link__date">${el.createdAt}</span>
-          <span class="link__icon" aria-hidden="true"></span>
-        </div>
-        <p class="link__title">${el.title}</p>
-        <p class="link__descr">${el.subtitle}</p>
-      </a>`;
-        });
-        blog.innerHTML = blogContent;
-      });
-    </script>
-    <script src="./assets/js/lib/inputmask.min.js"></script>
-    <script src="./assets/js/lib/just-validate.min.js"></script>
-    <script src="./assets/js/fixed-header.js"></script>
-    <script src="./assets/js/video-bg.js"></script>
-    <script src="./assets/js/accordion.js"></script>
-    <script src="./assets/js/burger.js"></script>
-    <script src="./assets/js/links.js"></script>
-    <script src="./assets/js/form.js"></script>
-    <script src="./assets/js/mail-link.js"></script>
-    <script src="./assets/js/animation.js"></script>
+    <div class="tooltip fixed">
+      <button class="tooltip__btn btn-reset" aria-labelledby="form-tooltip" aria-label="Відкрити форму"></button>
+      <div class="tooltip__body" role="tooltip" id="form-tooltip">
+        <form class="tooltip__form" action="/assets/php/mail.php" method="post">
+          <input
+            class="tooltip__input"
+            type="email"
+            name="Email"
+            placeholder="example@company.com"
+            data-validate-field="email"
+            autocomplete="off"
+          />
+        </form>
+      </div>
+    </div>
+
+    <script src="/assets/js/getData.js"></script>
+    <script src="/assets/js/select.js"></script>
+    <script src="/assets/js/language.js"></script>
+    <script src="/assets/js/lib/inputmask.min.js"></script>
+    <script src="/assets/js/lib/just-validate.min.js"></script>
+    <script src="/assets/js/fixed-header.js"></script>
+    <script src="/assets/js/video-bg.js"></script>
+    <script src="/assets/js/accordion.js"></script>
+    <script src="/assets/js/burger.js"></script>
+    <script src="/assets/js/links.js"></script>
+    <script src="/assets/js/form.js"></script>
+    <script src="/assets/js/mail-link.js"></script>
+    <script src="/assets/js/animation.js"></script>
+    <script src="/assets/js/moving.js"></script>
+    <script src="/assets/js/lib/splide.min.js"></script>
+    <script src="/assets/js/lib/splide-extension-auto-scroll.min.js"></script>
+    <script src="/assets/js/marquee.js"></script>
+    <script src="/assets/js/tooltip.js"></script>
   </body>
 </html>

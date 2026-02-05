@@ -1,0 +1,108 @@
+.custom-select {
+  width: 80px;
+  position: relative;
+  z-index: 1;
+
+  .select {
+    &-trigger {
+      background: transparent;
+      border: 1px solid #e0e0e0;
+      border-radius: 8px;
+      padding: 12px 40px 12px 16px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      transition: all 0.3s ease;
+      user-select: none;
+    }
+
+    &-trigger.active {
+      border-color: #7db9fe;
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0;
+      box-shadow: 0 4px 12px rgba(102, 126, 234, 0.15);
+    }
+
+    &-text {
+      color: #fff;
+    }
+
+    &-arrow {
+      position: absolute;
+      right: 16px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 14px;
+      height: 10px;
+      stroke: #fff !important;
+      fill: #fff;
+      transition: transform 0.3s ease;
+    }
+
+    &-options {
+      position: absolute;
+      top: calc(100% - 2px);
+      left: 0;
+      right: 0;
+      background: white;
+      border: 2px solid #7db9fe;
+      border-top: none;
+      border-bottom-left-radius: 8px;
+      border-bottom-right-radius: 8px;
+      max-height: 0;
+      overflow: hidden;
+      opacity: 0;
+      transition: all 0.3s ease;
+      z-index: 10;
+      box-shadow: 0 8px 16px rgba(102, 126, 234, 0.15);
+
+      &.active {
+        max-height: 280px;
+        opacity: 1;
+        overflow-y: auto;
+        border-top: 1px solid #7db9fe;
+      }
+    }
+
+    &-option {
+      padding: 12px 16px;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      color: #333;
+      font-size: 15px;
+
+      &:hover {
+        background: #f0f2ff;
+        color: #667eea;
+      }
+
+      &.selected {
+        color: $color-main;
+      }
+
+      &:last-child {
+        border-bottom-left-radius: 6px;
+        border-bottom-right-radius: 6px;
+      }
+    }
+  }
+
+  .result {
+    background: #f8f9fa;
+    padding: 16px;
+    border-radius: 8px;
+    text-align: center;
+    color: #666;
+    font-size: 14px;
+    min-height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &.has-value {
+      color: #333;
+      font-weight: 500;
+    }
+  }
+}

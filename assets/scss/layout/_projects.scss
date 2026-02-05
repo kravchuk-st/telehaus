@@ -1,0 +1,39 @@
+.project .marquee {
+  &__item {
+    img {
+      display: block;
+      width: fit-content;
+      height: 100%;
+      border-radius: 25px;
+      background-image: linear-gradient(to right, rgba(#000, 0.2), rgba(#000, 0.2));
+    }
+  }
+
+  &__text {
+    width: 100%;
+    max-width: 95%;
+    padding: 0 10px;
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%);
+    color: white;
+    font-size: 28px;
+    font-weight: 600;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    white-space: normal;
+    pointer-events: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .project .marquee__item img {
+    border-radius: 18px;
+  }
+
+  .project .marquee__text {
+    font-size: 20px;
+  }
+}

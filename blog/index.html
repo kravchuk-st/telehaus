@@ -7,18 +7,21 @@
     <title>Document</title>
     <link rel="shortcut icon" type="image/ico" href="../assets/img/favicon.svg" />
 
-    <link rel="stylesheet" href="../assets/css/normalize.css" />
-    <link rel="stylesheet" href="../assets/css/lib/splide.min.css" />
-    <link rel="stylesheet" href="../assets/css/blog.css" />
+    <link rel="stylesheet" href="/assets/css/normalize.css" />
+    <link rel="stylesheet" href="/assets/css/lib/splide.min.css" />
+    <link rel="stylesheet" href="/assets/css/blog.css" />
   </head>
   <body>
     <svg class="sprite" style="display: none">
       <symbol viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg" id="arrow-btn">
         <path d="M1.06055 15.9L15.4605 1.5M15.4605 1.5H2.26056M15.4605 1.5V14.7" stroke-width="3" />
       </symbol>
+      <symbol viewBox="0 0 22 13" fill="none" xmlns="http://www.w3.org/2000/svg" id="arrow">
+        <path d="M0.957031 0.957031L10.957 10.957L20.957 0.957031" stroke="#000" stroke-width="2.70667" />
+      </symbol>
     </svg>
 
-    <header class="header">
+    <header class="header fixed">
       <div class="wrapper">
         <a href="../" class="logo">
           <img class="logo__img" src="../assets/img/logo-dark.svg" alt="Logo img" width="220" />
@@ -27,6 +30,9 @@
           <ol class="nav__list list-reset">
             <li class="nav__item">
               <a href="../#about" class="nav__link">Послуги</a>
+            </li>
+            <li class="nav__item">
+              <a href="../#projects" class="nav__link">Кейси</a>
             </li>
             <li class="nav__item">
               <a href="../#why" class="nav__link">Чому ми?</a>
@@ -40,7 +46,22 @@
           </ol>
           <a href="#form" class="btn nav__btn btn-reset">Контакти</a>
         </nav>
-        <a href="#form" class="btn btn-lg btn-reset">Контакти</a>
+        <div class="header__btns">
+          <div class="custom-select">
+            <div class="select-trigger">
+              <span class="select-text placeholder">en</span>
+              <svg class="select-arrow" aria-hidden="true">
+                <use xlink:href="#arrow"></use>
+              </svg>
+            </div>
+            <div class="select-options">
+              <div class="select-option" data-value="en">en</div>
+              <div class="select-option" data-value="pl">pl</div>
+              <div class="select-option" data-value="ua">ua</div>
+            </div>
+          </div>
+          <a href="#form" class="btn btn-lg btn-reset">Contact</a>
+        </div>
         <button class="burger btn-reset" aria-label="Відкрити меню">
           <span class="burger__line" aria-hidden="true"></span>
           <span class="burger__line" aria-hidden="true"></span>
@@ -133,11 +154,11 @@
               </p>
             </a>
           </div>
-          <a class="btn btn-fill btn-reset blog-btn blog-btn--reverse" href="../">
+          <a class="btn btn-fill btn-reset blog-btn blog-btn--reverse" href="../#blog">
             <svg class="btn__icon" aria-hidden="true">
               <use xlink:href="#arrow-btn"></use>
             </svg>
-            на головну
+            <span class="btn-text">на головну</span>
           </a>
         </div>
       </section>
@@ -151,8 +172,8 @@
           </a>
           <h2 class="contacts__title">Warsaw, Poland</h2>
           <div class="address">
-            <p>Business center Park Rozwoju</p>
-            <p>Entrance D, 3rd floor</p>
+            <p class="address__location">Business center Park Rozwoju</p>
+            <p class="address__point">Entrance D, 3rd floor</p>
             <a href="https://maps.app.goo.gl/mMJwZ7mz5mBAdVBy7" class="address__link btn-reset" target="_blank" rel="noopener noreferrer"
               >Konstruktorska st. 12/12A</a
             >
@@ -197,9 +218,14 @@
             </li>
           </ul>
           <hr class="contacts__line" />
+          <div class="policy">
+            <a href="/privacy/" class="policy__link btn-reset" target="_blank" rel="noopener noreferrer">Privacy</a>
+            <a href="/cookie/" class="policy__link btn-reset" target="_blank" rel="noopener noreferrer">Cookie</a>
+            <a href="/legal/" class="policy__link btn-reset" target="_blank" rel="noopener noreferrer">Legal notice</a>
+          </div>
           <p class="contacts__copy">&copy; Telehaus 2025</p>
         </div>
-        <form class="request__form" action="../assets/php/mail.php" method="post">
+        <form class="request__form" action="/assets/php/mail.php" method="post">
           <div class="form__row">
             <label for="email">Введіть ваш email</label>
             <input name="E-mail" type="email" id="email" placeholder="example@company.com" data-validate-field="email" autocomplete="off" />
@@ -210,7 +236,7 @@
           </div>
           <div class="form__btns">
             <button class="btn btn-dark form__btn btn-reset" type="submit">
-              Надіслати
+              <span class="btn-text">Надіслати</span>
               <svg class="btn__icon" aria-hidden="true">
                 <use xlink:href="#arrow-btn"></use>
               </svg>
@@ -220,14 +246,15 @@
       </div>
     </footer>
 
-    <script src="../assets/js/lib/splide.min.js"></script>
-    <script src="../assets/js/lib/inputmask.min.js"></script>
-    <script src="../assets/js/lib/just-validate.min.js"></script>
-    <script src="../assets/js/blog.js"></script>
-    <script src="../assets/js/slider.js"></script>
-    <script src="../assets/js/burger.js"></script>
-    <script src="../assets/js/links.js"></script>
-    <script src="../assets/js/form.js"></script>
-    <script src="../assets/js/mail-link.js"></script>
+    <script src="/assets/js/lib/splide.min.js"></script>
+    <script src="/assets/js/lib/inputmask.min.js"></script>
+    <script src="/assets/js/lib/just-validate.min.js"></script>
+    <script src="/assets/js/burger.js"></script>
+    <script src="/assets/js/links.js"></script>
+    <script src="/assets/js/form.js"></script>
+    <script src="/assets/js/mail-link.js"></script>
+    <script src="/assets/js/getData.js"></script>
+    <script src="/assets/js/select.js"></script>
+    <script src="/assets/js/renderPage.js"></script>
   </body>
 </html>

@@ -22,7 +22,29 @@
   }
 }
 
-@media screen and (min-width: 1050px) {
+.custom-select {
+  .select-trigger {
+    border-color: #000;
+
+    &.active {
+      border-color: #000;
+    }
+  }
+
+  .select-options {
+    border-width: 1px;
+
+    &.active {
+      border-color: #000;
+    }
+  }
+
+  .select-text {
+    color: #000;
+  }
+}
+
+@media screen and (min-width: 1260px) {
   .header .nav__link {
     color: $color-text;
     text-shadow: 0 0 1px $color-secondary;

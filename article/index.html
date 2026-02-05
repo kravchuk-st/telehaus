@@ -15,9 +15,12 @@
       <symbol viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg" id="arrow-btn">
         <path d="M1.06055 15.9L15.4605 1.5M15.4605 1.5H2.26056M15.4605 1.5V14.7" stroke-width="3" />
       </symbol>
+      <symbol viewBox="0 0 22 13" fill="none" xmlns="http://www.w3.org/2000/svg" id="arrow">
+        <path d="M0.957031 0.957031L10.957 10.957L20.957 0.957031" stroke-width="2.70667" />
+      </symbol>
     </svg>
 
-    <header class="header">
+    <header class="header fixed">
       <div class="wrapper">
         <a href="../" class="logo">
           <img class="logo__img" src="../assets/img/logo.svg" alt="Logo img" width="220" />
@@ -26,6 +29,9 @@
           <ol class="nav__list list-reset">
             <li class="nav__item">
               <a href="../#about" class="nav__link">Послуги</a>
+            </li>
+            <li class="nav__item">
+              <a href="../#projects" class="nav__link">Кейси</a>
             </li>
             <li class="nav__item">
               <a href="../#why" class="nav__link">Чому ми?</a>
@@ -39,7 +45,22 @@
           </ol>
           <a href="#form" class="btn nav__btn btn-reset">Контакти</a>
         </nav>
-        <a href="#form" class="btn btn-lg btn-reset">Контакти</a>
+        <div class="header__btns">
+          <div class="custom-select">
+            <div class="select-trigger">
+              <span class="select-text placeholder">en</span>
+              <svg class="select-arrow" aria-hidden="true">
+                <use xlink:href="#arrow"></use>
+              </svg>
+            </div>
+            <div class="select-options">
+              <div class="select-option" data-value="en">en</div>
+              <div class="select-option" data-value="pl">pl</div>
+              <div class="select-option" data-value="ua">ua</div>
+            </div>
+          </div>
+          <a href="#form" class="btn btn-lg btn-reset">Contact</a>
+        </div>
         <button class="burger btn-reset" aria-label="Відкрити меню">
           <span class="burger__line" aria-hidden="true"></span>
           <span class="burger__line" aria-hidden="true"></span>
@@ -63,43 +84,52 @@
 
       <section class="article">
         <div class="wrapper">
-          <h2>Повернення живих зустрічей — сильніше, ніж очікували</h2>
-          <p>
-            Після кількох років онлайну Європа переживає справжній бум офлайн-подій. Компанії повертаються до зустрічей наживо і не просто
-            повертаються, а масштабують їх. Дослідження показують: 70% сучасних корпоративних заходів — це командні вечері, ланчі та
-            зустрічі, які допомагають людям нарешті «вийти з Zoom-втоми» та відчути себе командою. Це той випадок, коли потреба в живому
-            контакті стала бізнес-необхідністю.
-          </p>
-          <h2>Гнучкі формати замість жорстких сценаріїв</h2>
-          <p>
-            Суворий сценарій з таймінгом до хвилини застаріває. Європейські компанії хочуть події, які можна «підлаштувати під настрій»:
-            гібридні формати, вільні зони для нетворкінгу, інтерактиви, змішування офлайну з диджитал-елементами. Подія має жити, а не
-            просто відбуватися.
-          </p>
-          <h2>Персоналізація: події, які “говорять” мовою людей</h2>
-          <p>
-            Європейські організатори все частіше влаштовують івенти, де учасники не просто слухають, а діють: практичні майстер-класи,
-            тематичні вияви, камерні дискусії, гастрономічні вечері, immersive-досвід. Корпоративна подія стає не розвагою, а цінним
-            досвідом, який співробітники згадують, обговорюють і чекають наступного разу.
-          </p>
-          <h2>Технології, які працюють для людей</h2>
-          <p>
-            Чат-боти для реєстрації, інтерактивні застосунки, аналітика поведінки гостей, швидкий збір фідбеку, автоматизація процесів —
-            технології стали непомітним «фоном», який робить подію зручною і гладкою. Важливо, що фокус змінився: не технології заради
-            технологій, а зручність заради людини.
-          </p>
-          <h2>Події як інструмент емоційного менеджменту</h2>
-          <p>
-            Звучить по-новому, але це факт: компанії все частіше використовують події, аби відновити командну динаміку, знизити емоційне
-            вигорання та створити відчуття приналежності. Один якісний корпоратив або камерна бізнес-вечеря інколи роблять більше, ніж
-            місяць тімбілдинг-чатів і zoom-митингів.
-          </p>
-          <h2>Чому ці тренди важливі для бізнесу?</h2>
-          <p>
-            Бо вони відображають головну зміну: подія — це досвід, який формує ставлення людей до компанії. У Європі давно зрозуміли, що
-            зустріч — це не пункт у календарі. Це інвестиція в культуру, команду, бренд роботодавця, партнерства та результати. Iвенти стали
-            мовою бізнесу — і хто говорить нею краще, той і виграє.
-          </p>
+          <div class="article__text">
+            <h2>Повернення живих зустрічей — сильніше, ніж очікували</h2>
+            <p>
+              Після кількох років онлайну Європа переживає справжній бум офлайн-подій. Компанії повертаються до зустрічей наживо і не просто
+              повертаються, а масштабують їх. Дослідження показують: 70% сучасних корпоративних заходів — це командні вечері, ланчі та
+              зустрічі, які допомагають людям нарешті «вийти з Zoom-втоми» та відчути себе командою. Це той випадок, коли потреба в живому
+              контакті стала бізнес-необхідністю.
+            </p>
+            <h2>Гнучкі формати замість жорстких сценаріїв</h2>
+            <p>
+              Суворий сценарій з таймінгом до хвилини застаріває. Європейські компанії хочуть події, які можна «підлаштувати під настрій»:
+              гібридні формати, вільні зони для нетворкінгу, інтерактиви, змішування офлайну з диджитал-елементами. Подія має жити, а не
+              просто відбуватися.
+            </p>
+            <h2>Персоналізація: події, які “говорять” мовою людей</h2>
+            <p>
+              Європейські організатори все частіше влаштовують івенти, де учасники не просто слухають, а діють: практичні майстер-класи,
+              тематичні вияви, камерні дискусії, гастрономічні вечері, immersive-досвід. Корпоративна подія стає не розвагою, а цінним
+              досвідом, який співробітники згадують, обговорюють і чекають наступного разу.
+            </p>
+            <h2>Технології, які працюють для людей</h2>
+            <p>
+              Чат-боти для реєстрації, інтерактивні застосунки, аналітика поведінки гостей, швидкий збір фідбеку, автоматизація процесів —
+              технології стали непомітним «фоном», який робить подію зручною і гладкою. Важливо, що фокус змінився: не технології заради
+              технологій, а зручність заради людини.
+            </p>
+            <h2>Події як інструмент емоційного менеджменту</h2>
+            <p>
+              Звучить по-новому, але це факт: компанії все частіше використовують події, аби відновити командну динаміку, знизити емоційне
+              вигорання та створити відчуття приналежності. Один якісний корпоратив або камерна бізнес-вечеря інколи роблять більше, ніж
+              місяць тімбілдинг-чатів і zoom-митингів.
+            </p>
+            <h2>Чому ці тренди важливі для бізнесу?</h2>
+            <p>
+              Бо вони відображають головну зміну: подія — це досвід, який формує ставлення людей до компанії. У Європі давно зрозуміли, що
+              зустріч — це не пункт у календарі. Це інвестиція в культуру, команду, бренд роботодавця, партнерства та результати. Iвенти
+              стали мовою бізнесу — і хто говорить нею краще, той і виграє.
+            </p>
+          </div>
+
+          <a class="btn btn-fill btn-reset article__btn" href="../#blog">
+            <svg class="btn__icon" aria-hidden="true">
+              <use xlink:href="#arrow-btn"></use>
+            </svg>
+            <span class="btn-text">на головну</span>
+          </a>
         </div>
       </section>
     </main>
@@ -112,8 +142,8 @@
           </a>
           <h2 class="contacts__title">Warsaw, Poland</h2>
           <div class="address">
-            <p>Business center Park Rozwoju</p>
-            <p>Entrance D, 3rd floor</p>
+            <p class="address__location">Business center Park Rozwoju</p>
+            <p class="address__point">Entrance D, 3rd floor</p>
             <a href="https://maps.app.goo.gl/mMJwZ7mz5mBAdVBy7" class="address__link btn-reset" target="_blank" rel="noopener noreferrer"
               >Konstruktorska st. 12/12A</a
             >
@@ -158,9 +188,14 @@
             </li>
           </ul>
           <hr class="contacts__line" />
+          <div class="policy">
+            <a href="/privacy/" class="policy__link btn-reset" target="_blank" rel="noopener noreferrer">Privacy</a>
+            <a href="/cookie/" class="policy__link btn-reset" target="_blank" rel="noopener noreferrer">Cookie</a>
+            <a href="/legal/" class="policy__link btn-reset" target="_blank" rel="noopener noreferrer">Legal notice</a>
+          </div>
           <p class="contacts__copy">&copy; Telehaus 2025</p>
         </div>
-        <form class="request__form" action="../assets/php/mail.php" method="post">
+        <form class="request__form" action="/assets/php/mail.php" method="post">
           <div class="form__row">
             <label for="email">Введіть ваш email</label>
             <input name="E-mail" type="email" id="email" placeholder="example@company.com" data-validate-field="email" autocomplete="off" />
@@ -171,7 +206,7 @@
           </div>
           <div class="form__btns">
             <button class="btn btn-dark form__btn btn-reset" type="submit">
-              Надіслати
+              <span class="btn-text">Надіслати</span>
               <svg class="btn__icon" aria-hidden="true">
                 <use xlink:href="#arrow-btn"></use>
               </svg>
@@ -181,14 +216,14 @@
       </div>
     </footer>
 
-    <script src="../assets/js/blog.js"></script>
-    <script src="../assets/js/article.js"></script>
-    <script src="../assets/js/lib/inputmask.min.js"></script>
-    <script src="../assets/js/lib/just-validate.min.js"></script>
-    <script src="../assets/js/fixed-header.js"></script>
-    <script src="../assets/js/burger.js"></script>
-    <script src="../assets/js/links.js"></script>
-    <script src="../assets/js/form.js"></script>
-    <script src="../assets/js/mail-link.js"></script>
+    <script src="/assets/js/getData.js"></script>
+    <script src="/assets/js/select.js"></script>
+    <script src="/assets/js/renderPage.js"></script>
+    <script src="/assets/js/lib/just-validate.min.js"></script>
+    <script src="/assets/js/fixed-header.js"></script>
+    <script src="/assets/js/burger.js"></script>
+    <script src="/assets/js/links.js"></script>
+    <script src="/assets/js/form.js"></script>
+    <script src="/assets/js/mail-link.js"></script>
   </body>
 </html>
