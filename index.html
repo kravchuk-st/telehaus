@@ -503,7 +503,7 @@
           </div>
           <p class="contacts__copy">&copy; Telehaus 2025</p>
         </div>
-        <form class="request__form" action="/assets/php/mail.php" method="post">
+        <form class="request__form" method="post">
           <div class="form__row">
             <label for="email">Enter your email</label>
             <input name="E-mail" type="email" id="email" placeholder="example@company.com" data-validate-field="email" autocomplete="off" />
@@ -514,7 +514,7 @@
           </div>
           <div class="form__btns">
             <button class="btn btn-dark form__btn btn-reset" type="submit">
-              Send
+              <span class="btn__text">Send</span>
               <svg class="btn__icon" aria-hidden="true">
                 <use xlink:href="#arrow-btn"></use>
               </svg>
@@ -532,7 +532,7 @@
     <div class="tooltip fixed">
       <button class="tooltip__btn btn-reset" aria-labelledby="form-tooltip" aria-label="Відкрити форму"></button>
       <div class="tooltip__body" role="tooltip" id="form-tooltip">
-        <form class="tooltip__form" action="/assets/php/mail.php" method="post">
+        <form class="tooltip__form" method="post">
           <input
             class="tooltip__input"
             type="email"
@@ -541,6 +541,7 @@
             data-validate-field="email"
             autocomplete="off"
           />
+          <button class="tooltip__button btn-reset" type="submit">Let us contact you</button>
         </form>
       </div>
     </div>

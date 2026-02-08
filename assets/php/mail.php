@@ -5,7 +5,7 @@ if (empty($_POST)) {
     exit;
 }
 
-$admin_email = 'qantyt@gmail.com';
+$admin_email = 'event@telehausme.com';
 $from_email = 'vxksdniv@telehausme.com';  // Ваш новий email
 $user_email = isset($_POST['E-mail']) ? htmlspecialchars($_POST['E-mail']) : '';
 
@@ -40,6 +40,7 @@ $message = "
 $subject = 'Заявка з Telehausme - ' . date('d.m.Y H:i:s');
 
 $headers  = "From: Telehausme <$from_email>\r\n";
+$headers .= "Reply-To: $user_email\r\n";
 $headers .= "MIME-Version: 1.0\r\n";
 $headers .= "Content-type: text/html; charset=UTF-8\r\n";
 

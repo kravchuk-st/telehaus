@@ -77,16 +77,19 @@ new window.JustValidate('.tooltip__form', {
     xhr.onreadystatechange = function () {
       if (xhr.readyState === 4) {
         if (xhr.status === 200) {
-          tooltipInstance.destroy();
-          console.log('Отправлено');
+          console.log('Відправлено успішно');
+        } else {
+          console.error('Помилка відправки:', xhr.status);
         }
       }
     };
 
-    xhr.open('POST', '../assets/php/mail.php', true);
+    xhr.open('POST', '/assets/php/mail.php', true);
     xhr.send(formData);
 
     thisForm.reset();
     tooltipInstance.destroy();
+
+    return false;
   },
 });

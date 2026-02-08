@@ -132,6 +132,10 @@
         margin-left: 45px;
         padding: 8px 30px;
         font-size: 24px;
+
+        &:disabled {
+          pointer-events: none;
+        }
       }
     }
   }

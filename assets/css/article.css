@@ -781,6 +781,9 @@ p {
   padding: 8px 30px;
   font-size: 24px;
 }
+.request__form .form__btn:disabled {
+  pointer-events: none;
+}
 .request .policy {
   display: flex;
   -moz-column-gap: 10px;
