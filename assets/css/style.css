@@ -465,21 +465,21 @@ textarea {
 .tooltip__input {
   width: 200px;
   height: 32px;
-  font-size: 16px;
+  font-size: 14px;
   color: #333;
   background-color: #daff01;
   border-color: #daff01;
 }
 .tooltip__input::-moz-placeholder {
-  font-size: 16px;
+  font-size: inherit;
 }
 .tooltip__input::placeholder {
-  font-size: 16px;
+  font-size: inherit;
 }
 .tooltip__button {
   width: 100%;
   margin-top: 10px;
-  padding: 8px 12px;
+  padding: 8px 15px;
   background-color: #daff01;
   border-radius: 18px;
 }
